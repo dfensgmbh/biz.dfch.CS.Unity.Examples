@@ -1,26 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+namespace Assets.Scripts
 
-public class LearningCurve : MonoBehaviour
 {
-    public int currentAge = 30;
-    public int addedAge = 1;
-
-    // Start is called before the first frame update
-    void Start()
+    public class LearningCurve : MonoBehaviour
     {
-        ComputeAge();
-    }
+        private int currentAge = 30;
+        public int AddedAge = 1;
 
-    void ComputeAge()
-    {
-        Debug.Log(currentAge + addedAge);
-    }
+        public float Pi = 3.14f;
+        public string WelcomeMessage = "Welcome to my Unity Game";
+        public bool IsMarked = true;
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Start is called before the first frame update
+        void Start()
+        {
+            ComputeAge();
+            var isGenerated = GenerateCharacter("Yasuo");
+        }
+
+        /// <summary>
+        /// Computes a modified age integer
+        /// </summary>
+        void ComputeAge()
+        {
+            var computedAge = currentAge + AddedAge;
+
+            Debug.Log("Log: Computed Age: " + computedAge);
+            Debug.Log($"Log: Computed Age: {computedAge}");
+            Debug.LogFormat("LogFormat: Computed Age: {0}", computedAge);
+        }
+
+        public bool GenerateCharacter(string characterName)
+        {
+            Debug.Log($"{characterName} - Character generated");
+
+            return true;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
         
+        }
     }
 }
