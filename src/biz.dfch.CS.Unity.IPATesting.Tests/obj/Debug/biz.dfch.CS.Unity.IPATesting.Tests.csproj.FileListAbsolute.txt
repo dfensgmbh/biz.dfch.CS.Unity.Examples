@@ -1,0 +1,2 @@
+C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting.Tests\obj\Debug\biz.dfch.CS.Unity.IPATesting.Tests.csproj.CoreCompileInputs.cache
+C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting.Tests\obj\Debug\biz.dfch.CS.Unity.IPATesting.Tests.csprojAssemblyReference.cache

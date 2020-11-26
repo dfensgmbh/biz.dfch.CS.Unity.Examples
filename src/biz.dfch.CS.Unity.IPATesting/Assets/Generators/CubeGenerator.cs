@@ -54,19 +54,19 @@ namespace Assets.Generators
 
         private Color MapTemperatureToColor()
         {
-            Debug.Log($"START Mapping temperature ('{CubeInfo.Temperature}') to color");
+            Debug.Log($"START Mapping temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to color");
 
             if (CubeInfo.TemperatureUnit != TemperatureUnit.Kelvin)
             {
-                Debug.Log($"START Converting temperature ('{CubeInfo.Temperature}') to Kelvin...");
+                Debug.Log($"START Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
                 CubeInfo.Temperature = temperatureConverter.ConvertToKelvin(CubeInfo.Temperature, CubeInfo.TemperatureUnit);
                 CubeInfo.TemperatureUnit = TemperatureUnit.Kelvin;
-                Debug.Log($"END Converting temperature ('{CubeInfo.Temperature}')");
+                Debug.Log($"END Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}')");
             }
 
             if (CubeInfo.Temperature > MaxKelvinTemperature || CubeInfo.Temperature < MinKelvinTemperature)
             {
-                Debug.Log($"Temperature ('{CubeInfo.Temperature}') is outside temperature range. Min Temperature: '{MinKelvinTemperature}' Max Temperature '{MaxKelvinTemperature}'");
+                Debug.Log($"Temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') is outside temperature range. Min Temperature: '{MinKelvinTemperature} K' Max Temperature '{MaxKelvinTemperature} K'");
                 return default;
             }
 
