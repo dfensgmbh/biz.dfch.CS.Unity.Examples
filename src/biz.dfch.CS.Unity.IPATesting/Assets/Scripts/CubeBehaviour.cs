@@ -26,7 +26,7 @@ namespace Assets.Scripts
         private CubeGenerator cubeGenerator;
         private CubeInfo cubeInfo;
 
-        public double Temperature { get; set; } = 200d;
+        public double Temperature { get; set; } = 15d;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Fahrenheit;
 
         // Start is called before the first frame update
