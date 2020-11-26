@@ -20,14 +20,30 @@ namespace Assets.Converters
             }
         }
 
-        public double ConvertToFahrenheit(double temperature, string temperatureUnit)
+        public double ConvertToFahrenheit(double temperature, TemperatureUnit temperatureUnit)
         {
-            return default;
+            switch (temperatureUnit)
+            {
+                case TemperatureUnit.Celsius:
+                    return temperature * 9 / 5  + 32;
+                case TemperatureUnit.Kelvin:
+                    return (temperature - DeltaKelvinCelsius) * 9 / 5 + 32;
+                default:
+                    return temperature;
+            }
         }       
         
-        public double ConvertToCelsius(double temperature, string temperatureUnit)
+        public double ConvertToCelsius(double temperature, TemperatureUnit temperatureUnit)
         {
-            return default;
+            switch (temperatureUnit)
+            {
+                case TemperatureUnit.Kelvin:
+                    return temperature - DeltaKelvinCelsius;
+                case TemperatureUnit.Fahrenheit:
+                    return (temperature - 32) * 5 / 9;
+                default:
+                    return temperature;
+            }
         }
     }
 }

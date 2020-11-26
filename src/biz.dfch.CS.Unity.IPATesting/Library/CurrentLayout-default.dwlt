@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Test Runner
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 331, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 47
+  controlID: 135
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 83
+  controlID: 47
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,7 +204,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 134
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 21
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,8 +325,8 @@ MonoBehaviour:
     y: 0
     width: 955
     height: 588
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Tests
+    m_Text: EditModeTests
     m_Image: {fileID: 3764734208316478041, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: Assets/Tests
+    m_Tooltip: Assets/EditModeTests
   m_Pos:
     serializedVersion: 2
     x: 1536
@@ -391,7 +391,7 @@ MonoBehaviour:
     m_CachedPref: 1
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 14226
+  m_LastInspectedObjectInstanceID: 14230
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 86fb0e42b67efa2469be2da7d8d56329
   m_InstanceID: 0
@@ -421,15 +421,15 @@ MonoBehaviour:
     height: 338
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 207
-    splitterInitialOffset: 0
+    ID: 279
+    splitterInitialOffset: 248
     currentActiveSplitter: -1
     realSizes:
-    - 201
-    - 67
+    - 179
+    - 89
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.66791046
+    - 0.33208954
     minSizes:
     - 32
     - 32
@@ -444,7 +444,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 16}
     newResultList:
@@ -452,8 +452,8 @@ MonoBehaviour:
       uniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
-      resultStatus: 0
-      duration: 0.4094493
+      resultStatus: 1
+      duration: 0.2942509
       messages: 
       output: 
       stacktrace: 
@@ -464,13 +464,95 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: 
+    - id: 1004
+      uniqueId: '[PlayModeTests.dll][suite]'
+      name: PlayModeTests.dll
+      fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
+      resultStatus: 1
+      duration: 0.2248624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
+    - id: 1005
+      uniqueId: PlayModeTests.dll/[PlayModeTests][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.1955909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[PlayModeTests.dll][suite]'
+    - id: 1001
+      uniqueId: PlayModeTests.dll/Tests/[PlayModeTests][Tests.CubeGeneratorTest][suite]
+      name: CubeGeneratorTest
+      fullName: Tests.CubeGeneratorTest
+      resultStatus: 1
+      duration: 0.1670149
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][Tests][suite]
+    - id: 1002
+      uniqueId: PlayModeTests.dll/Tests/CubeGeneratorTest/[PlayModeTests][Tests.CubeGeneratorTest.CubeGeneratorTestSimplePasses]
+      name: CubeGeneratorTestSimplePasses
+      fullName: Tests.CubeGeneratorTest.CubeGeneratorTestSimplePasses
+      resultStatus: 1
+      duration: 0.0288718
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/Tests/[PlayModeTests][Tests.CubeGeneratorTest][suite]
+    - id: 1003
+      uniqueId: PlayModeTests.dll/Tests/CubeGeneratorTest/[PlayModeTests][Tests.CubeGeneratorTest.CubeGeneratorTestWithEnumeratorPasses]
+      name: CubeGeneratorTestWithEnumeratorPasses
+      fullName: Tests.CubeGeneratorTest.CubeGeneratorTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.0469305
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/Tests/[PlayModeTests][Tests.CubeGeneratorTest][suite]
+    m_ResultText: PlayModeTests.dll (0.225s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6bfbc9c4
-      m_LastClickedID: -993395861
-      m_ExpandedIDs: 517ef48ec7f204906bfbc9c4e557abf72314d600ffffff7f
+      m_SelectedIDs: ae332b91
+      m_LastClickedID: -1859439698
+      m_ExpandedIDs: 517ef48ec7f20490ae332b9144b3fb9c6bfbc9c49a141ee9e557abf72314d600ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -505,7 +587,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.0757132
+      duration: 0.2289512
       messages: 
       output: 
       stacktrace: 
@@ -516,12 +598,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/Tests.dll
+    - id: 1011
+      uniqueId: '[EditModeTests.dll][suite]'
+      name: EditModeTests.dll
+      fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 1
-      duration: 0.0225934
+      duration: 0.16121
       messages: 
       output: 
       stacktrace: 
@@ -532,12 +614,12 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
-    - id: 1005
-      uniqueId: Tests.dll/[Assets][suite]
+    - id: 1012
+      uniqueId: EditModeTests.dll/[Assets][suite]
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.0212366
+      duration: 0.1543977
       messages: 
       output: 
       stacktrace: 
@@ -546,14 +628,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
-      parentUniqueId: '[Tests.dll][suite]'
-    - id: 1006
-      uniqueId: Tests.dll/Assets/[Tests][suite]
+      parentId: 1011
+      parentUniqueId: '[EditModeTests.dll][suite]'
+    - id: 1013
+      uniqueId: EditModeTests.dll/Assets/[EditModeTests][Assets.Tests][suite]
       name: Tests
       fullName: Assets.Tests
       resultStatus: 1
-      duration: 0.0144251
+      duration: 0.1493386
       messages: 
       output: 
       stacktrace: 
@@ -562,14 +644,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Assets][suite]
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/[Assets][suite]
     - id: 1001
-      uniqueId: Tests.dll/Assets/Tests/[Tests][Assets.Tests.TemperatureConverterTest][suite]
+      uniqueId: EditModeTests.dll/Assets/Tests/[EditModeTests][Assets.Tests.TemperatureConverterTest][suite]
       name: TemperatureConverterTest
       fullName: Assets.Tests.TemperatureConverterTest
       resultStatus: 1
-      duration: 0.007601
+      duration: 0.1367928
       messages: 
       output: 
       stacktrace: 
@@ -578,14 +660,30 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1006
-      parentUniqueId: Tests.dll/Assets/[Tests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Assets/Tests/TemperatureConverterTest/[Tests][Assets.Tests.TemperatureConverterTest.ConvertingCelsiusToKelvinReturnsExpectedResult]
-      name: ConvertingCelsiusToKelvinReturnsExpectedResult
-      fullName: Assets.Tests.TemperatureConverterTest.ConvertingCelsiusToKelvinReturnsExpectedResult
+      parentId: 1013
+      parentUniqueId: EditModeTests.dll/Assets/[EditModeTests][Assets.Tests][suite]
+    - id: 1010
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+      name: ConvertToCelsiusReturnsExpectedTemperature
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0387892
+      duration: 0.0688269
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: EditModeTests.dll/Assets/Tests/[EditModeTests][Assets.Tests.TemperatureConverterTest][suite]
+    - id: 1008
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)]
+      name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
+      resultStatus: 1
+      duration: 0.0334952
       messages: 
       output: 
       stacktrace: 
@@ -595,14 +693,97 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+    - id: 1009
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)]
+      name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
+      resultStatus: 1
+      duration: 0.0006301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+    - id: 1007
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+      name: ConvertToFahrenheitReturnsExpectedTemperature
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
+      resultStatus: 1
+      duration: 0.0378725
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
       parentId: 1001
-      parentUniqueId: Tests.dll/Assets/Tests/[Tests][Assets.Tests.TemperatureConverterTest][suite]
+      parentUniqueId: EditModeTests.dll/Assets/Tests/[EditModeTests][Assets.Tests.TemperatureConverterTest][suite]
+    - id: 1005
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)]
+      name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
+      resultStatus: 1
+      duration: 0.0008936
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+    - id: 1006
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)]
+      name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
+      resultStatus: 1
+      duration: 0.0002579
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+    - id: 1004
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+      name: ConvertToKelvinReturnsExpectedTemperature
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
+      resultStatus: 1
+      duration: 0.0169868
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: EditModeTests.dll/Assets/Tests/[EditModeTests][Assets.Tests.TemperatureConverterTest][suite]
     - id: 1002
-      uniqueId: Tests.dll/Assets/Tests/TemperatureConverterTest/[Tests][Assets.Tests.TemperatureConverterTest.ConvertingFahrenheitToKelvinReturnsExpectedResult]
-      name: ConvertingFahrenheitToKelvinReturnsExpectedResult
-      fullName: Assets.Tests.TemperatureConverterTest.ConvertingFahrenheitToKelvinReturnsExpectedResult
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)]
+      name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       resultStatus: 1
-      duration: 0.0009703
+      duration: 0.0007299
       messages: 
       output: 
       stacktrace: 
@@ -612,15 +793,32 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Assets/Tests/[Tests][Assets.Tests.TemperatureConverterTest][suite]
-    m_ResultText: ConvertingFahrenheitToKelvinReturnsExpectedResult (0.001s)
+      parentId: 1004
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+    - id: 1003
+      uniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)]
+      name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
+      fullName: Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
+      resultStatus: 1
+      duration: 0.0003203
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: EditModeTests.dll/Assets/Tests/TemperatureConverterTest/[EditModeTests][Assets.Tests.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+    m_ResultText: ConvertToFahrenheitReturnsExpectedTemperature (0.038s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f77c2efd
-      m_LastClickedID: -47285001
-      m_ExpandedIDs: 517ef48ec7f204906bfbc9c4e557abf72314d6008359db41ce887573ffffff7f
+      m_SelectedIDs: 8d9afa8e
+      m_LastClickedID: -1896179059
+      m_ExpandedIDs: 517ef48ec7f20490bc1b99b0df9607bd6bfbc9c4f96298d0e557abf72314d600ab9237098359db4128c4b35fce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -738,21 +936,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests
+    - Assets/EditModeTests
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tests
+  - Assets/EditModeTests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92370000
-    m_LastClickedID: 14226
-    m_ExpandedIDs: 000000009837000000ca9a3b
+    m_SelectedIDs: 96370000
+    m_LastClickedID: 14230
+    m_ExpandedIDs: 000000009c37000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -780,7 +978,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000098370000
+    m_ExpandedIDs: 000000009c370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -807,7 +1005,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -824,7 +1022,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 7}
+      m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -904,7 +1102,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1ef9ffff60f9ffff60fbffff
+      m_ExpandedIDs: 3aedffff5cedfffff6edffff48eeffffbcf5ffff72f6ffff30f7ffffe6f7ffff8af8ffff38f9ffffe6f9ffff96faffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
