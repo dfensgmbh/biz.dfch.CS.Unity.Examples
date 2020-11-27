@@ -2,7 +2,7 @@
 using Assets.Converters;
 using NUnit.Framework;
 
-namespace Assets.Tests
+namespace Assets.EditModeTests
 {
     public class TemperatureConverterTest
     {
