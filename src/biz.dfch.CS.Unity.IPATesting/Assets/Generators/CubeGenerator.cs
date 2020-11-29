@@ -27,15 +27,16 @@ namespace Assets.Generators
         public readonly CubeInfo CubeInfo;
         public readonly GameObject GameObject;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject)
+        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
+            Contract.Assert(null != renderer);
 
             CubeInfo = cubeInfo;
             GameObject = gameObject;
+            this.renderer = renderer;
 
-            renderer = GameObject.GetComponent<Renderer>();
             temperatureConverter = new TemperatureConverter();
         }
 

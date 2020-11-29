@@ -26,12 +26,14 @@ namespace Assets.Scripts
         private CubeGenerator cubeGenerator;
         private CubeInfo cubeInfo;
 
+        public Renderer Renderer { get; set; }
         public double Temperature { get; set; } = 15d;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Fahrenheit;
 
         // Start is called before the first frame update
         void Start()
         {
+            Renderer = gameObject.GetComponent<Renderer>();
             cubeInfo = new CubeInfo
             {
                 Energy = 15d,
@@ -40,7 +42,7 @@ namespace Assets.Scripts
                 TemperatureUnit = TemperatureUnit
             };
 
-            cubeGenerator = new CubeGenerator(cubeInfo, gameObject);
+            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer);
             cubeGenerator.Generate();
         }
     }

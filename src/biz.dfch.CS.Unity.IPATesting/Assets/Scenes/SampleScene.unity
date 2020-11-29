@@ -231,8 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: 400
-  TemperatureUnit: Kelvin
 --- !u!1 &566332891
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +244,7 @@ GameObject:
   - component: {fileID: 566332893}
   - component: {fileID: 566332892}
   - component: {fileID: 566332896}
+  - component: {fileID: 566332897}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -341,8 +340,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: -400
-  TemperatureUnit: Kelvin
+--- !u!114 &566332897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566332891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fefb5b5c5ca974aa78d6377244847b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &592372343
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,8 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: -130
-  TemperatureUnit: Kelvin
 --- !u!1 &1473128305
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,8 +839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: 0
-  TemperatureUnit: Kelvin
 --- !u!1 &1499028937
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,8 +947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: -265
-  TemperatureUnit: Kelvin
 --- !u!1 &1573912210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,8 +1055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: 135
-  TemperatureUnit: Kelvin
 --- !u!850595691 &1768526646
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1223,5 +1224,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429cf2934f407b6478f85592f0f0f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Temperature: 265
-  TemperatureUnit: Kelvin
