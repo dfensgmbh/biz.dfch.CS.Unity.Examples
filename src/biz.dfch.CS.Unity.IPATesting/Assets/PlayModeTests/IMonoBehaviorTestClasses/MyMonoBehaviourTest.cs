@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Assets.PlayModeTests
+namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 {
     public class MyMonoBehaviourTest : MonoBehaviour, IMonoBehaviourTest
     {
@@ -10,7 +10,9 @@ namespace Assets.PlayModeTests
 
         void Update()
         {
+            Debug.Log("Update");
             frameCount++;
+            Debug.Log("Update 2");
         }
     }
 }
