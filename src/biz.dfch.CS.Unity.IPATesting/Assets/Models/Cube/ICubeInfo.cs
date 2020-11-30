@@ -6,7 +6,7 @@ namespace Assets.Models.Cube
     {
         double Temperature { get; set; }
         TemperatureUnit TemperatureUnit { get; set; }
-        double Energy { get; set; }
+        double EnergyPerMonth { get; set; }
         EnergyUnit EnergyUnit { get; set; }
     }
 }

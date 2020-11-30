@@ -34,11 +34,15 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.Renderer = gameObject.AddComponent<MeshRenderer>();
             controller.TemperatureUnit = TemperatureUnit.Celsius;
             controller.Temperature = 20d;
+            controller.EnergyPerMonth = 75d;
+            controller.EnergyUnit = EnergyUnit.KiloWatt;
         }
 
         private void Update()
         {
             frameCount++;
+
+            // Color Tests
 
             var expectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f);
             var resultColor = controller.Renderer.material.GetColor("_Color");
@@ -47,6 +51,15 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             Assert.AreEqual(expectedColor.g, resultColor.g);
             Assert.AreEqual(expectedColor.b, resultColor.b);
             Assert.AreEqual(expectedColor.a, resultColor.a);
+
+            // Scale Tests
+            
+            var expectedVector3 = new Vector3(1, 1, 1);
+            var resultVector3 = gameObject.transform.localScale;
+
+            Assert.AreEqual(expectedVector3.y, resultVector3.y);
+            Assert.AreEqual(expectedVector3.x, resultVector3.x);
+            Assert.AreEqual(expectedVector3.z, resultVector3.z);
         }
         public bool IsTestFinished => frameCount > 0;
     }

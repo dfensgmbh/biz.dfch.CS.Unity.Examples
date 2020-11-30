@@ -9,6 +9,25 @@ namespace Assets.Generators
     public class CubeGenerator
     {
         // ReSharper disable once InconsistentNaming
+        // Average gain of solar energy in swiss alps is 135 kWh/m2 during April  
+        private const int MaxEnergyPerSquareMeterPerOneMonth = 150;
+
+        // ReSharper disable once InconsistentNaming
+        private const int MinEnergyPerSquareMeterPerOneMonth = 0;
+
+        // ReSharper disable once InconsistentNaming
+        private const int EnergyRange = MaxEnergyPerSquareMeterPerOneMonth - MinEnergyPerSquareMeterPerOneMonth;
+
+        // ReSharper disable once InconsistentNaming
+        private const int MaxVector3CubeValue = 2;
+
+        // ReSharper disable once InconsistentNaming
+        private const int MinVector3CubeValue = 0;
+
+        // ReSharper disable once InconsistentNaming
+        private const int Vector3CubeValueRange = MaxVector3CubeValue - MinVector3CubeValue;
+
+        // ReSharper disable once InconsistentNaming
         // Highest measured temperature on earth
         private const int MaxKelvinTemperature = 330;
 
@@ -45,10 +64,18 @@ namespace Assets.Generators
             var resultColor = MapTemperatureToColor();
             if (default == resultColor)
             {
+                Debug.Log($"Ups, Something went wrong");
                 return false;
             }
-
             renderer.material.SetColor(MainColorName, resultColor);
+
+            var resultVector3 = MapEnergyToVector3();
+            if (default== resultVector3)
+            {
+                Debug.Log($"Ups, Something went wrong");
+                return false;
+            }
+            GameObject.transform.localScale = resultVector3;
 
             return true;
         }
@@ -85,9 +112,18 @@ namespace Assets.Generators
             return result;
         }
 
-        private void SetCubeSize()
+        private Vector3 MapEnergyToVector3()
         {
+            Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
 
+            var valueVector3 = (float) (EnergyRange - (MaxEnergyPerSquareMeterPerOneMonth - CubeInfo.EnergyPerMonth)) / EnergyRange * Vector3CubeValueRange;
+            Debug.Log($"Value Vector3 ('{valueVector3}')");
+
+            var result = new Vector3(valueVector3, valueVector3, valueVector3);
+
+            Debug.Log($"END Result Vector3: '{result}'");
+            
+            return result;
         }
 
         private void DisplayInfoOnCube()

@@ -29,6 +29,8 @@ namespace Assets.Scripts
         public Renderer Renderer { get; set; }
         public double Temperature { get; set; } = 15d;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Fahrenheit;
+        public double EnergyPerMonth { get; set; } = 20d;
+        public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
 
         // Start is called before the first frame update
         void Start()
@@ -36,8 +38,8 @@ namespace Assets.Scripts
             Renderer = gameObject.GetComponent<Renderer>();
             cubeInfo = new CubeInfo
             {
-                Energy = 15d,
-                EnergyUnit = EnergyUnit.KiloWatt,
+                EnergyPerMonth = EnergyPerMonth,
+                EnergyUnit = EnergyUnit,
                 Temperature = Temperature,
                 TemperatureUnit = TemperatureUnit
             };
