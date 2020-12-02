@@ -42,7 +42,9 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                     EnergyUnit = EnergyUnit.KiloWatt
                 },
                 ExpectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f),
-                ExpectedVector3 = new Vector3(1, 1, 1)
+                ExpectedVertices = default,
+                ExpectedText = "Temperature: 293.15 K\nEnergy: 75 kWh",
+                ExpectedFontSize = 82
             },
             new CubeBehaviourTestInfo
             {
@@ -54,14 +56,21 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                     EnergyUnit = EnergyUnit.KiloWatt
                 },
                 ExpectedColor = new Color(1, 0, 0, 1),
-                ExpectedVector3 = new Vector3(2, 2, 2)
+                ExpectedVertices = default,
+                ExpectedText = "Temperature: 330 K\nEnergy: 150 kWh",
+                ExpectedFontSize = 125
             }
         };
 
+        private GameObject Cube { get; set; } 
+
         private void Awake()
         {
-            controller = gameObject.AddComponent<CubeBehaviour>();
-            controller.Renderer = gameObject.AddComponent<MeshRenderer>();
+            Cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+            controller = Cube.AddComponent<CubeBehaviour>();
+            controller.Renderer = Cube.GetComponent<MeshRenderer>();
+            controller.MeshFilter = Cube.GetComponent<MeshFilter>();
 
             controller.TemperatureUnit = testCases.First().CubeInfoTestValues.TemperatureUnit;
             controller.Temperature = testCases.First().CubeInfoTestValues.Temperature;
@@ -97,18 +106,32 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             // Scale Tests
             
-            var expectedVector3 = testCase.ExpectedVector3;
-            var resultVector3 = gameObject.transform.localScale;
+            var expectedVector3 = testCase.ExpectedVertices;
+            var resultVector3 = controller.MeshFilter.mesh.vertices;
 
-            Debug.Log($"Expected Vector3: {expectedVector3}");
-            Debug.Log($"Result Vector3: {resultVector3}");
+            Debug.Log($"Expected Vector3[]: {expectedVector3}");
+            Debug.Log($"Result Vector3[]: {resultVector3}");
 
-            Assert.AreEqual(expectedVector3.y, resultVector3.y);
-            Assert.AreEqual(expectedVector3.x, resultVector3.x);
-            Assert.AreEqual(expectedVector3.z, resultVector3.z);
+            //Assert.AreEqual(expectedVector3.y, resultVector3.y);
+            //Assert.AreEqual(expectedVector3.x, resultVector3.x);
+            //Assert.AreEqual(expectedVector3.z, resultVector3.z);
+
+            // Text Tests
+
+            var childTextMesh = Cube.GetComponentInChildren<TextMesh>();
             
+            var expectedText = testCase.ExpectedText;
+            var resultText = childTextMesh.text;
+
+            var expectedFontSize = testCase.ExpectedFontSize;
+            var resultFontSize = childTextMesh.fontSize;
+
+            Assert.AreEqual(expectedText, resultText);
+            Assert.AreEqual(expectedFontSize, resultFontSize);
+
             frameCount++;
             Destroy(controller);
+            Destroy(childTextMesh);
             LoadNextTestCase();
         }
 
@@ -120,7 +143,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             var testCase = testCases[frameCount];
 
-            controller = gameObject.AddComponent<CubeBehaviour>();
+            controller = Cube.AddComponent<CubeBehaviour>();
             
             controller.TemperatureUnit = testCase.CubeInfoTestValues.TemperatureUnit;
             controller.Temperature = testCase.CubeInfoTestValues.Temperature;
@@ -132,7 +155,9 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         {
             public CubeInfo CubeInfoTestValues { get; set; }
             public Color ExpectedColor { get; set; }
-            public Vector3 ExpectedVector3 { get; set; }
+            public Vector3[] ExpectedVertices { get; set; }
+            public string ExpectedText { get; set; }
+            public int ExpectedFontSize { get; set; }
         }
     }
 

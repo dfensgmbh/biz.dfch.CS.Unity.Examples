@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Contracts;
+﻿using System;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using Assets.Constants;
 using Assets.Converters;
@@ -55,21 +56,24 @@ namespace Assets.Generators
 
         private readonly Renderer renderer;
         private readonly TextMesh textMesh;
+        private readonly MeshFilter meshFilter;
         private readonly TemperatureConverter temperatureConverter;
         public readonly CubeInfo CubeInfo;
         public readonly GameObject GameObject;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh)
+        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh, MeshFilter meshFilter)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
             Contract.Assert(null != renderer);
             Contract.Assert(null != textMesh);
+            Contract.Assert(null != meshFilter);
 
             CubeInfo = cubeInfo;
             GameObject = gameObject;
             this.renderer = renderer;
             this.textMesh = textMesh;
+            this.meshFilter = meshFilter;
 
             temperatureConverter = new TemperatureConverter();
         }
@@ -157,7 +161,7 @@ namespace Assets.Generators
         {
             Debug.Log($"START Recalculating bounds for Cube with scale value '{scale}'");
 
-            var mesh = GameObject.GetComponent<MeshFilter>().mesh;
+            var mesh = meshFilter.mesh;
             var baseVertices = mesh?.vertices;
             if (null == baseVertices)
             {
@@ -187,6 +191,7 @@ namespace Assets.Generators
                 Debug.Log("ABORT Recalculating as calculated vertices of Cube mesh is empty");
                 return false;
             }
+            Debug.Log($"Calculated vertices '{vertices}'");
 
             mesh.vertices = vertices;
             mesh.RecalculateBounds();
@@ -200,17 +205,17 @@ namespace Assets.Generators
         {
             Debug.Log($"START Displaying information on cube with scale value '{scale}'");
 
-            var fontSize = (int) (scale - MinCubeScaleValue) / CubeScaleValueRange * FontSizeRange + MinFontSize;
+            var fontSize = (scale - MinCubeScaleValue) / CubeScaleValueRange * FontSizeRange + MinFontSize;
 
             Debug.Log($"Calculated FontSize '{fontSize}'");
 
             textMesh.anchor = TextAnchor.MiddleCenter;
             textMesh.characterSize = 0.03f;
-            textMesh.fontSize = fontSize;
-            textMesh.text = $"Temperature: {CubeInfo.Temperature}  {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
+            textMesh.fontSize = Convert.ToInt32(fontSize);
+            textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
             textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
 
-            Debug.Log($"END TextMesh:\nAnchor: '{fontSize}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
+            Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
         }
     }
 }
