@@ -42,19 +42,22 @@ namespace Assets.Generators
         private const string MainColorName = "_Color";
 
         private readonly Renderer renderer;
+        private readonly TextMesh textMesh;
         private readonly TemperatureConverter temperatureConverter;
         public readonly CubeInfo CubeInfo;
         public readonly GameObject GameObject;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer)
+        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
             Contract.Assert(null != renderer);
+            Contract.Assert(null != textMesh);
 
             CubeInfo = cubeInfo;
             GameObject = gameObject;
             this.renderer = renderer;
+            this.textMesh = textMesh;
 
             temperatureConverter = new TemperatureConverter();
         }
@@ -76,7 +79,10 @@ namespace Assets.Generators
                 return false;
             }
             GameObject.transform.localScale = resultVector3;
+            //GameObject.GetComponentInChildren<Transform>().localScale = resultVector3;
 
+            DisplayInfoOnCube();
+            
             return true;
         }
 
@@ -114,7 +120,14 @@ namespace Assets.Generators
 
         private Vector3 MapEnergyToVector3()
         {
+            // DFTODO - Add size so can be converted to square meter
+
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
+
+            if (CubeInfo.EnergyPerMonth > MaxEnergyPerSquareMeterPerOneMonth || CubeInfo.EnergyPerMonth < MinEnergyPerSquareMeterPerOneMonth)
+            {
+                return default;
+            }
 
             var valueVector3 = (float) (EnergyRange - (MaxEnergyPerSquareMeterPerOneMonth - CubeInfo.EnergyPerMonth)) / EnergyRange * Vector3CubeValueRange;
             Debug.Log($"Value Vector3 ('{valueVector3}')");
@@ -128,7 +141,9 @@ namespace Assets.Generators
 
         private void DisplayInfoOnCube()
         {
-
+            textMesh.anchor = TextAnchor.MiddleCenter;
+            textMesh.fontSize = 3;
+            textMesh.text = $"Temperature: {CubeInfo.Temperature}  {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
         }
     }
 }

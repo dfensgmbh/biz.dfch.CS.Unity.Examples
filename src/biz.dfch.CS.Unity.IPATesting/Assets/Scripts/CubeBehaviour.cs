@@ -27,15 +27,22 @@ namespace Assets.Scripts
         private CubeInfo cubeInfo;
 
         public Renderer Renderer { get; set; }
-        public double Temperature { get; set; } = 15d;
-        public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Fahrenheit;
-        public double EnergyPerMonth { get; set; } = 20d;
+        public TextMesh TextMesh { get; set; }
+        public double Temperature { get; set; } = 330d;
+        public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
+        public double EnergyPerMonth { get; set; } = 75d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
 
         // Start is called before the first frame update
         void Start()
         {
             Renderer = gameObject.GetComponent<Renderer>();
+
+            var childGameObject = new GameObject("Child");
+            childGameObject.transform.parent = gameObject.transform;
+            childGameObject.transform.position = gameObject.transform.position;
+            TextMesh = childGameObject.AddComponent<TextMesh>();
+
             cubeInfo = new CubeInfo
             {
                 EnergyPerMonth = EnergyPerMonth,
@@ -44,7 +51,7 @@ namespace Assets.Scripts
                 TemperatureUnit = TemperatureUnit
             };
 
-            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer);
+            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh);
             cubeGenerator.Generate();
         }
     }
