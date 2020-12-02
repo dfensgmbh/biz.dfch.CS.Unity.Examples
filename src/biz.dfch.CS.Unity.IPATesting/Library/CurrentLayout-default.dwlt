@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Console
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,10 +39,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 572.8
+    x: 678.4
     y: 0
-    width: 547.2
-    height: 274
+    width: 581.6
+    height: 381.4
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 24}
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 456.8
-    width: 1120
-    height: 274
+    y: 349.6
+    width: 1260
+    height: 381.4
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 110
+  controlID: 54
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,11 +96,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1536
-    height: 730.8
+    height: 731
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 108
+  controlID: 124
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,10 +116,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1120
+    x: 1260
     y: 0
-    width: 416
-    height: 730.8
+    width: 276
+    height: 731
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -146,8 +146,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 321.6
-    height: 456.8
+    width: 361.6
+    height: 349.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
@@ -172,8 +172,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 572.8
-    height: 274
+    width: 678.4
+    height: 381.4
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -203,7 +203,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1536
-    height: 780.8
+    height: 781
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 760.8
+    y: 761
     width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -275,12 +275,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1120
-    height: 730.8
+    width: 1260
+    height: 731
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 109
+  controlID: 97
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,12 +300,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1120
-    height: 456.8
+    width: 1260
+    height: 349.6
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 90
+  controlID: 98
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,10 +321,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 321.6
+    x: 361.6
     y: 0
-    width: 798.4
-    height: 456.8
+    width: 898.4
+    height: 349.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Package Manager
-    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -415,28 +415,28 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 574.4
-    y: 327.2
-    width: 543.6
-    height: 456.4
+    x: 678.4
+    y: 423.2
+    width: 579.6
+    height: 360.4
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 164
-    splitterInitialOffset: 170
+    ID: 2246
+    splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
-    - 188
-    - 197.6
+    - 160.6
+    - 129
     relativeSizes:
-    - 0.48674244
-    - 0.51325756
+    - 0.55455804
+    - 0.44544196
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 385.6
+    lastTotalSize: 289.6
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -453,7 +453,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.5038435
+      duration: 0.1611967
       messages: 
       output: 
       stacktrace: 
@@ -469,7 +469,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
       resultStatus: 1
-      duration: 0.3803749
+      duration: 0.1289543
       messages: 
       output: 
       stacktrace: 
@@ -485,7 +485,7 @@ MonoBehaviour:
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.3481468
+      duration: 0.1153535
       messages: 
       output: 
       stacktrace: 
@@ -501,7 +501,7 @@ MonoBehaviour:
       name: PlayModeTests
       fullName: Assets.PlayModeTests
       resultStatus: 1
-      duration: 0.3370978
+      duration: 0.1063849
       messages: 
       output: 
       stacktrace: 
@@ -517,7 +517,7 @@ MonoBehaviour:
       name: CubeBehaviourTest
       fullName: Assets.PlayModeTests.CubeBehaviourTest
       resultStatus: 1
-      duration: 0.3193264
+      duration: 0.098899
       messages: 
       output: 
       stacktrace: 
@@ -533,23 +533,106 @@ MonoBehaviour:
       name: CubeBehaviour_Works
       fullName: Assets.PlayModeTests.CubeBehaviourTest.CubeBehaviour_Works
       resultStatus: 1
-      duration: 0.2270314
+      duration: 0.0711122
       messages: 
       output: "START Mapping temperature ('20 \xB0C') to color\r\nSTART Converting
         temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature ('293.15
         K')\r\nDifference between max and min temperature value is: '146'\r\nCreating
         color with R '0.7476028' G '0' and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748,
-        0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75') to Vector3\r\nValue
-        Vector3 ('1')\r\nEND Result Vector3: '(1.0, 1.0, 1.0)'\r\nFrame Count: 0\r\nTestCases
-        Count: 2\r\nTestCase loaded\r\nTemperature: 20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth:
-        75\r\nEnergyUnit: KiloWatt\r\nExpected Color: KiloWatt\r\nExpected Vector3:
-        KiloWatt\r\nSTART Mapping temperature ('330 K') to color\r\nDifference between
-        max and min temperature value is: '146'\r\nCreating color with R '1' G '0'
-        and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART
-        Mapping energy ('150') to Vector3\r\nValue Vector3 ('2')\r\nEND Result Vector3:
-        '(2.0, 2.0, 2.0)'\r\nFrame Count: 1\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature:
-        330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth: 150\r\nEnergyUnit: KiloWatt\r\nExpected
-        Color: KiloWatt\r\nExpected Vector3: KiloWatt\r\n"
+        0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75') to Vector3\r\nEnd Mapping
+        Energy to scale value ('1')\r\nSTART Recalculating bounds for Cube with scale
+        value '1'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.5, -0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5,
+        -0.5, 0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.5, 0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5,
+        0.5, 0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.5, 0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+        0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+        -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.5, 0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5,
+        0.5, 0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.5, 0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+        0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.5,
+        -0.5, 0.5)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.5, -0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+        -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.5, -0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5,
+        0.5, 0.5)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.5, 0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+        -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.5,
+        0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.5, 0.5, 0.5)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.5,
+        -0.5, 0.5)'\r\nCalculated vertices 'UnityEngine.Vector3[]'\r\nEND Recalculating
+        cube bounds\r\nSTART Displaying information on cube with scale value '1'\r\nCalculated
+        FontSize '82.5'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size:
+        '0.03' \nFont Size: '82'\r\nFrame Count: 0\r\nTestCases Count: 2\r\nTestCase
+        loaded\r\nTemperature: 20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth:
+        75\r\nEnergyUnit: KiloWatt\r\nExpected Color: RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected
+        Color: RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected Vector3[]: \r\nResult
+        Vector3[]: UnityEngine.Vector3[]\r\nSTART Mapping temperature ('330 K') to
+        color\r\nDifference between max and min temperature value is: '146'\r\nCreating
+        color with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000,
+        0.000, 1.000)'\r\nSTART Mapping energy ('150') to Vector3\r\nEnd Mapping
+        Energy to scale value ('2')\r\nSTART Recalculating bounds for Cube with scale
+        value '2'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        -1.0, 1.0)'\r\nCalculated vertices 'UnityEngine.Vector3[]'\r\nEND Recalculating
+        cube bounds\r\nSTART Displaying information on cube with scale value '2'\r\nCalculated
+        FontSize '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size:
+        '0.03' \nFont Size: '125'\r\nFrame Count: 1\r\nTestCases Count: 2\r\nTestCase
+        loaded\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
+        150\r\nEnergyUnit: KiloWatt\r\nExpected Color: RGBA(1.000, 0.000, 0.000,
+        1.000)\r\nExpected Color: RGBA(1.000, 0.000, 0.000, 1.000)\r\nExpected Vector3[]:
+        \r\nResult Vector3[]: UnityEngine.Vector3[]\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -564,7 +647,7 @@ MonoBehaviour:
       name: MonoBehaviourTest_Works
       fullName: Assets.PlayModeTests.CubeBehaviourTest.MonoBehaviourTest_Works
       resultStatus: 1
-      duration: 0.2611916
+      duration: 0.1154991
       messages: 
       output: 'Update
 
@@ -673,21 +756,100 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.CubeGeneratorTest][suite]
-    m_ResultText: "CubeBehaviour_Works (0.227s)\n---\nSTART Mapping temperature ('20
+    m_ResultText: "CubeBehaviour_Works (0.071s)\n---\nSTART Mapping temperature ('20
       \xB0C') to color\r\nSTART Converting temperature ('20 \xB0C') to Kelvin...\r\nEND
       Converting temperature ('293.15 K')\r\nDifference between max and min temperature
       value is: '146'\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND
       Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75')
-      to Vector3\r\nValue Vector3 ('1')\r\nEND Result Vector3: '(1.0, 1.0, 1.0)'\r\nFrame
-      Count: 0\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature: 20\r\nTemperatureUnit:
-      Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nExpected Color: KiloWatt\r\nExpected
-      Vector3: KiloWatt\r\nSTART Mapping temperature ('330 K') to color\r\nDifference
-      between max and min temperature value is: '146'\r\nCreating color with R '1'
-      G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART
-      Mapping energy ('150') to Vector3\r\nValue Vector3 ('2')\r\nEND Result Vector3:
-      '(2.0, 2.0, 2.0)'\r\nFrame Count: 1\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature:
+      to Vector3\r\nEnd Mapping Energy to scale value ('1')\r\nSTART Recalculating
+      bounds for Cube with scale value '1'\r\nCurrent vertex that gets calculated
+      '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.5, -0.5, 0.5)'\r\nCurrent
+      vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
+      '(-0.5, -0.5, 0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+      vertex that got calculated '(0.5, 0.5, 0.5)'\r\nCurrent vertex that gets calculated
+      '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5, 0.5, 0.5)'\r\nCurrent
+      vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
+      '(0.5, 0.5, -0.5)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-0.5, 0.5, -0.5)'\r\nCurrent vertex that gets
+      calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.5,
+      -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+      calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.5, 0.5,
+      0.5)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex
+      that got calculated '(-0.5, 0.5, 0.5)'\r\nCurrent vertex that gets calculated
+      '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.5, 0.5, -0.5)'\r\nCurrent
+      vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
+      '(-0.5, 0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+      calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.5, -0.5,
+      0.5)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-0.5, -0.5, 0.5)'\r\nCurrent vertex that gets
+      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+      -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-0.5, -0.5, 0.5)'\r\nCurrent vertex that gets
+      calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.5,
+      0.5, 0.5)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-0.5, 0.5, -0.5)'\r\nCurrent vertex that gets
+      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.5,
+      -0.5, -0.5)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(0.5, -0.5, -0.5)'\r\nCurrent vertex that gets
+      calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.5, 0.5,
+      -0.5)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
+      that got calculated '(0.5, 0.5, 0.5)'\r\nCurrent vertex that gets calculated
+      '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.5, -0.5, 0.5)'\r\nCalculated
+      vertices 'UnityEngine.Vector3[]'\r\nEND Recalculating cube bounds\r\nSTART
+      Displaying information on cube with scale value '1'\r\nCalculated FontSize
+      '82.5'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont
+      Size: '82'\r\nFrame Count: 0\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature:
+      20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nExpected
+      Color: RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected Color: RGBA(0.748, 0.000,
+      0.252, 1.000)\r\nExpected Vector3[]: \r\nResult Vector3[]: UnityEngine.Vector3[]\r\nSTART
+      Mapping temperature ('330 K') to color\r\nDifference between max and min temperature
+      value is: '146'\r\nCreating color with R '1' G '0' and B '0'\r\nEND Result
+      Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART Mapping energy ('150') to
+      Vector3\r\nEnd Mapping Energy to scale value ('2')\r\nSTART Recalculating bounds
+      for Cube with scale value '2'\r\nCurrent vertex that gets calculated '(0.5,
+      -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent
+      vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
+      '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
+      vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
+      '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent
+      vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
+      '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+      calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+      calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0,
+      1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex
+      that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
+      '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+      vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
+      '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+      calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0,
+      1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+      calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+      1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+      vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
+      vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+      calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0,
+      -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
+      that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
+      '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCalculated
+      vertices 'UnityEngine.Vector3[]'\r\nEND Recalculating cube bounds\r\nSTART
+      Displaying information on cube with scale value '2'\r\nCalculated FontSize
+      '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont
+      Size: '125'\r\nFrame Count: 1\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature:
       330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth: 150\r\nEnergyUnit: KiloWatt\r\nExpected
-      Color: KiloWatt\r\nExpected Vector3: KiloWatt"
+      Color: RGBA(1.000, 0.000, 0.000, 1.000)\r\nExpected Color: RGBA(1.000, 0.000,
+      0.000, 1.000)\r\nExpected Vector3[]: \r\nResult Vector3[]: UnityEngine.Vector3[]"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1017,7 +1179,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
-    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -1046,7 +1208,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -1071,14 +1233,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 530.4
-    width: 571.8
-    height: 253
+    y: 423.2
+    width: 677.4
+    height: 360.4
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1093,20 +1255,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a4370000
-    m_LastClickedID: 14244
+    m_SelectedIDs: b4370000
+    m_LastClickedID: 14260
     m_ExpandedIDs: 00000000a437000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1187,7 +1349,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 199}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
@@ -1211,10 +1373,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1120
+    x: 1260
     y: 73.6
-    width: 415
-    height: 709.8
+    width: 275
+    height: 710
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -1245,35 +1407,35 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 320.6
-    height: 435.8
+    width: 360.6
+    height: 328.6
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 20b5ffffa2bfffff56fbfffff83600000437000034370000403700004c3700005a370000
+      m_ExpandedIDs: 46a2ffff68a2ffff24a3ffff96a3ffffb8a3ffff74a4ffffd8a4fffffaa4ffff8ea5ffff16a6ffff88a6ffffaaa6ffff64a7ffff74a7ffff92a7ffff8aa8ffffa8a8ffffe8a9ffff06aaffff8aabffffacabffff5cacffff74acffff96acffff94adffffb4adffffd6adffffd2aeffff40b0ffff62b0ffff10b1ffff26b1ffff48b1fffff6b1ffff82b2ffffa4b2ffff3ab3ffffb2b3ffffd4b3ffff7cb4ffff78b5ffff9ab5ffff50b6ffff62b6ffff84b6ffff1ab7ffff2cb7ffff4eb7ffff0cb8ffff6cb9ffff8eb9ffff42baffffaebaffffd0baffff84bbffffe8bbffff0abcffffbcbcffff60fbfffff4ffffff04370000f4480000a24a00000c4b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Cube (6)
-        m_OriginalName: Cube (6)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 14084
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -1299,14 +1461,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 321.6
+    x: 361.6
     y: 73.6
-    width: 796.4
-    height: 435.8
+    width: 896.4
+    height: 328.6
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -1319,9 +1481,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.2663453, y: 3.2379396, z: 2.808238}
+    m_Target: {x: 0.656499, y: 0.92253995, z: -3.334045}
     speed: 2
-    m_Value: {x: 2.2663453, y: 3.2379396, z: 2.808238}
+    m_Value: {x: 0.656499, y: 0.92253995, z: -3.334045}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1363,25 +1525,25 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.03871333, y: 0.9448468, z: -0.30137324, w: -0.1230098}
+    m_Target: {x: 0.1313701, y: 0.43747306, z: 0.06477755, w: -0.8872356}
     speed: 2
-    m_Value: {x: -0.038709622, y: 0.9447564, z: -0.3013444, w: -0.12299803}
+    m_Value: {x: 0.13136853, y: 0.43746784, z: 0.06477678, w: -0.88722503}
   m_Size:
-    m_Target: 2.5596955
+    m_Target: 1.1596622
     speed: 2
-    m_Value: 2.5596955
+    m_Value: 1.1596622
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.0646999
-    m_SpeedNormalized: 0.53
+    m_Speed: 1.2437998
+    m_SpeedNormalized: 0.6199999
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1415,14 +1577,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1938
-    y: 73
-    width: 996
-    height: 571
+    x: 361.6
+    y: 73.6
+    width: 896.4
+    height: 328.6
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1430,7 +1592,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 978, y: 550}
+  m_TargetSize: {x: 547, y: 307.6}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1445,10 +1607,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -489
-    m_HBaseRangeMax: 489
-    m_VBaseRangeMin: -275
-    m_VBaseRangeMax: 275
+    m_HBaseRangeMin: -218.8
+    m_HBaseRangeMax: 218.8
+    m_VBaseRangeMin: -123.04
+    m_VBaseRangeMax: 123.04
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1466,23 +1628,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 996
-      height: 550
+      width: 896.4
+      height: 307.6
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 498, y: 275}
+    m_Translation: {x: 448.2, y: 153.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -498
-      y: -275
-      width: 996
-      height: 550
+      x: -448.2
+      y: -153.8
+      width: 896.4
+      height: 307.6
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 996, y: 571}
+  m_LastWindowPixelSize: {x: 1120.5, y: 410.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1504,14 +1666,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 572.8
-    y: 530.4
-    width: 545.2
-    height: 253
+    x: 678.4
+    y: 423.2
+    width: 579.6
+    height: 360.4
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:

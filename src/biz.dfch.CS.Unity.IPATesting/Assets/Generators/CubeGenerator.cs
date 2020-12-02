@@ -87,7 +87,8 @@ namespace Assets.Generators
                 return false;
             }
             renderer.material.SetColor(MainColorName, resultColor);
-
+            
+            // DFTODO - ReSharper Message
             var resultScaleValue = MapEnergyToScaleValue();
             if (default == resultScaleValue)
             {
@@ -113,6 +114,8 @@ namespace Assets.Generators
 
             if (CubeInfo.TemperatureUnit != TemperatureUnit.Kelvin)
             {
+                // DFTODO - CubeInfo Temperature and TemperatureUnit are overwritten if converted --> currently displaying the converted values instead of initial values. 
+
                 Debug.Log($"START Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
                 CubeInfo.Temperature = temperatureConverter.ConvertToKelvin(CubeInfo.Temperature, CubeInfo.TemperatureUnit);
                 CubeInfo.TemperatureUnit = TemperatureUnit.Kelvin;
@@ -121,6 +124,7 @@ namespace Assets.Generators
 
             if (CubeInfo.Temperature > MaxKelvinTemperature || CubeInfo.Temperature < MinKelvinTemperature)
             {
+                // DFTODO - if over/below max/min value maybe take these instead of returning
                 Debug.Log($"Temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') is outside temperature range. Min Temperature: '{MinKelvinTemperature} K' Max Temperature '{MaxKelvinTemperature} K'");
                 return default;
             }
@@ -142,7 +146,7 @@ namespace Assets.Generators
         private float MapEnergyToScaleValue()
         {
             // DFTODO - Add size so can be converted to square meter
-            // DFTODO - If energy is 0 create scale value is 0 --> default
+            // DFTODO - If energy is 0 scale value is 0 --> default
 
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
 

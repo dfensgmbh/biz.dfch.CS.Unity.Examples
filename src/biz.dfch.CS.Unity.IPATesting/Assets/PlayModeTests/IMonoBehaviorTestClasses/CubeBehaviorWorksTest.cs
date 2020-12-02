@@ -34,7 +34,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         {
             new CubeBehaviourTestInfo
             {
-                CubeInfoTestValues = new CubeInfo
+                TestData = new CubeInfo
                 {
                     Temperature = 20d,
                     TemperatureUnit = TemperatureUnit.Celsius,
@@ -48,7 +48,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             },
             new CubeBehaviourTestInfo
             {
-                CubeInfoTestValues = new CubeInfo
+                TestData = new CubeInfo
                 {
                     Temperature = 330d,
                     TemperatureUnit = TemperatureUnit.Kelvin,
@@ -72,10 +72,10 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.Renderer = Cube.GetComponent<MeshRenderer>();
             controller.MeshFilter = Cube.GetComponent<MeshFilter>();
 
-            controller.TemperatureUnit = testCases.First().CubeInfoTestValues.TemperatureUnit;
-            controller.Temperature = testCases.First().CubeInfoTestValues.Temperature;
-            controller.EnergyPerMonth = testCases.First().CubeInfoTestValues.EnergyPerMonth;
-            controller.EnergyUnit = testCases.First().CubeInfoTestValues.EnergyUnit;
+            controller.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
+            controller.Temperature = testCases.First().TestData.Temperature;
+            controller.EnergyPerMonth = testCases.First().TestData.EnergyPerMonth;
+            controller.EnergyUnit = testCases.First().TestData.EnergyUnit;
         }
 
         private void Update()
@@ -86,10 +86,10 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             var testCase = testCases[frameCount];
 
             Debug.Log("TestCase loaded");
-            Debug.Log($"Temperature: {testCase.CubeInfoTestValues.Temperature}");
-            Debug.Log($"TemperatureUnit: {testCase.CubeInfoTestValues.TemperatureUnit}");
-            Debug.Log($"EnergyPerMonth: {testCase.CubeInfoTestValues.EnergyPerMonth}");
-            Debug.Log($"EnergyUnit: {testCase.CubeInfoTestValues.EnergyUnit}");
+            Debug.Log($"Temperature: {testCase.TestData.Temperature}");
+            Debug.Log($"TemperatureUnit: {testCase.TestData.TemperatureUnit}");
+            Debug.Log($"EnergyPerMonth: {testCase.TestData.EnergyPerMonth}");
+            Debug.Log($"EnergyUnit: {testCase.TestData.EnergyUnit}");
 
             // Color Tests
 
@@ -145,15 +145,15 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             controller = Cube.AddComponent<CubeBehaviour>();
             
-            controller.TemperatureUnit = testCase.CubeInfoTestValues.TemperatureUnit;
-            controller.Temperature = testCase.CubeInfoTestValues.Temperature;
-            controller.EnergyPerMonth = testCase.CubeInfoTestValues.EnergyPerMonth;
-            controller.EnergyUnit = testCase.CubeInfoTestValues.EnergyUnit;
+            controller.TemperatureUnit = testCase.TestData.TemperatureUnit;
+            controller.Temperature = testCase.TestData.Temperature;
+            controller.EnergyPerMonth = testCase.TestData.EnergyPerMonth;
+            controller.EnergyUnit = testCase.TestData.EnergyUnit;
         }
 
         private class CubeBehaviourTestInfo
         {
-            public CubeInfo CubeInfoTestValues { get; set; }
+            public CubeInfo TestData { get; set; }
             public Color ExpectedColor { get; set; }
             public Vector3[] ExpectedVertices { get; set; }
             public string ExpectedText { get; set; }
