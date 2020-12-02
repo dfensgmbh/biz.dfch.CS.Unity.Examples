@@ -30,7 +30,7 @@ namespace Assets.Scripts
         public TextMesh TextMesh { get; set; }
         public double Temperature { get; set; } = 330d;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
-        public double EnergyPerMonth { get; set; } = 75d;
+        public double EnergyPerMonth { get; set; } = 150d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
 
         // Start is called before the first frame update

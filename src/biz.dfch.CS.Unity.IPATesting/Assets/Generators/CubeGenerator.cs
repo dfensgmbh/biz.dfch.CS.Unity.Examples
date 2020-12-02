@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.Contracts;
+using System.Linq;
 using Assets.Constants;
 using Assets.Converters;
 using Assets.Models.Cube;
@@ -8,6 +9,17 @@ namespace Assets.Generators
 {
     public class CubeGenerator
     {
+        // DFTODO - Some log messages can be put in a resource file
+
+        // ReSharper disable once InconsistentNaming
+        private const int MaxFontSize = 125;
+
+        // ReSharper disable once InconsistentNaming
+        private const int MinFontSize = 40;
+
+        // ReSharper disable once InconsistentNaming
+        private const int FontSizeRange = MaxFontSize - MinFontSize;
+
         // ReSharper disable once InconsistentNaming
         // Average gain of solar energy in swiss alps is 135 kWh/m2 during April  
         private const int MaxEnergyPerSquareMeterPerOneMonth = 150;
@@ -19,13 +31,13 @@ namespace Assets.Generators
         private const int EnergyRange = MaxEnergyPerSquareMeterPerOneMonth - MinEnergyPerSquareMeterPerOneMonth;
 
         // ReSharper disable once InconsistentNaming
-        private const int MaxVector3CubeValue = 2;
+        private const int MaxCubeScaleValue = 2;
 
         // ReSharper disable once InconsistentNaming
-        private const int MinVector3CubeValue = 0;
+        private const int MinCubeScaleValue = 0;
 
         // ReSharper disable once InconsistentNaming
-        private const int Vector3CubeValueRange = MaxVector3CubeValue - MinVector3CubeValue;
+        private const int CubeScaleValueRange = MaxCubeScaleValue - MinCubeScaleValue;
 
         // ReSharper disable once InconsistentNaming
         // Highest measured temperature on earth
@@ -67,21 +79,26 @@ namespace Assets.Generators
             var resultColor = MapTemperatureToColor();
             if (default == resultColor)
             {
-                Debug.Log($"Ups, Something went wrong");
+                Debug.Log("Ups, Something went wrong");
                 return false;
             }
             renderer.material.SetColor(MainColorName, resultColor);
 
-            var resultVector3 = MapEnergyToVector3();
-            if (default== resultVector3)
+            var resultScaleValue = MapEnergyToScaleValue();
+            if (default == resultScaleValue)
             {
-                Debug.Log($"Ups, Something went wrong");
+                Debug.Log("Ups, Something went wrong");
                 return false;
             }
-            GameObject.transform.localScale = resultVector3;
-            //GameObject.GetComponentInChildren<Transform>().localScale = resultVector3;
 
-            DisplayInfoOnCube();
+            var resultRecalculation = RecalculateCubeBounds(resultScaleValue);
+            if (!resultRecalculation)
+            {
+                Debug.Log("Ups, Something went wrong");
+                return false;
+            }
+
+            DisplayInfoOnCube(resultScaleValue);
             
             return true;
         }
@@ -118,9 +135,10 @@ namespace Assets.Generators
             return result;
         }
 
-        private Vector3 MapEnergyToVector3()
+        private float MapEnergyToScaleValue()
         {
             // DFTODO - Add size so can be converted to square meter
+            // DFTODO - If energy is 0 create scale value is 0 --> default
 
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
 
@@ -129,21 +147,70 @@ namespace Assets.Generators
                 return default;
             }
 
-            var valueVector3 = (float) (EnergyRange - (MaxEnergyPerSquareMeterPerOneMonth - CubeInfo.EnergyPerMonth)) / EnergyRange * Vector3CubeValueRange;
-            Debug.Log($"Value Vector3 ('{valueVector3}')");
-
-            var result = new Vector3(valueVector3, valueVector3, valueVector3);
-
-            Debug.Log($"END Result Vector3: '{result}'");
+            var scale = (float) (EnergyRange - (MaxEnergyPerSquareMeterPerOneMonth - CubeInfo.EnergyPerMonth)) / EnergyRange * CubeScaleValueRange;
+            Debug.Log($"End Mapping Energy to scale value ('{scale}')");
             
-            return result;
+            return scale;
         }
 
-        private void DisplayInfoOnCube()
+        private bool RecalculateCubeBounds(float scale)
         {
+            Debug.Log($"START Recalculating bounds for Cube with scale value '{scale}'");
+
+            var mesh = GameObject.GetComponent<MeshFilter>().mesh;
+            var baseVertices = mesh?.vertices;
+            if (null == baseVertices)
+            {
+                Debug.Log("ABORT Recalculating as vertices of Cube mesh is null");
+                return false;
+            }
+
+            var vertices = new Vector3[baseVertices.Length];
+
+            for (int i = 0; i < vertices.Length; i++)
+            {
+                var vertex = baseVertices[i];
+
+                Debug.Log($"Current vertex that gets calculated '{vertex}'");
+
+                vertex.x = vertex.x * scale;
+                vertex.y = vertex.y * scale;
+                vertex.z = vertex.z * scale;
+
+                Debug.Log($"Result vertex that got calculated '{vertex}'");
+
+                vertices[i] = vertex;
+            }
+
+            if (!vertices.Any())
+            {
+                Debug.Log("ABORT Recalculating as calculated vertices of Cube mesh is empty");
+                return false;
+            }
+
+            mesh.vertices = vertices;
+            mesh.RecalculateBounds();
+
+            Debug.Log("END Recalculating cube bounds");
+
+            return true;
+        }
+
+        private void DisplayInfoOnCube(float scale)
+        {
+            Debug.Log($"START Displaying information on cube with scale value '{scale}'");
+
+            var fontSize = (int) (scale - MinCubeScaleValue) / CubeScaleValueRange * FontSizeRange + MinFontSize;
+
+            Debug.Log($"Calculated FontSize '{fontSize}'");
+
             textMesh.anchor = TextAnchor.MiddleCenter;
-            textMesh.fontSize = 3;
+            textMesh.characterSize = 0.03f;
+            textMesh.fontSize = fontSize;
             textMesh.text = $"Temperature: {CubeInfo.Temperature}  {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
+            textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
+
+            Debug.Log($"END TextMesh:\nAnchor: '{fontSize}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
         }
     }
 }
