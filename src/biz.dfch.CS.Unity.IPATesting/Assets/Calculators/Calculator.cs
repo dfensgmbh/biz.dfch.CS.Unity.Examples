@@ -14,24 +14,40 @@
  * limitations under the License.
  */
 
+using System;
 using Assets.Constants;
 
 namespace Assets.Calculators
 {
     public class Calculator
     {
-        public static int CalculateFontSize(float scale)
+        public static int CalculateFontSize(float scaleValue)
         {
-            return (int) ((scale - CalculationValue.MinCubeScaleValue) / CalculationValue.CubeScaleValueRange * CalculationValue.FontSizeRange + CalculationValue.MinFontSize);
+            if (scaleValue > CalculationValue.MaxCubeScaleValue || scaleValue < CalculationValue.MinCubeScaleValue)
+            {
+                throw new ArgumentOutOfRangeException(); 
+            }
+
+            return (int) ((scaleValue - CalculationValue.MinCubeScaleValue) / CalculationValue.CubeScaleValueRange * CalculationValue.FontSizeRange + CalculationValue.MinFontSize);
         }
 
         public static float CalculateCubeScaleValue(double energyPerMonth)
         {
-            return (float)(CalculationValue.EnergyRange - (CalculationValue.MaxEnergyPerSquareMeterPerOneMonth - energyPerMonth)) / CalculationValue.EnergyRange * CalculationValue.CubeScaleValueRange;
+            if (energyPerMonth > CalculationValue.MaxEnergyPerSquareMeterPerOneMonth || energyPerMonth < CalculationValue.MinEnergyPerSquareMeterPerOneMonth)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            return (float) ((CalculationValue.EnergyRange - (CalculationValue.MaxEnergyPerSquareMeterPerOneMonth - energyPerMonth)) / CalculationValue.EnergyRange * CalculationValue.CubeScaleValueRange);
         }
         public static float CalculateRedColorValue(double temperature)
         {
-            return (float)((CalculationValue.TemperatureRangeInKelvin - (CalculationValue.MaxKelvinTemperature - temperature)) / CalculationValue.TemperatureRangeInKelvin);
+            if (temperature > CalculationValue.MaxKelvinTemperature || temperature < CalculationValue.MinKelvinTemperature)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            return (float) ((CalculationValue.TemperatureRangeInKelvin - (CalculationValue.MaxKelvinTemperature - temperature)) / CalculationValue.TemperatureRangeInKelvin);
         }
     }
 }

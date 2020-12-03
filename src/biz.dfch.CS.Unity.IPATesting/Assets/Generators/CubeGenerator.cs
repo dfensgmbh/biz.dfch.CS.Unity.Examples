@@ -117,10 +117,10 @@ namespace Assets.Generators
                 return default;
             }
 
-            var scale = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
-            Debug.Log($"End Mapping Energy to scale value ('{scale}')");
+            var scaleValue = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
+            Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
             
-            return scale;
+            return scaleValue;
         }
 
         private bool RecalculateCubeBounds(float scale)
