@@ -21,6 +21,7 @@ namespace Assets.Calculators
 {
     public class Calculator
     {
+        // DFTODO - Converting from float to int doesn't round properly -> See test case 3 for this method
         public static int CalculateFontSize(float scaleValue)
         {
             if (scaleValue > CalculationValue.MaxCubeScaleValue || scaleValue < CalculationValue.MinCubeScaleValue)
@@ -40,6 +41,7 @@ namespace Assets.Calculators
 
             return (float) ((CalculationValue.EnergyRange - (CalculationValue.MaxEnergyPerSquareMeterPerOneMonth - energyPerMonth)) / CalculationValue.EnergyRange * CalculationValue.CubeScaleValueRange);
         }
+
         public static float CalculateRedColorValue(double temperature)
         {
             if (temperature > CalculationValue.MaxKelvinTemperature || temperature < CalculationValue.MinKelvinTemperature)

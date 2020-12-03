@@ -49,10 +49,13 @@ namespace Assets.Generators
                 return false;
             }
             renderer.material.SetColor(MainColorName, resultColor);
-            
-            // DFTODO - ReSharper Message
-            var resultScaleValue = MapEnergyToScaleValue();
-            if (default == resultScaleValue)
+
+            float resultScaleValue;
+            try
+            {
+                resultScaleValue = MapEnergyToScaleValue();
+            }
+            catch (ArgumentOutOfRangeException)
             {
                 Debug.Log("Ups, Something went wrong");
                 return false;
@@ -65,7 +68,12 @@ namespace Assets.Generators
                 return false;
             }
 
-            DisplayInfoOnCube(resultScaleValue);
+            var isDisplayed = DisplayInfoOnCube(resultScaleValue);
+            if (!isDisplayed)
+            {
+                Debug.Log("Ups, Something went wrong");
+                return false;
+            }
             
             return true;
         }
@@ -74,35 +82,34 @@ namespace Assets.Generators
         {
             Debug.Log($"START Mapping temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to color");
 
+            var temperature = CubeInfo.Temperature;
+
             if (CubeInfo.TemperatureUnit != TemperatureUnit.Kelvin)
             {
-                // DFTODO - CubeInfo Temperature and TemperatureUnit are overwritten if converted --> currently displaying the converted values instead of initial values. 
-
-                Debug.Log($"START Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
-                CubeInfo.Temperature = temperatureConverter.ConvertToKelvin(CubeInfo.Temperature, CubeInfo.TemperatureUnit);
-                CubeInfo.TemperatureUnit = TemperatureUnit.Kelvin;
-                Debug.Log($"END Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}')");
+                Debug.Log($"START Converting temperature ('{temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
+                temperature = temperatureConverter.ConvertToKelvin(CubeInfo.Temperature, CubeInfo.TemperatureUnit);
+                Debug.Log($"END Converting temperature '{temperature} K");
             }
 
-            if (CubeInfo.Temperature > CalculationValue.MaxKelvinTemperature || CubeInfo.Temperature < CalculationValue.MinKelvinTemperature)
+            try
             {
-                // DFTODO - if over/below max/min value maybe take these instead of returning
-                Debug.Log($"Temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') is outside temperature range. Min Temperature: '{CalculationValue.MinKelvinTemperature} K' Max Temperature '{CalculationValue.MaxKelvinTemperature} K'");
+                var valueR = Calculator.CalculateRedColorValue(temperature);
+                var valueB = 1 - valueR;
+
+                Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
+
+                var result = new Color(valueR, 0, valueB);
+
+                Debug.Log($"END Result Color: '{result}'");
+
+                return result;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Debug.Log($"Temperature '{temperature} K' is outside of temperature range. Min Temperature: '{CalculationValue.MinKelvinTemperature} K' Max Temperature '{CalculationValue.MaxKelvinTemperature} K'");
+                Debug.Log(e.Message);
                 return default;
             }
-
-            Debug.Log($"Difference between max and min temperature value is: '{CalculationValue.TemperatureRangeInKelvin}'");
-
-            var valueR = Calculator.CalculateRedColorValue(CubeInfo.Temperature);
-            var valueB = 1 - valueR;
-
-            Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
-
-            var result = new Color(valueR, 0, valueB);
-
-            Debug.Log($"END Result Color: '{result}'");
-
-            return result;
         }
 
         private float MapEnergyToScaleValue()
@@ -110,17 +117,21 @@ namespace Assets.Generators
             // DFTODO - Add size so can be converted to square meter
             // DFTODO - If energy is 0 scale value is 0 --> default
 
-            Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
-
-            if (CubeInfo.EnergyPerMonth > CalculationValue.MaxEnergyPerSquareMeterPerOneMonth || CubeInfo.EnergyPerMonth < CalculationValue.MinEnergyPerSquareMeterPerOneMonth)
+            Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to scale value");
+            try
             {
-                return default;
-            }
+                var scaleValue = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
 
-            var scaleValue = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
-            Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
-            
-            return scaleValue;
+                Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
+
+                return scaleValue;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Debug.Log($"ABORT Mapping energy '{CubeInfo.EnergyPerMonth}' to scale value as energy is out of energy range. Min energy value: '{CalculationValue.MinEnergyPerSquareMeterPerOneMonth}' Max energy value: '{CalculationValue.MaxEnergyPerSquareMeterPerOneMonth}");
+                Debug.Log(e.Message);
+                throw;
+            }
         }
 
         private bool RecalculateCubeBounds(float scale)
@@ -168,21 +179,32 @@ namespace Assets.Generators
             return true;
         }
 
-        private void DisplayInfoOnCube(float scale)
+        private bool DisplayInfoOnCube(float scaleValue)
         {
-            Debug.Log($"START Displaying information on cube with scale value '{scale}'");
+            Debug.Log($"START Displaying information on cube with scale value '{scaleValue}'");
 
-            var fontSize = Calculator.CalculateFontSize(scale);
+            try
+            {
+                var fontSize = Calculator.CalculateFontSize(scaleValue);
 
-            Debug.Log($"Calculated FontSize '{fontSize}'");
+                Debug.Log($"Calculated FontSize '{fontSize}'");
 
-            textMesh.anchor = TextAnchor.MiddleCenter;
-            textMesh.characterSize = 0.03f;
-            textMesh.fontSize = fontSize;
-            textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
-            textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
+                textMesh.anchor = TextAnchor.MiddleCenter;
+                textMesh.characterSize = 0.03f;
+                textMesh.fontSize = fontSize;
+                textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
+                textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
 
-            Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
+                Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
+
+                return true;
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Debug.Log($"ABORT Displaying information on cube as scale value '{scaleValue}' is out of range. Min scale value: '{CalculationValue.MinCubeScaleValue}' Max scale value: '{CalculationValue.MaxCubeScaleValue}'");
+                Debug.Log(e.Message);
+                return false;
+            }
         }
     }
 }
