@@ -16,8 +16,6 @@
 
 using System.Collections;
 using Assets.PlayModeTests.IMonoBehaviorTestClasses;
-using Assets.Scripts;
-using NUnit.Framework;
 using UnityEngine.TestTools;
 
 namespace Assets.PlayModeTests

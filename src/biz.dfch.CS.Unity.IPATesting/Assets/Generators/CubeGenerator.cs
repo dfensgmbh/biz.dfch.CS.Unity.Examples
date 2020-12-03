@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Assets.Calculators;
 using Assets.Constants;
 using Assets.Converters;
 using Assets.Models.Cube;
@@ -11,45 +12,6 @@ namespace Assets.Generators
     public class CubeGenerator
     {
         // DFTODO - Some log messages can be put in a resource file
-
-        // ReSharper disable once InconsistentNaming
-        private const int MaxFontSize = 125;
-
-        // ReSharper disable once InconsistentNaming
-        private const int MinFontSize = 40;
-
-        // ReSharper disable once InconsistentNaming
-        private const int FontSizeRange = MaxFontSize - MinFontSize;
-
-        // ReSharper disable once InconsistentNaming
-        // Average gain of solar energy in swiss alps is 135 kWh/m2 during April  
-        private const int MaxEnergyPerSquareMeterPerOneMonth = 150;
-
-        // ReSharper disable once InconsistentNaming
-        private const int MinEnergyPerSquareMeterPerOneMonth = 0;
-
-        // ReSharper disable once InconsistentNaming
-        private const int EnergyRange = MaxEnergyPerSquareMeterPerOneMonth - MinEnergyPerSquareMeterPerOneMonth;
-
-        // ReSharper disable once InconsistentNaming
-        private const int MaxCubeScaleValue = 2;
-
-        // ReSharper disable once InconsistentNaming
-        private const int MinCubeScaleValue = 0;
-
-        // ReSharper disable once InconsistentNaming
-        private const int CubeScaleValueRange = MaxCubeScaleValue - MinCubeScaleValue;
-
-        // ReSharper disable once InconsistentNaming
-        // Highest measured temperature on earth
-        private const int MaxKelvinTemperature = 330;
-
-        // ReSharper disable once InconsistentNaming
-        // Lowest measured temperature on earth
-        private const int MinKelvinTemperature = 184;
-
-        // ReSharper disable once InconsistentNaming
-        private const int TemperatureRangeInKelvin = MaxKelvinTemperature - MinKelvinTemperature;
 
         // ReSharper disable once InconsistentNaming
         private const string MainColorName = "_Color";
@@ -122,16 +84,16 @@ namespace Assets.Generators
                 Debug.Log($"END Converting temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}')");
             }
 
-            if (CubeInfo.Temperature > MaxKelvinTemperature || CubeInfo.Temperature < MinKelvinTemperature)
+            if (CubeInfo.Temperature > CalculationValue.MaxKelvinTemperature || CubeInfo.Temperature < CalculationValue.MinKelvinTemperature)
             {
                 // DFTODO - if over/below max/min value maybe take these instead of returning
-                Debug.Log($"Temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') is outside temperature range. Min Temperature: '{MinKelvinTemperature} K' Max Temperature '{MaxKelvinTemperature} K'");
+                Debug.Log($"Temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') is outside temperature range. Min Temperature: '{CalculationValue.MinKelvinTemperature} K' Max Temperature '{CalculationValue.MaxKelvinTemperature} K'");
                 return default;
             }
 
-            Debug.Log($"Difference between max and min temperature value is: '{TemperatureRangeInKelvin}'");
+            Debug.Log($"Difference between max and min temperature value is: '{CalculationValue.TemperatureRangeInKelvin}'");
 
-            var valueR = (float)(TemperatureRangeInKelvin - (MaxKelvinTemperature - CubeInfo.Temperature)) / TemperatureRangeInKelvin;
+            var valueR = Calculator.CalculateRedColorValue(CubeInfo.Temperature);
             var valueB = 1 - valueR;
 
             Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
@@ -150,12 +112,12 @@ namespace Assets.Generators
 
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to Vector3");
 
-            if (CubeInfo.EnergyPerMonth > MaxEnergyPerSquareMeterPerOneMonth || CubeInfo.EnergyPerMonth < MinEnergyPerSquareMeterPerOneMonth)
+            if (CubeInfo.EnergyPerMonth > CalculationValue.MaxEnergyPerSquareMeterPerOneMonth || CubeInfo.EnergyPerMonth < CalculationValue.MinEnergyPerSquareMeterPerOneMonth)
             {
                 return default;
             }
 
-            var scale = (float) (EnergyRange - (MaxEnergyPerSquareMeterPerOneMonth - CubeInfo.EnergyPerMonth)) / EnergyRange * CubeScaleValueRange;
+            var scale = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
             Debug.Log($"End Mapping Energy to scale value ('{scale}')");
             
             return scale;
@@ -186,6 +148,7 @@ namespace Assets.Generators
                 vertex.z = vertex.z * scale;
 
                 Debug.Log($"Result vertex that got calculated '{vertex}'");
+                Debug.Log($"Selected baseVertices'{baseVertices[i]}'");
 
                 vertices[i] = vertex;
             }
@@ -209,13 +172,13 @@ namespace Assets.Generators
         {
             Debug.Log($"START Displaying information on cube with scale value '{scale}'");
 
-            var fontSize = (scale - MinCubeScaleValue) / CubeScaleValueRange * FontSizeRange + MinFontSize;
+            var fontSize = Calculator.CalculateFontSize(scale);
 
             Debug.Log($"Calculated FontSize '{fontSize}'");
 
             textMesh.anchor = TextAnchor.MiddleCenter;
             textMesh.characterSize = 0.03f;
-            textMesh.fontSize = Convert.ToInt32(fontSize);
+            textMesh.fontSize = fontSize;
             textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
             textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
 

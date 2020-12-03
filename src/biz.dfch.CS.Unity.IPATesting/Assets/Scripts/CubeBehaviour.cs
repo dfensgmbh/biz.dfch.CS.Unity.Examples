@@ -31,7 +31,7 @@ namespace Assets.Scripts
         public MeshFilter MeshFilter { get; set; }
         public double Temperature { get; set; } = 330d;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
-        public double EnergyPerMonth { get; set; } = 75d;
+        public double EnergyPerMonth { get; set; } = 100d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
 
         // Start is called before the first frame update
