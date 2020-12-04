@@ -16,7 +16,7 @@
 
 using Assets.Constants;
 using Assets.Generators;
-using Assets.Models.Cube;
+using Assets.Models;
 using UnityEngine;
 
 namespace Assets.Scripts

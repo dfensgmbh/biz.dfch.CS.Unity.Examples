@@ -17,7 +17,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Constants;
-using Assets.Models.Cube;
+using Assets.Models;
 using Assets.Scripts;
 using NUnit.Framework;
 using UnityEngine;

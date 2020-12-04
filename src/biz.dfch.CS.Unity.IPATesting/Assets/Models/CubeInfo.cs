@@ -1,8 +1,8 @@
 ﻿using Assets.Constants;
 
-namespace Assets.Models.Cube
+namespace Assets.Models
 {
-    public class CubeInfo : ICubeInfo
+    public class CubeInfo
     {
         public double Temperature { get; set; }
         public TemperatureUnit TemperatureUnit { get; set; }

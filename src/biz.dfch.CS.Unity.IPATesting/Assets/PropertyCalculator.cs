@@ -17,11 +17,10 @@
 using System;
 using Assets.Constants;
 
-namespace Assets.Calculators
+namespace Assets
 {
-    public class Calculator
+    public class PropertyCalculator
     {
-        // DFTODO - Converting from float to int doesn't round properly -> See test case 3 for this method
         public static int CalculateFontSize(float scaleValue)
         {
             if (scaleValue > CalculationValue.MaxCubeScaleValue || scaleValue < CalculationValue.MinCubeScaleValue)
@@ -29,7 +28,7 @@ namespace Assets.Calculators
                 throw new ArgumentOutOfRangeException(); 
             }
 
-            return (int) ((scaleValue - CalculationValue.MinCubeScaleValue) / CalculationValue.CubeScaleValueRange * CalculationValue.FontSizeRange + CalculationValue.MinFontSize);
+            return (int)Math.Round((float)CalculationValue.FontSizeRange / CalculationValue.MaxCubeScaleValue * scaleValue + CalculationValue.MinFontSize);
         }
 
         public static float CalculateCubeScaleValue(double energyPerMonth)

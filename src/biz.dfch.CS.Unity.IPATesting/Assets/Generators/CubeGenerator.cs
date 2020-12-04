@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using System.Linq;
-using Assets.Calculators;
 using Assets.Constants;
 using Assets.Converters;
-using Assets.Models.Cube;
+using Assets.Models;
 using UnityEngine;
 
 namespace Assets.Generators
@@ -91,9 +90,10 @@ namespace Assets.Generators
                 Debug.Log($"END Converting temperature '{temperature} K");
             }
 
+
             try
             {
-                var valueR = Calculator.CalculateRedColorValue(temperature);
+                var valueR = PropertyCalculator.CalculateRedColorValue(temperature);
                 var valueB = 1 - valueR;
 
                 Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
@@ -108,6 +108,7 @@ namespace Assets.Generators
             {
                 Debug.Log($"Temperature '{temperature} K' is outside of temperature range. Min Temperature: '{CalculationValue.MinKelvinTemperature} K' Max Temperature '{CalculationValue.MaxKelvinTemperature} K'");
                 Debug.Log(e.Message);
+                Debug.Log(default(Color));
                 return default;
             }
         }
@@ -115,12 +116,11 @@ namespace Assets.Generators
         private float MapEnergyToScaleValue()
         {
             // DFTODO - Add size so can be converted to square meter
-            // DFTODO - If energy is 0 scale value is 0 --> default
 
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to scale value");
             try
             {
-                var scaleValue = Calculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
+                var scaleValue = PropertyCalculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
 
                 Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
 
@@ -159,7 +159,7 @@ namespace Assets.Generators
                 vertex.z = vertex.z * scale;
 
                 Debug.Log($"Result vertex that got calculated '{vertex}'");
-                Debug.Log($"Selected baseVertices'{baseVertices[i]}'");
+                Debug.Log($"Selected baseVertices '{baseVertices[i]}'");
 
                 vertices[i] = vertex;
             }
@@ -169,7 +169,6 @@ namespace Assets.Generators
                 Debug.Log("ABORT Recalculating as calculated vertices of Cube mesh is empty");
                 return false;
             }
-            Debug.Log($"Calculated vertices '{vertices}'");
 
             mesh.vertices = vertices;
             mesh.RecalculateBounds();
@@ -185,7 +184,7 @@ namespace Assets.Generators
 
             try
             {
-                var fontSize = Calculator.CalculateFontSize(scaleValue);
+                var fontSize = PropertyCalculator.CalculateFontSize(scaleValue);
 
                 Debug.Log($"Calculated FontSize '{fontSize}'");
 

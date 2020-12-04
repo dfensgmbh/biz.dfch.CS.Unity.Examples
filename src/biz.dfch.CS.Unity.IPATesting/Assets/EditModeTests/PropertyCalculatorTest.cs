@@ -15,12 +15,11 @@
  */
 
 using System;
-using Assets.Calculators;
 using NUnit.Framework;
 
 namespace Assets.EditModeTests
 {
-    public class CalculatorTest
+    public class PropertyCalculatorTest
     {
         [TestCase(2f, 125)]
         [TestCase(0f, 40)]
@@ -29,7 +28,7 @@ namespace Assets.EditModeTests
         {
             // Arrange
             // Act
-            var result = Calculator.CalculateFontSize(scaleValue);
+            var result = PropertyCalculator.CalculateFontSize(scaleValue);
 
             // Assert
             Assert.AreEqual(expectedFontSize, result);
@@ -44,7 +43,7 @@ namespace Assets.EditModeTests
             // Arrange
             // Act
             // Assert
-            Assert.Throws<ArgumentOutOfRangeException>(() => Calculator.CalculateFontSize(scaleValue));
+            Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateFontSize(scaleValue));
         }
 
         [TestCase(150d, 2f)]
@@ -53,7 +52,7 @@ namespace Assets.EditModeTests
         {
             // Arrange
             // Act
-            var result = Calculator.CalculateCubeScaleValue(energy);
+            var result = PropertyCalculator.CalculateCubeScaleValue(energy);
 
             // Assert
             Assert.AreEqual(expectedCubeScaleValue, result);
@@ -68,7 +67,7 @@ namespace Assets.EditModeTests
             // Arrange
             // Act
             // Assert
-            Assert.Throws<ArgumentOutOfRangeException>(() => Calculator.CalculateCubeScaleValue(energy));
+            Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateCubeScaleValue(energy));
         }
 
         [TestCase(330d, 1f)]
@@ -77,7 +76,7 @@ namespace Assets.EditModeTests
         {
             // Arrange
             // Act
-            var result = Calculator.CalculateRedColorValue(temperatureInKelvin);
+            var result = PropertyCalculator.CalculateRedColorValue(temperatureInKelvin);
 
             // Assert
             Assert.AreEqual(expectedRedColorValue, result);
@@ -92,7 +91,7 @@ namespace Assets.EditModeTests
             // Arrange
             // Act
             // Assert
-            Assert.Throws<ArgumentOutOfRangeException>(() => Calculator.CalculateRedColorValue(temperatureInKelvin));
+            Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateRedColorValue(temperatureInKelvin));
         }
     }
 }
