@@ -45,14 +45,8 @@ namespace Assets.Scripts
             childGameObject.transform.position = gameObject.transform.position;
             TextMesh = childGameObject.AddComponent<TextMesh>();
 
-            cubeInfo = new CubeInfo
-            {
-                EnergyPerMonth = EnergyPerMonth,
-                EnergyUnit = EnergyUnit,
-                Temperature = Temperature,
-                TemperatureUnit = TemperatureUnit
-            };
-
+            cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit);
+            
             cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh, MeshFilter);
             cubeGenerator.Generate();
         }

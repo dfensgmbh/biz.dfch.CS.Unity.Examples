@@ -34,27 +34,15 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         {
             new CubeBehaviourTestInfo
             {
-                TestData = new CubeInfo
-                {
-                    Temperature = 20d,
-                    TemperatureUnit = TemperatureUnit.Celsius,
-                    EnergyPerMonth = 75d,
-                    EnergyUnit = EnergyUnit.KiloWatt
-                },
+                TestData = new CubeInfo(20d, TemperatureUnit.Celsius, 75d, EnergyUnit.KiloWatt),
                 ExpectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f),
                 ExpectedVertices = default,
-                ExpectedText = "Temperature: 293.15 K\nEnergy: 75 kWh",
+                ExpectedText = "Temperature: 20 °C\nEnergy: 75 kWh",
                 ExpectedFontSize = 82
             },
             new CubeBehaviourTestInfo
             {
-                TestData = new CubeInfo
-                {
-                    Temperature = 330d,
-                    TemperatureUnit = TemperatureUnit.Kelvin,
-                    EnergyPerMonth = 150d,
-                    EnergyUnit = EnergyUnit.KiloWatt
-                },
+                TestData = new CubeInfo(330d, TemperatureUnit.Kelvin, 150, EnergyUnit.KiloWatt),
                 ExpectedColor = new Color(1, 0, 0, 1),
                 ExpectedVertices = default,
                 ExpectedText = "Temperature: 330 K\nEnergy: 150 kWh",
