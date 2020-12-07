@@ -41,40 +41,37 @@ namespace Assets.Generators
 
         public bool Generate()
         {
-            var resultColor = MapTemperatureToColor();
-            if (default == resultColor)
-            {
-                Debug.Log("Ups, Something went wrong");
-                return false;
-            }
-            renderer.material.SetColor(MainColorName, resultColor);
-
-            float resultScaleValue;
             try
             {
-                resultScaleValue = MapEnergyToScaleValue();
-            }
-            catch (ArgumentOutOfRangeException)
-            {
-                Debug.Log("Ups, Something went wrong");
-                return false;
-            }
+                var resultColor = MapTemperatureToColor();
+                if (default == resultColor)
+                {
+                    return false;
+                }
+                renderer.material.SetColor(MainColorName, resultColor);
 
-            var resultRecalculation = RecalculateCubeBounds(resultScaleValue);
-            if (!resultRecalculation)
-            {
-                Debug.Log("Ups, Something went wrong");
-                return false;
-            }
+                var resultScaleValue = MapEnergyToScaleValue();
 
-            var isDisplayed = DisplayInfoOnCube(resultScaleValue);
-            if (!isDisplayed)
+                var resultRecalculation = RecalculateCubeBounds(resultScaleValue);
+                if (default == resultRecalculation)
+                {
+                    return false;
+                }
+
+                var isDisplayed = DisplayInfoOnCube(resultScaleValue);
+                if (default == isDisplayed)
+                {
+                    return false;
+                }
+
+                return true;
+
+            }
+            catch (ArgumentException e)
             {
-                Debug.Log("Ups, Something went wrong");
+                Debug.Log(e);
                 return false;
             }
-            
-            return true;
         }
 
         private Color MapTemperatureToColor()
@@ -90,27 +87,16 @@ namespace Assets.Generators
                 Debug.Log($"END Converting temperature '{temperature} K");
             }
 
+            var valueR = PropertyCalculator.CalculateRedColorValue(temperature);
+            var valueB = 1 - valueR;
 
-            try
-            {
-                var valueR = PropertyCalculator.CalculateRedColorValue(temperature);
-                var valueB = 1 - valueR;
+            Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
 
-                Debug.Log($"Creating color with R '{valueR}' G '0' and B '{valueB}'");
+            var result = new Color(valueR, 0, valueB);
 
-                var result = new Color(valueR, 0, valueB);
+            Debug.Log($"END Result Color: '{result}'");
 
-                Debug.Log($"END Result Color: '{result}'");
-
-                return result;
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                Debug.Log($"Temperature '{temperature} K' is outside of temperature range. Min Temperature: '{CalculationValue.MinKelvinTemperature} K' Max Temperature '{CalculationValue.MaxKelvinTemperature} K'");
-                Debug.Log(e.Message);
-                Debug.Log(default(Color));
-                return default;
-            }
+            return result;
         }
 
         private float MapEnergyToScaleValue()
@@ -118,20 +104,12 @@ namespace Assets.Generators
             // DFTODO - Add size so can be converted to square meter
 
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to scale value");
-            try
-            {
-                var scaleValue = PropertyCalculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
 
-                Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
+            var scaleValue = PropertyCalculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
 
-                return scaleValue;
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                Debug.Log($"ABORT Mapping energy '{CubeInfo.EnergyPerMonth}' to scale value as energy is out of energy range. Min energy value: '{CalculationValue.MinEnergyPerSquareMeterPerOneMonth}' Max energy value: '{CalculationValue.MaxEnergyPerSquareMeterPerOneMonth}");
-                Debug.Log(e.Message);
-                throw;
-            }
+            Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
+            
+            return scaleValue; 
         }
 
         private bool RecalculateCubeBounds(float scale)
@@ -146,9 +124,7 @@ namespace Assets.Generators
                 return false;
             }
 
-            var vertices = new Vector3[baseVertices.Length];
-
-            for (int i = 0; i < vertices.Length; i++)
+            for (var i = 0; i < baseVertices.Length; i++)
             {
                 var vertex = baseVertices[i];
 
@@ -159,18 +135,17 @@ namespace Assets.Generators
                 vertex.z = vertex.z * scale;
 
                 Debug.Log($"Result vertex that got calculated '{vertex}'");
-                Debug.Log($"Selected baseVertices '{baseVertices[i]}'");
 
-                vertices[i] = vertex;
+                baseVertices[i] = vertex;
             }
 
-            if (!vertices.Any())
+            if (!baseVertices.Any())
             {
                 Debug.Log("ABORT Recalculating as calculated vertices of Cube mesh is empty");
                 return false;
             }
 
-            mesh.vertices = vertices;
+            mesh.vertices = baseVertices;
             mesh.RecalculateBounds();
 
             Debug.Log("END Recalculating cube bounds");
@@ -182,28 +157,19 @@ namespace Assets.Generators
         {
             Debug.Log($"START Displaying information on cube with scale value '{scaleValue}'");
 
-            try
-            {
-                var fontSize = PropertyCalculator.CalculateFontSize(scaleValue);
+            var fontSize = PropertyCalculator.CalculateFontSize(scaleValue);
 
-                Debug.Log($"Calculated FontSize '{fontSize}'");
+            Debug.Log($"Calculated FontSize '{fontSize}'");
 
-                textMesh.anchor = TextAnchor.MiddleCenter;
-                textMesh.characterSize = 0.03f;
-                textMesh.fontSize = fontSize;
-                textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
-                textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
+            textMesh.anchor = TextAnchor.MiddleCenter;
+            textMesh.characterSize = 0.03f;
+            textMesh.fontSize = fontSize;
+            textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
+            textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
 
-                Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
+            Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
 
-                return true;
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                Debug.Log($"ABORT Displaying information on cube as scale value '{scaleValue}' is out of range. Min scale value: '{CalculationValue.MinCubeScaleValue}' Max scale value: '{CalculationValue.MaxCubeScaleValue}'");
-                Debug.Log(e.Message);
-                return false;
-            }
+            return true;
         }
     }
 }
