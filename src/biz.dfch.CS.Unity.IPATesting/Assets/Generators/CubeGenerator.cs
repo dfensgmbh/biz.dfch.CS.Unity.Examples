@@ -101,11 +101,15 @@ namespace Assets.Generators
 
         private float MapEnergyToScaleValue()
         {
-            // DFTODO - Add size so can be converted to square meter
-
             Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to scale value");
 
-            var scaleValue = PropertyCalculator.CalculateCubeScaleValue(CubeInfo.EnergyPerMonth);
+            Debug.Log($"Calculating energy per one square meter. Size of solar panel is '{CubeInfo.SolarPanelSizeInSquareMeter}' ");
+
+            var energy = PropertyCalculator.CalculateEnergyPerOneSquareMeter(CubeInfo.EnergyPerMonth, CubeInfo.SolarPanelSizeInSquareMeter);
+
+            Debug.Log($"Energy per one square meter is: '{energy}'");
+            
+            var scaleValue = PropertyCalculator.CalculateCubeScaleValue(energy);
 
             Debug.Log($"End Mapping Energy to scale value ('{scaleValue}')");
             

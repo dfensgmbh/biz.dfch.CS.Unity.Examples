@@ -93,5 +93,20 @@ namespace Assets.EditModeTests
             // Assert
             Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateRedColorValue(temperatureInKelvin));
         }
+
+
+        [TestCase(100, 2, 50)]
+        [TestCase(100, 0.5, 200)]
+        [TestCase(200, 2.5, 80)]
+        [TestCase(30, 0.1, 300)]
+        public void CalculatingEnergyForOneSquareMeterReturnsExpectedResult(double energy, double solarPanelSizeInSquareMeter, double expectedEnergyPerSquareMeter)
+        {
+            // Arrange
+            // Act
+            var result = PropertyCalculator.CalculateEnergyPerOneSquareMeter(energy, solarPanelSizeInSquareMeter);
+
+            // Assert
+            Assert.AreEqual(expectedEnergyPerSquareMeter, result);
+        }
     }
 }

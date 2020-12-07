@@ -33,6 +33,7 @@ namespace Assets.Scripts
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
         public double EnergyPerMonth { get; set; } = 140d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
+        public double SolarPanelSizeInSquareMeter { get; set; } = 1;
 
         // Start is called before the first frame update
         void Start()
@@ -45,7 +46,7 @@ namespace Assets.Scripts
             childGameObject.transform.position = gameObject.transform.position;
             TextMesh = childGameObject.AddComponent<TextMesh>();
 
-            cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit);
+            cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
             cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh, MeshFilter);
             cubeGenerator.Generate();

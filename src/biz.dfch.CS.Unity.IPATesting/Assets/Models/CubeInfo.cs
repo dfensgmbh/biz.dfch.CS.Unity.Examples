@@ -35,7 +35,9 @@ namespace Assets.Models
             get => energyPerMonth;
             private set
             {
-                if (value >= CalculationValue.MinEnergyPerSquareMeterPerOneMonth && value <= CalculationValue.MaxEnergyPerSquareMeterPerOneMonth)
+                var energyPerOneSquareMeter = PropertyCalculator.CalculateEnergyPerOneSquareMeter(value, SolarPanelSizeInSquareMeter);
+
+                if (energyPerOneSquareMeter >= CalculationValue.MinEnergyPerSquareMeterPerOneMonth && energyPerOneSquareMeter <= CalculationValue.MaxEnergyPerSquareMeterPerOneMonth)
                 {
                     energyPerMonth = value;
                 }
@@ -48,7 +50,9 @@ namespace Assets.Models
 
         public EnergyUnit EnergyUnit { get; set; }
 
-        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit)
+        public double SolarPanelSizeInSquareMeter { get; set; }
+
+        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
         {
             // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary for setting the 'Temperature'.
 
@@ -58,6 +62,7 @@ namespace Assets.Models
             Temperature = temperature;
 
             EnergyUnit = energyUnit;
+            SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
             EnergyPerMonth = energyPerMonth;
         }
     }
