@@ -51,18 +51,14 @@ namespace Assets
             return (float) ((CalculationValue.TemperatureRangeInKelvin - (CalculationValue.MaxKelvinTemperature - temperature)) / CalculationValue.TemperatureRangeInKelvin);
         }
 
-        public static double CalculateEnergyPerOneSquareMeter(double energy, double solarPanelSizeInSquareMeter)
+        public static double CalculateEnergyPerSquareMeter(double energy, double solarPanelSizeInSquareMeter)
         {
-            if (energy > 1)
+            if (energy < 0)
             {
-                return energy / solarPanelSizeInSquareMeter;
+                throw new ArgumentOutOfRangeException();
             }
-            if (energy < 1)
-            {
-                return 1 / solarPanelSizeInSquareMeter * energy;
-            }
-            
-            return energy;
+
+            return energy / solarPanelSizeInSquareMeter;
         }
     }
 }

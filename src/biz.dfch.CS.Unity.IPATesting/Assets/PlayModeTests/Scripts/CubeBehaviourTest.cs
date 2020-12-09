@@ -23,7 +23,7 @@ namespace Assets.PlayModeTests.Scripts
     public class CubeBehaviourTest
     {
         [UnityTest]
-        public IEnumerator CubeBehaviourRunsOnCubeAndReturnsExpectedValues()
+        public IEnumerator CubeBehaviourRunsOnCubeAndReturnsExpectedValues()  
         {
             yield return new MonoBehaviourTest<CubeBehaviorWorksTest>();
         }

@@ -99,14 +99,24 @@ namespace Assets.EditModeTests
         [TestCase(100, 0.5, 200)]
         [TestCase(200, 2.5, 80)]
         [TestCase(30, 0.1, 300)]
+        [TestCase(0, 5, 0)]
         public void CalculatingEnergyForOneSquareMeterReturnsExpectedResult(double energy, double solarPanelSizeInSquareMeter, double expectedEnergyPerSquareMeter)
         {
             // Arrange
             // Act
-            var result = PropertyCalculator.CalculateEnergyPerOneSquareMeter(energy, solarPanelSizeInSquareMeter);
+            var result = PropertyCalculator.CalculateEnergyPerSquareMeter(energy, solarPanelSizeInSquareMeter);
 
             // Assert
             Assert.AreEqual(expectedEnergyPerSquareMeter, result);
+        }
+
+        [TestCase(-5, 2)]
+        public void CalculatingEnergyForOneSquareMeterReturnsExpectedWithPanelSizeEqualToZeroThrowsDivideByZeroException(double energy, double solarPanelSizeInSquareMeter)
+        {
+            // Arrange
+            // Act
+            // Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateEnergyPerSquareMeter(energy, solarPanelSizeInSquareMeter));
         }
     }
 }
