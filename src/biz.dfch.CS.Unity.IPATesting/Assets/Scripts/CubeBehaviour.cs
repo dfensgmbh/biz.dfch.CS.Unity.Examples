@@ -29,17 +29,18 @@ namespace Assets.Scripts
         public Renderer Renderer { get; set; }
         public TextMesh TextMesh { get; set; }
         public MeshFilter MeshFilter { get; set; }
-        public double Temperature { get; set; } = 330d;
+        public BoxCollider BoxCollider { get; set; }
+        public double Temperature { get; set; } = 330;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
-        public double EnergyPerMonth { get; set; } = 140d;
+        public double EnergyPerMonth { get; set; } = 25d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
         public double SolarPanelSizeInSquareMeter { get; set; } = 1;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             Renderer = gameObject.GetComponent<Renderer>();
             MeshFilter = gameObject.GetComponent<MeshFilter>();
+            BoxCollider = gameObject.GetComponent<BoxCollider>();
 
             var childGameObject = new GameObject("Child");
             childGameObject.transform.parent = gameObject.transform;
@@ -48,7 +49,7 @@ namespace Assets.Scripts
 
             cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
-            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh, MeshFilter);
+            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh, MeshFilter, BoxCollider);
             cubeGenerator.Generate();
         }
     }

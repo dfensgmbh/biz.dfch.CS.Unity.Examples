@@ -34,23 +34,26 @@ namespace Assets.Generators
         private readonly Renderer renderer;
         private readonly TextMesh textMesh;
         private readonly MeshFilter meshFilter;
+        private readonly BoxCollider boxCollider;
         private readonly TemperatureConverter temperatureConverter;
         public readonly CubeInfo CubeInfo;
         public readonly GameObject GameObject;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh, MeshFilter meshFilter)
+        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh, MeshFilter meshFilter, BoxCollider boxCollider)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
             Contract.Assert(null != renderer);
             Contract.Assert(null != textMesh);
             Contract.Assert(null != meshFilter);
+            Contract.Assert(null != boxCollider);
 
             CubeInfo = cubeInfo;
             GameObject = gameObject;
             this.renderer = renderer;
             this.textMesh = textMesh;
             this.meshFilter = meshFilter;
+            this.boxCollider = boxCollider;
 
             temperatureConverter = new TemperatureConverter();
         }
@@ -73,6 +76,8 @@ namespace Assets.Generators
                 {
                     return false;
                 }
+
+                RecalculateBoxColliderSize(resultScaleValue);
 
                 var isDisplayed = DisplayInfoOnCube(resultScaleValue);
                 if (default == isDisplayed)
@@ -132,9 +137,9 @@ namespace Assets.Generators
             return scaleValue; 
         }
 
-        private bool RecalculateCubeBounds(float scale)
+        private bool RecalculateCubeBounds(float scaleValue)
         {
-            Debug.Log($"START Recalculating bounds for Cube with scale value '{scale}'");
+            Debug.Log($"START Recalculating bounds for Cube with scale value '{scaleValue}'");
 
             var mesh = meshFilter.mesh;
             var baseVertices = mesh?.vertices;
@@ -150,9 +155,9 @@ namespace Assets.Generators
 
                 Debug.Log($"Current vertex that gets calculated '{vertex}'");
 
-                vertex.x = vertex.x * scale;
-                vertex.y = vertex.y * scale;
-                vertex.z = vertex.z * scale;
+                vertex.x = vertex.x * scaleValue;
+                vertex.y = vertex.y * scaleValue;
+                vertex.z = vertex.z * scaleValue;
 
                 Debug.Log($"Result vertex that got calculated '{vertex}'");
 
@@ -171,6 +176,23 @@ namespace Assets.Generators
             Debug.Log("END Recalculating cube bounds");
 
             return true;
+        }
+
+        private void RecalculateBoxColliderSize(float scaleValue)
+        {
+            Debug.Log($"START Recalculating BoxCollider size with scale value '{scaleValue}'");
+
+            var newBoxColliderSizeX = boxCollider.size.x * scaleValue;
+            var newBoxColliderSizeY = boxCollider.size.y * scaleValue;
+            var newBoxColliderSizeZ = boxCollider.size.z * scaleValue;
+
+            var recalculatedSize = new Vector3(newBoxColliderSizeX, newBoxColliderSizeY, newBoxColliderSizeZ);
+
+            Debug.Log($"Result Vector3 for BoxCollider size: '{recalculatedSize}'");
+
+            boxCollider.size = recalculatedSize;
+
+            Debug.Log("END Recalculating BoxCollider size'");
         }
 
         private bool DisplayInfoOnCube(float scaleValue)

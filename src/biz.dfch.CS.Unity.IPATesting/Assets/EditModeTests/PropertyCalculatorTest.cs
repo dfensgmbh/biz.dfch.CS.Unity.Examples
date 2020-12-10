@@ -100,6 +100,8 @@ namespace Assets.EditModeTests
         [TestCase(200, 2.5, 80)]
         [TestCase(30, 0.1, 300)]
         [TestCase(0, 5, 0)]
+        [TestCase(1, 0, double.PositiveInfinity)]
+        [TestCase(0, 0, double.NaN)]
         public void CalculatingEnergyForOneSquareMeterReturnsExpectedResult(double energy, double solarPanelSizeInSquareMeter, double expectedEnergyPerSquareMeter)
         {
             // Arrange
@@ -111,6 +113,7 @@ namespace Assets.EditModeTests
         }
 
         [TestCase(-5, 2)]
+        [TestCase(-1, 2)]
         public void CalculatingEnergyForOneSquareMeterReturnsExpectedWithPanelSizeEqualToZeroThrowsDivideByZeroException(double energy, double solarPanelSizeInSquareMeter)
         {
             // Arrange

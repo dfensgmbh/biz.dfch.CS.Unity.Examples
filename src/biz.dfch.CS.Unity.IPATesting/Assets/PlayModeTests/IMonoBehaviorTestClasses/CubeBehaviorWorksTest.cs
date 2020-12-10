@@ -30,6 +30,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         private int frameCount;
         private CubeBehaviour controller;
 
+        private readonly Vector3 baseBoxColliderSize = new Vector3(1, 1, 1);
+
         private readonly Vector3[] baseVerticesForCube = 
         {
             new Vector3(0.5f, -0.5f, 0.5f),
@@ -92,7 +94,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                     new Vector3(0.0625f, -0.0625f, 0.0625f)
                 },
                 ExpectedText = "Temperature: 20 °C\nEnergy: 75 kWh",
-                ExpectedFontSize = 45
+                ExpectedFontSize = 45, 
+                ExpectedBoxColliderSize = new Vector3(0.125f, 0.125f, 0.125f)
             },
             new CubeBehaviourTestInfo
             {
@@ -126,7 +129,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                     new Vector3(1f, -1f, 1f)
                 },
                 ExpectedText = "Temperature: 330 K\nEnergy: 75 kWh",
-                ExpectedFontSize = 125
+                ExpectedFontSize = 125,
+                ExpectedBoxColliderSize = new Vector3(2, 2 , 2)
             }
         };
 
@@ -139,6 +143,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller = Cube.AddComponent<CubeBehaviour>();
             controller.Renderer = Cube.GetComponent<MeshRenderer>();
             controller.MeshFilter = Cube.GetComponent<MeshFilter>();
+            controller.BoxCollider = Cube.GetComponent<BoxCollider>();
 
             controller.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
             controller.Temperature = testCases.First().TestData.Temperature;
@@ -168,23 +173,20 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             Debug.Log($"Expected Color: {expectedColor}");
             Debug.Log($"Expected Color: {resultColor}");
 
-            Assert.AreEqual(expectedColor.r, resultColor.r);
-            Assert.AreEqual(expectedColor.g, resultColor.g);
-            Assert.AreEqual(expectedColor.b, resultColor.b);
-            Assert.AreEqual(expectedColor.a, resultColor.a);
+            Assert.AreEqual(expectedColor, resultColor);
 
             // Scale Tests
             
-            var expectedVector3Array = testCase.ExpectedVertices;
-            var resultVector3Array = controller.MeshFilter.mesh.vertices;
+            var expectedVertices = testCase.ExpectedVertices;
+            var resultVertices = controller.MeshFilter.mesh.vertices;
 
-            Debug.Log($"Expected Vector3[]: {expectedVector3Array}");
-            Debug.Log($"Result Vector3[]: {resultVector3Array}");
+            Debug.Log($"Expected Vector3[]: {expectedVertices}");
+            Debug.Log($"Result Vector3[]: {resultVertices}");
 
-            for (int i = 0; i < expectedVector3Array.Length; i++)
+            for (int i = 0; i < expectedVertices.Length; i++)
             {
-                var expectedVector3 = expectedVector3Array[i];
-                var vector3ToBeAsserted = resultVector3Array[i];
+                var expectedVector3 = expectedVertices[i];
+                var vector3ToBeAsserted = resultVertices[i];
                 Assert.IsNotNull(expectedVector3);
                 Assert.IsNotNull(vector3ToBeAsserted);
 
@@ -193,9 +195,12 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                 Assert.AreEqual(expectedVector3.z, vector3ToBeAsserted.z);
             }
 
-            //Assert.AreEqual(expectedVector3.y, resultVector3.y);
-            //Assert.AreEqual(expectedVector3.x, resultVector3.x);
-            //Assert.AreEqual(expectedVector3.z, resultVector3.z);
+            // BoxCollider Size Tests
+
+            var expectedBoxColliderSize = testCase.ExpectedBoxColliderSize;
+            var resultBoxColliderSize = controller.BoxCollider.size;
+
+            Assert.AreEqual(expectedBoxColliderSize, resultBoxColliderSize);
 
             // Text Tests
 
@@ -213,7 +218,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             Debug.Log("Test Finished - Loading next Case...");
 
             frameCount++;
-            ResetCubeVertices();
+
+            ResetCubeSize();
             DestroyComponents();
             LoadNextTestCase();
         }
@@ -235,10 +241,12 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.SolarPanelSizeInSquareMeter = testCase.TestData.SolarPanelSizeInSquareMeter;
         }
 
-        private void ResetCubeVertices()
+        private void ResetCubeSize()
         {
             controller.MeshFilter.mesh.vertices = baseVerticesForCube;
             controller.MeshFilter.mesh.RecalculateBounds();
+
+            controller.BoxCollider.size = baseBoxColliderSize;
         }
 
         private void DestroyComponents()
@@ -256,6 +264,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             public Vector3[] ExpectedVertices { get; set; }
             public string ExpectedText { get; set; }
             public int ExpectedFontSize { get; set; }
+            public Vector3 ExpectedBoxColliderSize { get; set; }
         }
     }
 

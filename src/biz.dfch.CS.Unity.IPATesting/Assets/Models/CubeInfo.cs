@@ -51,9 +51,9 @@ namespace Assets.Models
             get => energyPerMonth;
             private set
             {
-                var energyPerOneSquareMeter = PropertyCalculator.CalculateEnergyPerSquareMeter(value, SolarPanelSizeInSquareMeter);
+                var energyPerSquareMeter = PropertyCalculator.CalculateEnergyPerSquareMeter(value, SolarPanelSizeInSquareMeter);
 
-                if (energyPerOneSquareMeter >= CalculationValue.MinEnergyPerSquareMeterPerOneMonth && energyPerOneSquareMeter <= CalculationValue.MaxEnergyPerSquareMeterPerOneMonth)
+                if (energyPerSquareMeter >= CalculationValue.MinEnergyPerSquareMeterPerOneMonth && energyPerSquareMeter <= CalculationValue.MaxEnergyPerSquareMeterPerOneMonth)
                 {
                     energyPerMonth = value;
                 }
@@ -70,14 +70,14 @@ namespace Assets.Models
 
         public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
         {
-            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary for setting the 'Temperature'.
+            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
 
             temperatureConverter = new TemperatureConverter();
 
             TemperatureUnit = temperatureUnit;
             Temperature = temperature;
 
-            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary for setting the 'EnergyPerMonth'.
+            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary necessary inside the set accessor of the 'EnergyPerMonth' property.
 
             EnergyUnit = energyUnit;
             SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
