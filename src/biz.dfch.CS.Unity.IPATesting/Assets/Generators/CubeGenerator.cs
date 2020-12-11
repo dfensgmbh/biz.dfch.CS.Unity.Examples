@@ -95,6 +95,11 @@ namespace Assets.Generators
             }
         }
 
+        private void GetCubeComponents()
+        {
+
+        }
+
         private Color MapTemperatureToColor()
         {
             Debug.Log($"START Mapping temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to color");
@@ -155,15 +160,13 @@ namespace Assets.Generators
 
                 Debug.Log($"Current vertex that gets calculated '{vertex}'");
 
-                vertex.x = vertex.x * scaleValue;
-                vertex.y = vertex.y * scaleValue;
-                vertex.z = vertex.z * scaleValue;
+                vertex = RecalculateVertexWithScaleValue(vertex, scaleValue);
 
                 Debug.Log($"Result vertex that got calculated '{vertex}'");
 
                 baseVertices[i] = vertex;
             }
-
+            
             if (!baseVertices.Any())
             {
                 Debug.Log("ABORT Recalculating as calculated vertices of Cube mesh is empty");
@@ -182,17 +185,18 @@ namespace Assets.Generators
         {
             Debug.Log($"START Recalculating BoxCollider size with scale value '{scaleValue}'");
 
-            var newBoxColliderSizeX = boxCollider.size.x * scaleValue;
-            var newBoxColliderSizeY = boxCollider.size.y * scaleValue;
-            var newBoxColliderSizeZ = boxCollider.size.z * scaleValue;
+            var recalculateVertex = RecalculateVertexWithScaleValue(boxCollider.size, scaleValue);
 
-            var recalculatedSize = new Vector3(newBoxColliderSizeX, newBoxColliderSizeY, newBoxColliderSizeZ);
+            Debug.Log($"Result Vector3 for BoxCollider size: '{recalculateVertex}'");
 
-            Debug.Log($"Result Vector3 for BoxCollider size: '{recalculatedSize}'");
-
-            boxCollider.size = recalculatedSize;
+            boxCollider.size = recalculateVertex;
 
             Debug.Log("END Recalculating BoxCollider size'");
+        }
+
+        private Vector3 RecalculateVertexWithScaleValue(Vector3 vertex, float scaleValue)
+        {
+            return new Vector3(vertex.x * scaleValue, vertex.y * scaleValue, vertex.z * scaleValue);
         }
 
         private bool DisplayInfoOnCube(float scaleValue)

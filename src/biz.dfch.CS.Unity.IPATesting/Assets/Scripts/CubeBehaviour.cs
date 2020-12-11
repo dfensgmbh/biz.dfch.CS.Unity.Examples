@@ -32,7 +32,7 @@ namespace Assets.Scripts
         public BoxCollider BoxCollider { get; set; }
         public double Temperature { get; set; } = 330;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
-        public double EnergyPerMonth { get; set; } = 25d;
+        public double EnergyPerMonth { get; set; } = 125d;
         public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
         public double SolarPanelSizeInSquareMeter { get; set; } = 1;
 

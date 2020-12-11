@@ -27,6 +27,9 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 {
     public class CubeBehaviorWorksTest : MonoBehaviour, IMonoBehaviourTest
     {
+        // ReSharper disable once InconsistentNaming
+        private const string MainColorName = "_Color";
+
         private int frameCount;
         private CubeBehaviour controller;
 
@@ -150,28 +153,29 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.EnergyPerMonth = testCases.First().TestData.EnergyPerMonth;
             controller.SolarPanelSizeInSquareMeter = testCases.First().TestData.SolarPanelSizeInSquareMeter;
             controller.EnergyUnit = testCases.First().TestData.EnergyUnit;
+
+            Debug.Log($"TestCases Count: {testCases.Count}");
         }
 
         private void Update()
         {
             Debug.Log($"Frame Count: {frameCount}");
-            Debug.Log($"TestCases Count: {testCases.Count}");
 
             var testCase = testCases[frameCount];
 
-            Debug.Log("TestCase loaded");
             Debug.Log($"Temperature: {testCase.TestData.Temperature}");
             Debug.Log($"TemperatureUnit: {testCase.TestData.TemperatureUnit}");
             Debug.Log($"EnergyPerMonth: {testCase.TestData.EnergyPerMonth}");
             Debug.Log($"EnergyUnit: {testCase.TestData.EnergyUnit}");
+            Debug.Log($"SolarPanelSizeInSquareMeter: {testCase.TestData.SolarPanelSizeInSquareMeter}");
 
             // Color Tests
 
             var expectedColor = testCase.ExpectedColor;
-            var resultColor = controller.Renderer.material.GetColor("_Color");
+            var resultColor = controller.Renderer.material.GetColor(MainColorName);
 
-            Debug.Log($"Expected Color: {expectedColor}");
-            Debug.Log($"Expected Color: {resultColor}");
+            Debug.Log($"Expected Color: '{expectedColor}'");
+            Debug.Log($"Result Color: '{resultColor}'");
 
             Assert.AreEqual(expectedColor, resultColor);
 
@@ -180,19 +184,18 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             var expectedVertices = testCase.ExpectedVertices;
             var resultVertices = controller.MeshFilter.mesh.vertices;
 
-            Debug.Log($"Expected Vector3[]: {expectedVertices}");
-            Debug.Log($"Result Vector3[]: {resultVertices}");
-
             for (int i = 0; i < expectedVertices.Length; i++)
             {
-                var expectedVector3 = expectedVertices[i];
-                var vector3ToBeAsserted = resultVertices[i];
-                Assert.IsNotNull(expectedVector3);
-                Assert.IsNotNull(vector3ToBeAsserted);
+                var expectedVertex = expectedVertices[i];
+                var vertexToBeAsserted = resultVertices[i];
 
-                Assert.AreEqual(expectedVector3.x, vector3ToBeAsserted.x);
-                Assert.AreEqual(expectedVector3.y, vector3ToBeAsserted.y);
-                Assert.AreEqual(expectedVector3.z, vector3ToBeAsserted.z);
+                Debug.Log($"Expected vertex: '{expectedVertex}'");
+                Debug.Log($"Vertex to be asserted: '{vertexToBeAsserted}'");
+
+                Assert.IsNotNull(expectedVertex);
+                Assert.IsNotNull(vertexToBeAsserted);
+
+                Assert.AreEqual(expectedVertex, vertexToBeAsserted);
             }
 
             // BoxCollider Size Tests
@@ -209,8 +212,14 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             var expectedText = testCase.ExpectedText;
             var resultText = childTextMesh.text;
 
+            Debug.Log($"Expected text: '{expectedText}'");
+            Debug.Log($"Result text: '{resultText}'");
+
             var expectedFontSize = testCase.ExpectedFontSize;
             var resultFontSize = childTextMesh.fontSize;
+
+            Debug.Log($"Expected font size: '{expectedFontSize}'");
+            Debug.Log($"Result font size: '{resultFontSize}'");
 
             Assert.AreEqual(expectedText, resultText);
             Assert.AreEqual(expectedFontSize, resultFontSize);
@@ -239,6 +248,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.EnergyPerMonth = testCase.TestData.EnergyPerMonth;
             controller.EnergyUnit = testCase.TestData.EnergyUnit;
             controller.SolarPanelSizeInSquareMeter = testCase.TestData.SolarPanelSizeInSquareMeter;
+
+            Debug.Log("TestCase loaded");
         }
 
         private void ResetCubeSize()
@@ -247,6 +258,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             controller.MeshFilter.mesh.RecalculateBounds();
 
             controller.BoxCollider.size = baseBoxColliderSize;
+
+            Debug.Log("Resetting Cube size completed");
         }
 
         private void DestroyComponents()
@@ -255,6 +268,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             var childGameObject = Cube.transform.GetChild(0).gameObject;
             Destroy(childGameObject);
+        
+            Debug.Log("Destroying CubeBehaviour component and child GameObject completed");
         }
 
         private class CubeBehaviourTestInfo
