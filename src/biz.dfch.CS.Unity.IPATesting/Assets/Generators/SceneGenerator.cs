@@ -15,6 +15,7 @@
  */
 
 using System.Collections;
+using Assets.Constants;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,53 +25,62 @@ namespace Assets.Generators
     public class SceneGenerator 
     {
         private int activeSceneIndex;
+        private MonoBehaviour monoBehaviour;
+        private GameObject cube;
+
+        public SceneGenerator(MonoBehaviour monoBehaviour)
+        {
+            this.monoBehaviour = monoBehaviour;
+            Debug.Log(this.monoBehaviour.GetType());
+        }
 
         public void LoadNextScene()
         {
             activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-            //var result = LoadSceneSingle(activeSceneIndex + 1);
-
-            LoadCubeOnScene();
+            Debug.Log($"Active scene buildIndex is '{activeSceneIndex}'");
+            
+            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex + 1, activeSceneIndex));
         }
 
         public void LoadPreviousScene()
         {
             activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(activeSceneIndex - 1, LoadSceneMode.Single);
 
-            LoadCubeOnScene();
+            Debug.Log($"Active scene buildIndex is '{activeSceneIndex}'");
+
+            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex - 1, activeSceneIndex));
         }
 
-        private void DisplayLoadingScreen()
+        private void CreateCube()
         {
-
-        }
-
-        private void LoadCubeOnScene()
-        {
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cube.transform.position = new Vector3(0, 1, 0);
-            cube.AddComponent<CubeBehaviour>();
+            var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
+
+            cubeBehaviour.Temperature = 30;
+            cubeBehaviour.TemperatureUnit = TemperatureUnit.Celsius;
+            cubeBehaviour.EnergyPerMonth = 100;
+            cubeBehaviour.EnergyUnit = EnergyUnit.KiloWatt;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = 1;
         }
 
-        private IEnumerator LoadSceneSingle(int buildIndex)
+        private IEnumerator LoadScene(int sceneToLoadBuildIndex, int activeSceneBuildIndex)
         {
-            AsyncOperation _async = new AsyncOperation();
-            _async = SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Single);
+            var asyncOperation = SceneManager.LoadSceneAsync(sceneToLoadBuildIndex, LoadSceneMode.Additive);
 
-            while (!_async.isDone)
+            while (!asyncOperation.isDone)
             {
-                Debug.Log("Loading Scene ...");
                 yield return null;
             }
 
-            Scene nextScene = SceneManager.GetSceneByBuildIndex(buildIndex);
-            if (nextScene.IsValid())
-            {
-                SceneManager.SetActiveScene(nextScene);
-            }
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(activeSceneBuildIndex));
 
+            var scene = SceneManager.GetSceneByBuildIndex(sceneToLoadBuildIndex);
+            
+            CreateCube();
+
+            SceneManager.MoveGameObjectToScene(cube, scene);
         }
     }
 }

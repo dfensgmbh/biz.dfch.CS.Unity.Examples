@@ -44,7 +44,7 @@ namespace Assets.Scripts
         private void Start()
         {
             playerCubeRigidbody = GetComponent<Rigidbody>();
-            sceneGenerator = new SceneGenerator();
+            sceneGenerator = new SceneGenerator(this);
         }
 
         private void Update()
@@ -64,37 +64,16 @@ namespace Assets.Scripts
 
         private void OnCollisionEnter(Collision collision)
         {
-            Debug.Log($"Method Call: OnCollisionEnter Collision Name: {collision.gameObject.name}");
+            Debug.Log($"Method Call: {nameof(OnCollisionEnter)} Collision Name: {collision.gameObject.name}");
 
             if (collision.gameObject.CompareTag(CubeTagName))
             {
-                var activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                StartCoroutine(LoadSceneSingle(activeSceneIndex + 1));
+                sceneGenerator.LoadNextScene();
             }
             if (collision.gameObject.CompareTag(SphereTagName))
             {
                 sceneGenerator.LoadPreviousScene();
             }
-        }
-
-        private IEnumerator LoadSceneSingle(int buildIndex)
-        {
-            AsyncOperation _async = new AsyncOperation();
-            _async = SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
-
-            while (!_async.isDone)
-            {
-                yield return null;
-            }
-
-            var scene = SceneManager.GetSceneByBuildIndex(buildIndex);
-
-                GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                cube.transform.position = new Vector3(0, 1, 0);
-                cube.AddComponent<CubeBehaviour>();
-
-                SceneManager.MoveGameObjectToScene(cube, scene);
-                SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(buildIndex - 1));
         }
     }
 }
