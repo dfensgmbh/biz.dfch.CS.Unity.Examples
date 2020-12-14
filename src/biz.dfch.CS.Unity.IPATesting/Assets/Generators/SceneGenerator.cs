@@ -15,7 +15,9 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 using Assets.Constants;
+using Assets.Models;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,10 +26,19 @@ namespace Assets.Generators
 {
     public class SceneGenerator 
     {
-        private int activeSceneIndex;
+        private readonly Vector3 cubeStartPosition = new Vector3(-4, 1, 0);
         private readonly MonoBehaviour monoBehaviour;
+        private readonly List<CubeInfo> cubeInfos = new List<CubeInfo>()
+        {
+            new CubeInfo(30, TemperatureUnit.Celsius, 100, EnergyUnit.KiloWatt, 1),
+            new CubeInfo(-20, TemperatureUnit.Celsius, 50, EnergyUnit.KiloWatt, 1),
+            new CubeInfo(300, TemperatureUnit.Kelvin, 1000, EnergyUnit.KiloWatt, 11),
+            new CubeInfo(5, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
+            new CubeInfo(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25)
+        };
         private GameObject cube;
-
+        private int activeSceneIndex;
+        
         public SceneGenerator(MonoBehaviour monoBehaviour)
         {
             this.monoBehaviour = monoBehaviour;
@@ -52,17 +63,28 @@ namespace Assets.Generators
             monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex - 1, activeSceneIndex));
         }
 
-        private void CreateCube()
+        private void CreateCubesOnScene()
         {
-            cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.position = new Vector3(0, 1, 0);
-            var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
+            var scene = SceneManager.GetActiveScene();
 
-            cubeBehaviour.Temperature = 30;
-            cubeBehaviour.TemperatureUnit = TemperatureUnit.Celsius;
-            cubeBehaviour.EnergyPerMonth = 100;
-            cubeBehaviour.EnergyUnit = EnergyUnit.KiloWatt;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = 1;
+            var cubePosition = cubeStartPosition;
+
+            foreach (var cubeInfo in cubeInfos)
+            {
+                cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                cube.transform.position = cubePosition;
+                var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
+                
+                cubeBehaviour.TemperatureUnit = cubeInfo.TemperatureUnit;
+                cubeBehaviour.Temperature = cubeInfo.Temperature;
+                cubeBehaviour.EnergyUnit = cubeInfo.EnergyUnit;
+                cubeBehaviour.SolarPanelSizeInSquareMeter = cubeInfo.SolarPanelSizeInSquareMeter;
+                cubeBehaviour.EnergyPerMonth = cubeInfo.EnergyPerMonth;
+
+                SceneManager.MoveGameObjectToScene(cube, scene);
+
+                cubePosition.x += 3;
+            }
         }
 
         private IEnumerator LoadScene(int sceneToLoadBuildIndex, int activeSceneBuildIndex)
@@ -75,12 +97,8 @@ namespace Assets.Generators
             }
 
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(activeSceneBuildIndex));
-
-            var scene = SceneManager.GetSceneByBuildIndex(sceneToLoadBuildIndex);
             
-            CreateCube();
-
-            SceneManager.MoveGameObjectToScene(cube, scene);
+            CreateCubesOnScene();
         }
     }
 }
