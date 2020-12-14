@@ -36,26 +36,28 @@ namespace Assets.Generators
         private readonly MeshFilter meshFilter;
         private readonly BoxCollider boxCollider;
         private readonly TemperatureConverter temperatureConverter;
+
         public readonly CubeInfo CubeInfo;
         public readonly GameObject GameObject;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject, Renderer renderer, TextMesh textMesh, MeshFilter meshFilter, BoxCollider boxCollider)
+        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
+
+            CubeInfo = cubeInfo;
+            GameObject = gameObject;
+            temperatureConverter = new TemperatureConverter();
+
+            renderer = GameObject.GetComponent<Renderer>();
+            textMesh = GameObject.GetComponentInChildren<TextMesh>();
+            meshFilter = GameObject.GetComponent<MeshFilter>();
+            boxCollider = GameObject.GetComponent<BoxCollider>();
+
             Contract.Assert(null != renderer);
             Contract.Assert(null != textMesh);
             Contract.Assert(null != meshFilter);
             Contract.Assert(null != boxCollider);
-
-            CubeInfo = cubeInfo;
-            GameObject = gameObject;
-            this.renderer = renderer;
-            this.textMesh = textMesh;
-            this.meshFilter = meshFilter;
-            this.boxCollider = boxCollider;
-
-            temperatureConverter = new TemperatureConverter();
         }
 
         public bool Generate()
@@ -86,18 +88,12 @@ namespace Assets.Generators
                 }
 
                 return true;
-
             }
             catch (ArgumentException e)
             {
                 Debug.Log(e);
                 return false;
             }
-        }
-
-        private void GetCubeComponents()
-        {
-
         }
 
         private Color MapTemperatureToColor()
@@ -196,7 +192,11 @@ namespace Assets.Generators
 
         private Vector3 RecalculateVertexWithScaleValue(Vector3 vertex, float scaleValue)
         {
-            return new Vector3(vertex.x * scaleValue, vertex.y * scaleValue, vertex.z * scaleValue);
+            var xVector = vertex.x * scaleValue;
+            var yVector = vertex.x * scaleValue;
+            var zVector = vertex.x * scaleValue;
+
+            return new Vector3(xVector, yVector, zVector);
         }
 
         private bool DisplayInfoOnCube(float scaleValue)

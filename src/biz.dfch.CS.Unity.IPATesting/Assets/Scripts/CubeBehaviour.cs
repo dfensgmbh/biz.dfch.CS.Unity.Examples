@@ -23,13 +23,12 @@ namespace Assets.Scripts
 {
     public class CubeBehaviour : MonoBehaviour
     {
+        // ReSharper disable once InconsistentNaming
+        private const string TextMeshChildGameObjectName = "TextMesh Child";
+
         private CubeGenerator cubeGenerator;
         private CubeInfo cubeInfo;
 
-        public Renderer Renderer { get; set; }
-        public TextMesh TextMesh { get; set; }
-        public MeshFilter MeshFilter { get; set; }
-        public BoxCollider BoxCollider { get; set; }
         public double Temperature { get; set; } = 330;
         public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
         public double EnergyPerMonth { get; set; } = 125d;
@@ -38,18 +37,14 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            Renderer = gameObject.GetComponent<Renderer>();
-            MeshFilter = gameObject.GetComponent<MeshFilter>();
-            BoxCollider = gameObject.GetComponent<BoxCollider>();
-
-            var childGameObject = new GameObject("Child");
+            var childGameObject = new GameObject(TextMeshChildGameObjectName);
             childGameObject.transform.parent = gameObject.transform;
             childGameObject.transform.position = gameObject.transform.position;
-            TextMesh = childGameObject.AddComponent<TextMesh>();
+            childGameObject.AddComponent<TextMesh>();
 
             cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
-            cubeGenerator = new CubeGenerator(cubeInfo, gameObject, Renderer, TextMesh, MeshFilter, BoxCollider);
+            cubeGenerator = new CubeGenerator(cubeInfo, gameObject);
             cubeGenerator.Generate();
         }
     }

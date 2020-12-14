@@ -25,7 +25,7 @@ namespace Assets.Generators
     public class SceneGenerator 
     {
         private int activeSceneIndex;
-        private MonoBehaviour monoBehaviour;
+        private readonly MonoBehaviour monoBehaviour;
         private GameObject cube;
 
         public SceneGenerator(MonoBehaviour monoBehaviour)

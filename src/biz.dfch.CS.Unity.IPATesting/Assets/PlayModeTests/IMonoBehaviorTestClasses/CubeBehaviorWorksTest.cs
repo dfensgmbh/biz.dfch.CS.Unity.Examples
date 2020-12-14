@@ -137,16 +137,17 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             }
         };
 
-        private GameObject Cube { get; set; } 
+        private GameObject cube;
+        private Renderer cubeRenderer;
+        private MeshFilter meshFilter;
+        private BoxCollider boxCollider;
+        private TextMesh textMesh;
 
         private void Awake()
         {
-            Cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-            controller = Cube.AddComponent<CubeBehaviour>();
-            controller.Renderer = Cube.GetComponent<MeshRenderer>();
-            controller.MeshFilter = Cube.GetComponent<MeshFilter>();
-            controller.BoxCollider = Cube.GetComponent<BoxCollider>();
+            controller = cube.AddComponent<CubeBehaviour>();
 
             controller.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
             controller.Temperature = testCases.First().TestData.Temperature;
@@ -169,10 +170,15 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             Debug.Log($"EnergyUnit: {testCase.TestData.EnergyUnit}");
             Debug.Log($"SolarPanelSizeInSquareMeter: {testCase.TestData.SolarPanelSizeInSquareMeter}");
 
+            cubeRenderer = cube.GetComponent<Renderer>();
+            meshFilter = cube.GetComponent<MeshFilter>();
+            boxCollider = cube.GetComponent<BoxCollider>();
+            textMesh = cube.GetComponentInChildren<TextMesh>();
+
             // Color Tests
 
             var expectedColor = testCase.ExpectedColor;
-            var resultColor = controller.Renderer.material.GetColor(MainColorName);
+            var resultColor = cubeRenderer.material.GetColor(MainColorName);
 
             Debug.Log($"Expected Color: '{expectedColor}'");
             Debug.Log($"Result Color: '{resultColor}'");
@@ -182,7 +188,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             // Scale Tests
             
             var expectedVertices = testCase.ExpectedVertices;
-            var resultVertices = controller.MeshFilter.mesh.vertices;
+            var resultVertices = meshFilter.mesh.vertices;
 
             for (int i = 0; i < expectedVertices.Length; i++)
             {
@@ -201,22 +207,22 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             // BoxCollider Size Tests
 
             var expectedBoxColliderSize = testCase.ExpectedBoxColliderSize;
-            var resultBoxColliderSize = controller.BoxCollider.size;
+            var resultBoxColliderSize = boxCollider.size;
 
             Assert.AreEqual(expectedBoxColliderSize, resultBoxColliderSize);
 
             // Text Tests
 
-            var childTextMesh = Cube.GetComponentInChildren<TextMesh>();
+            Debug.Log("Children Count: " + cube.GetComponentsInChildren<Component>().Length);
             
             var expectedText = testCase.ExpectedText;
-            var resultText = childTextMesh.text;
+            var resultText = textMesh.text;
 
             Debug.Log($"Expected text: '{expectedText}'");
             Debug.Log($"Result text: '{resultText}'");
 
             var expectedFontSize = testCase.ExpectedFontSize;
-            var resultFontSize = childTextMesh.fontSize;
+            var resultFontSize = textMesh.fontSize;
 
             Debug.Log($"Expected font size: '{expectedFontSize}'");
             Debug.Log($"Result font size: '{resultFontSize}'");
@@ -241,7 +247,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             var testCase = testCases[frameCount];
 
-            controller = Cube.AddComponent<CubeBehaviour>();
+            controller = cube.AddComponent<CubeBehaviour>();
             
             controller.TemperatureUnit = testCase.TestData.TemperatureUnit;
             controller.Temperature = testCase.TestData.Temperature;
@@ -254,10 +260,10 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
         private void ResetCubeSize()
         {
-            controller.MeshFilter.mesh.vertices = baseVerticesForCube;
-            controller.MeshFilter.mesh.RecalculateBounds();
+            meshFilter.mesh.vertices = baseVerticesForCube;
+            meshFilter.mesh.RecalculateBounds();
 
-            controller.BoxCollider.size = baseBoxColliderSize;
+            boxCollider.size = baseBoxColliderSize;
 
             Debug.Log("Resetting Cube size completed");
         }
@@ -265,9 +271,9 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         private void DestroyComponents()
         {
             Destroy(controller);
-
-            var childGameObject = Cube.transform.GetChild(0).gameObject;
-            Destroy(childGameObject);
+            
+            var childGameObject = cube.transform.GetChild(0).gameObject;
+            DestroyImmediate(childGameObject);
         
             Debug.Log("Destroying CubeBehaviour component and child GameObject completed");
         }
