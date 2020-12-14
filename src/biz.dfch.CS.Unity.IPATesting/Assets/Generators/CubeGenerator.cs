@@ -193,8 +193,8 @@ namespace Assets.Generators
         private Vector3 RecalculateVertexWithScaleValue(Vector3 vertex, float scaleValue)
         {
             var xVector = vertex.x * scaleValue;
-            var yVector = vertex.x * scaleValue;
-            var zVector = vertex.x * scaleValue;
+            var yVector = vertex.y * scaleValue;
+            var zVector = vertex.z * scaleValue;
 
             return new Vector3(xVector, yVector, zVector);
         }
