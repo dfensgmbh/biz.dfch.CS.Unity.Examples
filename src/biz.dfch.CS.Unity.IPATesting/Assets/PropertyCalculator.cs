@@ -15,7 +15,9 @@
  */
 
 using System;
+using System.IO;
 using Assets.Constants;
+using UnityEngine;
 
 namespace Assets
 {
@@ -59,6 +61,21 @@ namespace Assets
             }
 
             return energy / solarPanelSizeInSquareMeter;
+        }
+
+        public static float CalculateAverage(float first, float second)
+        {
+            return (first + second) / 2;
+        }
+
+        public static float CalculateGroundXScaleValue(float cubesCount)
+        {
+            if (cubesCount < 1)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            return (cubesCount - 1) * CalculationValue.GroundXScaleValue + CalculationValue.GroundXScaleValueBase;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         private const string MainColorName = "_Color";
 
         private int frameCount;
-        private CubeBehaviour controller;
+        private CubeBehaviour cubeBehaviour;
 
         private readonly Vector3 baseBoxColliderSize = new Vector3(1, 1, 1);
 
@@ -147,13 +147,13 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         {
             cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-            controller = cube.AddComponent<CubeBehaviour>();
+            cubeBehaviour = cube.AddComponent<CubeBehaviour>();
 
-            controller.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
-            controller.Temperature = testCases.First().TestData.Temperature;
-            controller.EnergyPerMonth = testCases.First().TestData.EnergyPerMonth;
-            controller.SolarPanelSizeInSquareMeter = testCases.First().TestData.SolarPanelSizeInSquareMeter;
-            controller.EnergyUnit = testCases.First().TestData.EnergyUnit;
+            cubeBehaviour.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
+            cubeBehaviour.Temperature = testCases.First().TestData.Temperature;
+            cubeBehaviour.EnergyPerMonth = testCases.First().TestData.EnergyPerMonth;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = testCases.First().TestData.SolarPanelSizeInSquareMeter;
+            cubeBehaviour.EnergyUnit = testCases.First().TestData.EnergyUnit;
 
             Debug.Log($"TestCases Count: {testCases.Count}");
         }
@@ -247,13 +247,13 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             var testCase = testCases[frameCount];
 
-            controller = cube.AddComponent<CubeBehaviour>();
+            cubeBehaviour = cube.AddComponent<CubeBehaviour>();
             
-            controller.TemperatureUnit = testCase.TestData.TemperatureUnit;
-            controller.Temperature = testCase.TestData.Temperature;
-            controller.EnergyPerMonth = testCase.TestData.EnergyPerMonth;
-            controller.EnergyUnit = testCase.TestData.EnergyUnit;
-            controller.SolarPanelSizeInSquareMeter = testCase.TestData.SolarPanelSizeInSquareMeter;
+            cubeBehaviour.TemperatureUnit = testCase.TestData.TemperatureUnit;
+            cubeBehaviour.Temperature = testCase.TestData.Temperature;
+            cubeBehaviour.EnergyPerMonth = testCase.TestData.EnergyPerMonth;
+            cubeBehaviour.EnergyUnit = testCase.TestData.EnergyUnit;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = testCase.TestData.SolarPanelSizeInSquareMeter;
 
             Debug.Log("TestCase loaded");
         }
@@ -270,7 +270,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
         private void DestroyComponents()
         {
-            Destroy(controller);
+            Destroy(cubeBehaviour);
             
             var childGameObject = cube.transform.GetChild(0).gameObject;
             DestroyImmediate(childGameObject);

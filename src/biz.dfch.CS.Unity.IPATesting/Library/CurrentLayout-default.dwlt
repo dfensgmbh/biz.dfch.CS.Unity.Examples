@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 730
+    x: 715
     y: 0
-    width: 631
-    height: 493
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 630
+    height: 496
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 454
-    width: 1361
-    height: 493
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+    y: 451
+    width: 1345
+    height: 496
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 59
+  controlID: 131
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,10 +97,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 101
+  controlID: 37
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,12 +116,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1361
+    x: 1345
     y: 0
-    width: 559
+    width: 575
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -146,10 +146,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 392
-    height: 454
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 390
+    height: 451
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -172,8 +172,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 730
-    height: 493
+    width: 715
+    height: 496
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -275,12 +275,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1361
+    width: 1345
     height: 947
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 130
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,12 +300,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1361
-    height: 454
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1345
+    height: 451
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 112
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,24 +316,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 392
+    x: 390
     y: 0
-    width: 969
-    height: 454
+    width: 955
+    height: 451
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -391,7 +391,7 @@ MonoBehaviour:
     m_CachedPref: 1
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 14130
+  m_LastInspectedObjectInstanceID: 14222
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 86fb0e42b67efa2469be2da7d8d56329
   m_InstanceID: 0
@@ -415,18 +415,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2266
-    y: 527
-    width: 629
-    height: 472
+    x: 2251
+    y: 524
+    width: 628
+    height: 475
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 164
+    ID: 606
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
-    - 223
-    - 179
+    - 225
+    - 180
     relativeSizes:
     - 0.55455804
     - 0.44544196
@@ -436,7 +436,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 402
+    lastTotalSize: 405
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -453,7 +453,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.604863
+      duration: 0.6513368
       messages: 
       output: 
       stacktrace: 
@@ -469,7 +469,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
       resultStatus: 1
-      duration: 0.5019604
+      duration: 0.5568063
       messages: 
       output: 
       stacktrace: 
@@ -485,7 +485,7 @@ MonoBehaviour:
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.4635176
+      duration: 0.4973152
       messages: 
       output: 
       stacktrace: 
@@ -501,7 +501,7 @@ MonoBehaviour:
       name: PlayModeTests
       fullName: Assets.PlayModeTests
       resultStatus: 1
-      duration: 0.4464801
+      duration: 0.4697796
       messages: 
       output: 
       stacktrace: 
@@ -517,7 +517,7 @@ MonoBehaviour:
       name: Scripts
       fullName: Assets.PlayModeTests.Scripts
       resultStatus: 1
-      duration: 0.4277208
+      duration: 0.4403827
       messages: 
       output: 
       stacktrace: 
@@ -533,7 +533,7 @@ MonoBehaviour:
       name: CubeBehaviourTest
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest
       resultStatus: 1
-      duration: 0.402945
+      duration: 0.4131428
       messages: 
       output: 
       stacktrace: 
@@ -549,22 +549,16 @@ MonoBehaviour:
       name: CubeBehaviourRunsOnCubeAndReturnsExpectedValues
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues
       resultStatus: 1
-      duration: 0.3226234
+      duration: 0.3037035
       messages: 
-      output: "24\r\n(0.5, -0.5, 0.5)\r\n(-0.5, -0.5, 0.5)\r\n(0.5, 0.5, 0.5)\r\n(-0.5,
-        0.5, 0.5)\r\n(0.5, 0.5, -0.5)\r\n(-0.5, 0.5, -0.5)\r\n(0.5, -0.5, -0.5)\r\n(-0.5,
-        -0.5, -0.5)\r\n(0.5, 0.5, 0.5)\r\n(-0.5, 0.5, 0.5)\r\n(0.5, 0.5, -0.5)\r\n(-0.5,
-        0.5, -0.5)\r\n(0.5, -0.5, -0.5)\r\n(0.5, -0.5, 0.5)\r\n(-0.5, -0.5, 0.5)\r\n(-0.5,
-        -0.5, -0.5)\r\n(-0.5, -0.5, 0.5)\r\n(-0.5, 0.5, 0.5)\r\n(-0.5, 0.5, -0.5)\r\n(-0.5,
-        -0.5, -0.5)\r\n(0.5, -0.5, -0.5)\r\n(0.5, 0.5, -0.5)\r\n(0.5, 0.5, 0.5)\r\n(0.5,
-        -0.5, 0.5)\r\nSTART Mapping temperature ('20 \xB0C') to color\r\nSTART Converting
-        temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature '293.15
-        K\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND Result
-        Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75')
-        to scale value\r\nCalculating energy per one square meter. Size of solar
-        panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd Mapping Energy
-        to scale value ('0.125')\r\nSTART Recalculating bounds for Cube with scale
-        value '0.125'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+      output: "TestCases Count: 2\r\nSTART Mapping temperature ('20 \xB0C') to color\r\nSTART
+        Converting temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature
+        '293.15 K\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND
+        Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy
+        ('75') to scale value\r\nCalculating energy per one square meter. Size of
+        solar panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd Mapping
+        Energy to scale value ('0.125')\r\nSTART Recalculating bounds for Cube with
+        scale value '0.125'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
         vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
         calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
         -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
@@ -600,63 +594,120 @@ MonoBehaviour:
         0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
         vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
         calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
-        -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Displaying information
+        -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating BoxCollider
+        size with scale value '0.125'\r\nResult Vector3 for BoxCollider size: '(0.1,
+        0.1, 0.1)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying information
         on cube with scale value '0.125'\r\nCalculated FontSize '45'\r\nEND TextMesh:\nAnchor:
         'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '45'\r\nFrame Count:
-        0\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature: 20\r\nTemperatureUnit:
-        Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nExpected Color:
-        RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected Color: RGBA(0.748, 0.000, 0.252,
-        1.000)\r\nExpected Vector3[]: UnityEngine.Vector3[]\r\nResult Vector3[]:
-        UnityEngine.Vector3[]\r\nTest Finished - Loading next Case...\r\nSTART Mapping
-        temperature ('330 K') to color\r\nCreating color with R '1' G '0' and B '0'\r\nEND
-        Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART Mapping energy
-        ('75') to scale value\r\nCalculating energy per one square meter. Size of
-        solar panel is '0.5' \r\nEnergy per one square meter is: '150'\r\nEnd Mapping
-        Energy to scale value ('2')\r\nSTART Recalculating bounds for Cube with scale
-        value '2'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        0\r\nTemperature: 20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit:
+        KiloWatt\r\nSolarPanelSizeInSquareMeter: 8\r\nExpected Color: 'RGBA(0.748,
+        0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nExpected
+        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
+        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
+        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren
+        Count: 8\r\nExpected text: 'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult
+        text: 'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult
+        font size: '45'\r\nTest Finished - Loading next Case...\r\nResetting Cube
+        size completed\r\nDestroying CubeBehaviour component and child GameObject
+        completed\r\nTestCase loaded\r\nSTART Mapping temperature ('330 K') to color\r\nCreating
+        color with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000,
+        0.000, 1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating
+        energy per one square meter. Size of solar panel is '0.5' \r\nEnergy per
+        one square meter is: '150'\r\nEnd Mapping Energy to scale value ('2')\r\nSTART
+        Recalculating bounds for Cube with scale value '2'\r\nCurrent vertex that
+        gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
         -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
         vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
         calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
-        -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART Displaying information
-        on cube with scale value '2'\r\nCalculated FontSize '125'\r\nEND TextMesh:\nAnchor:
-        'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame Count:
-        1\r\nTestCases Count: 2\r\nTestCase loaded\r\nTemperature: 330\r\nTemperatureUnit:
-        Kelvin\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nExpected Color: RGBA(1.000,
-        0.000, 0.000, 1.000)\r\nExpected Color: RGBA(1.000, 0.000, 0.000, 1.000)\r\nExpected
-        Vector3[]: UnityEngine.Vector3[]\r\nResult Vector3[]: UnityEngine.Vector3[]\r\nTest
-        Finished - Loading next Case...\r\n"
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
+        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
+        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
+        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
+        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART
+        Recalculating BoxCollider size with scale value '2'\r\nResult Vector3 for
+        BoxCollider size: '(2.0, 2.0, 2.0)'\r\nEND Recalculating BoxCollider size'\r\nSTART
+        Displaying information on cube with scale value '2'\r\nCalculated FontSize
+        '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont
+        Size: '125'\r\nFrame Count: 1\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
+        75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter: 0.5\r\nExpected
+        Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult Color: 'RGBA(1.000, 0.000,
+        0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex to be asserted:
+        '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex to be
+        asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 8\r\nExpected text:
+        'Temperature: 330 K\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 330 K\nEnergy:
+        75 kWh'\r\nExpected font size: '125'\r\nResult font size: '125'\r\nTest Finished
+        - Loading next Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour
+        component and child GameObject completed\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -666,26 +717,20 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1130
       parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
-    m_ResultText: "CubeBehaviourRunsOnCubeAndReturnsExpectedValues (0.323s)\n---\n24\r\n(0.5,
-      -0.5, 0.5)\r\n(-0.5, -0.5, 0.5)\r\n(0.5, 0.5, 0.5)\r\n(-0.5, 0.5, 0.5)\r\n(0.5,
-      0.5, -0.5)\r\n(-0.5, 0.5, -0.5)\r\n(0.5, -0.5, -0.5)\r\n(-0.5, -0.5, -0.5)\r\n(0.5,
-      0.5, 0.5)\r\n(-0.5, 0.5, 0.5)\r\n(0.5, 0.5, -0.5)\r\n(-0.5, 0.5, -0.5)\r\n(0.5,
-      -0.5, -0.5)\r\n(0.5, -0.5, 0.5)\r\n(-0.5, -0.5, 0.5)\r\n(-0.5, -0.5, -0.5)\r\n(-0.5,
-      -0.5, 0.5)\r\n(-0.5, 0.5, 0.5)\r\n(-0.5, 0.5, -0.5)\r\n(-0.5, -0.5, -0.5)\r\n(0.5,
-      -0.5, -0.5)\r\n(0.5, 0.5, -0.5)\r\n(0.5, 0.5, 0.5)\r\n(0.5, -0.5, 0.5)\r\nSTART
-      Mapping temperature ('20 \xB0C') to color\r\nSTART Converting temperature ('20
-      \xB0C') to Kelvin...\r\nEND Converting temperature '293.15 K\r\nCreating color
-      with R '0.7476028' G '0' and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748,
-      0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating
-      energy per one square meter. Size of solar panel is '8' \r\nEnergy per one
-      square meter is: '9.375'\r\nEnd Mapping Energy to scale value ('0.125')\r\nSTART
-      Recalculating bounds for Cube with scale value '0.125'\r\nCurrent vertex that
-      gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
-      -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
-      calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1,
-      0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex
-      that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
+    m_ResultText: "CubeBehaviourRunsOnCubeAndReturnsExpectedValues (0.304s)\n---\nTestCases
+      Count: 2\r\nSTART Mapping temperature ('20 \xB0C') to color\r\nSTART Converting
+      temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature '293.15
+      K\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND Result
+      Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75') to
+      scale value\r\nCalculating energy per one square meter. Size of solar panel
+      is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd Mapping Energy to
+      scale value ('0.125')\r\nSTART Recalculating bounds for Cube with scale value
+      '0.125'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated
+      '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+      vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated
+      '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
       '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
       vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
       '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
@@ -714,24 +759,53 @@ MonoBehaviour:
       -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
       that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
       '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, 0.1)'\r\nEND
-      Recalculating cube bounds\r\nSTART Displaying information on cube with scale
-      value '0.125'\r\nCalculated FontSize '45'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
-      \nCharacter Size: '0.03' \nFont Size: '45'\r\nFrame Count: 0\r\nTestCases Count:
-      2\r\nTestCase loaded\r\nTemperature: 20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth:
-      75\r\nEnergyUnit: KiloWatt\r\nExpected Color: RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected
-      Color: RGBA(0.748, 0.000, 0.252, 1.000)\r\nExpected Vector3[]: UnityEngine.Vector3[]\r\nResult
-      Vector3[]: UnityEngine.Vector3[]\r\nTest Finished - Loading next Case...\r\nSTART
-      Mapping temperature ('330 K') to color\r\nCreating color with R '1' G '0' and
-      B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART Mapping
-      energy ('75') to scale value\r\nCalculating energy per one square meter. Size
-      of solar panel is '0.5' \r\nEnergy per one square meter is: '150'\r\nEnd Mapping
-      Energy to scale value ('2')\r\nSTART Recalculating bounds for Cube with scale
-      value '2'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated
-      '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
-      vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated
-      '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
-      vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
+      Recalculating cube bounds\r\nSTART Recalculating BoxCollider size with scale
+      value '0.125'\r\nResult Vector3 for BoxCollider size: '(0.1, 0.1, 0.1)'\r\nEND
+      Recalculating BoxCollider size'\r\nSTART Displaying information on cube with
+      scale value '0.125'\r\nCalculated FontSize '45'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
+      \nCharacter Size: '0.03' \nFont Size: '45'\r\nFrame Count: 0\r\nTemperature:
+      20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
+      8\r\nExpected Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748,
+      0.000, 0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be
+      asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+      to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+      to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 8\r\nExpected text: 'Temperature:
+      20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20 \xB0C\nEnergy: 75
+      kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest Finished
+      - Loading next Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour
+      component and child GameObject completed\r\nTestCase loaded\r\nSTART Mapping
+      temperature ('330 K') to color\r\nCreating color with R '1' G '0' and B '0'\r\nEND
+      Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART Mapping energy ('75')
+      to scale value\r\nCalculating energy per one square meter. Size of solar panel
+      is '0.5' \r\nEnergy per one square meter is: '150'\r\nEnd Mapping Energy to
+      scale value ('2')\r\nSTART Recalculating bounds for Cube with scale value '2'\r\nCurrent
+      vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
+      '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+      vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
+      calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0,
+      1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex
+      that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
       '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
       vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
       '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
@@ -760,13 +834,42 @@ MonoBehaviour:
       -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
       that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
       '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nEND
-      Recalculating cube bounds\r\nSTART Displaying information on cube with scale
-      value '2'\r\nCalculated FontSize '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
-      \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame Count: 1\r\nTestCases
-      Count: 2\r\nTestCase loaded\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
-      75\r\nEnergyUnit: KiloWatt\r\nExpected Color: RGBA(1.000, 0.000, 0.000, 1.000)\r\nExpected
-      Color: RGBA(1.000, 0.000, 0.000, 1.000)\r\nExpected Vector3[]: UnityEngine.Vector3[]\r\nResult
-      Vector3[]: UnityEngine.Vector3[]\r\nTest Finished - Loading next Case..."
+      Recalculating cube bounds\r\nSTART Recalculating BoxCollider size with scale
+      value '2'\r\nResult Vector3 for BoxCollider size: '(2.0, 2.0, 2.0)'\r\nEND
+      Recalculating BoxCollider size'\r\nSTART Displaying information on cube with
+      scale value '2'\r\nCalculated FontSize '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
+      \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame Count: 1\r\nTemperature:
+      330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
+      0.5\r\nExpected Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult Color:
+      'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+      to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 8\r\nExpected text: 'Temperature:
+      330 K\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 330 K\nEnergy: 75 kWh'\r\nExpected
+      font size: '125'\r\nResult font size: '125'\r\nTest Finished - Loading next
+      Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour component
+      and child GameObject completed"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1682,9 +1785,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1536
-    y: 527
-    width: 729
-    height: 472
+    y: 524
+    width: 714
+    height: 475
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1711,9 +1814,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4e370000
-    m_LastClickedID: 14158
-    m_ExpandedIDs: 000000003a37000000ca9a3b
+    m_SelectedIDs: aa370000
+    m_LastClickedID: 14250
+    m_ExpandedIDs: 000000009637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1741,7 +1844,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a370000
+    m_ExpandedIDs: 0000000096370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1817,9 +1920,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2897
+    x: 2881
     y: 73
-    width: 558
+    width: 574
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1857,29 +1960,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1536
     y: 73
-    width: 391
-    height: 433
+    width: 389
+    height: 430
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aeebffff
+      m_SelectedIDs: ae370000
       m_LastClickedID: 0
-      m_ExpandedIDs: b0ebffffd8ecffffdeedffff7af0ffffa4f1ffffb8f2ffff10f4ffff5ef4ffffe2f4ffff60f6ffffcef7ffffa4faffff60fbffff
+      m_ExpandedIDs: 0ce5fdff2ee5fdff10e6fdff8ee6fdff16fafdffeefafdff38fbfdff5afbfdff7cfbfdff92fbfdffb4fbfdffcafbfdffecfbfdff0efcfdff70fcfdff120afeff2c0afeffc40afeff3617feff0c1bfeff221ffeffe624feff3025fefff225feff6626feff122afeffa42afeff022bfeffb42bfeff6638fefff838feff3a39feff5c39feffbe39feffe439feff1e3afeff343afeff863afeffd241feff2e42feffde46feff3047feff7447feff4649feff804efeff6650feffe850feff6851feff8a51feff0e52feffa852feffc252feffe452fefffa52feff7a53feffd453fefff253feff1454feff2e54feff4854feff8c58feffa658feffbc58feffd658feff7e59feff9859feffaa59feffc459feffda59feff7c5afeff1461feffa262feff4c63feff6663feff1664feff2c64feff4664feff5c64feff7664feff8c64feffae64feffd464feff2a65feff7265feff9465feffaa65feff2267feff3267feff6068feff0e6cfeff686efeffdc96feffec96feff9e98feff1e9bfeff269cfeff709dfeff609efeff7aa2feff6ea3feffb2a4feffbcabfeff50acfeffe6affeff04b4feffacb6feff7eb9feffa0bafeff08c8feff54cafeff98cbfeffa8ccfeff8ecdfeff3ad2feff7ad3feff1ad7feff5cd8feff8edcfeffc8defeffa2e0feff6ee6feff08ebfeffb4eefeffceeffeffc6f0feffe8f2feff56f5feff6cf6feff3af8feff3e00fffffe01ffff1607fffff20ffffffe10ffffec16ffff1618ffff2c18ffff4218ffff4419ffff381bffff621effffc42fffff6432ffff0a35ffff1439ffff663fffff883fffff4640ffff7c43ffff1849ffff8e4bffffc64dffffbe50ffff1853ffff5656ffff3c61ffffd665ffff0669ffff526cffff5678ffff527fffff6282ffff5883ffff8687ffff9487ffffbc88ffff548affff628affff2c8bfffffa8dffff788effffc494ffff10b7ffff14d5ffff32d5ffffe6d5ffffbcd7ffffe2d7ffffe6d8ffff04d9ffffb8d9ffffe0dafffffedaffffb2dbffff3adcffff58dcffff8cdcffff12ddffff8eddffffacddffff60deffffa8dfffffc6dfffff42e0ffffc8e0ffffcee1ffffece1ffff9ee2ffff08e4ffff26e4ffffd8e4ffff40e5ffff5ee5ffff02e6ffff22e6ffff40e6ffffe4e6ffffaae9ffffc8e9ffff7ceaffffe4eaffff02ebffffb8ebffff08eeffff82f2ffffa0f4fffff0f6ffff50fbfffff4ffffffa8450000344b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Player
-        m_OriginalName: Player
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 15552
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -1909,10 +2012,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1928
+    x: 1926
     y: 73
-    width: 967
-    height: 433
+    width: 953
+    height: 430
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -1925,9 +2028,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4244878, y: 1.11383, z: 0.4757595}
+    m_Target: {x: 0, y: 3, z: 0}
     speed: 2
-    m_Value: {x: 1.4244878, y: 1.11383, z: 0.4757595}
+    m_Value: {x: 0, y: 3, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1974,20 +2077,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11448008, y: 0.38469476, z: -0.048128404, w: -0.9147076}
+    m_Target: {x: -0.18105803, y: -0.098629706, z: 0.018509356, w: -0.97845834}
     speed: 2
-    m_Value: {x: -0.11447424, y: 0.38467512, z: -0.04812595, w: -0.91466093}
+    m_Value: {x: -0.18103693, y: -0.09861821, z: 0.0185072, w: -0.97834426}
   m_Size:
-    m_Target: 8.644232
+    m_Target: 10
     speed: 2
-    m_Value: 8.644232
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.1243999
-    m_SpeedNormalized: 0.55999994
+    m_Speed: 1.005
+    m_SpeedNormalized: 0.49999997
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -2025,10 +2128,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1928
+    x: 1926
     y: 73
-    width: 967
-    height: 433
+    width: 953
+    height: 430
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -2036,7 +2139,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 732, y: 412}
+  m_TargetSize: {x: 727, y: 409}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2051,10 +2154,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -366
-    m_HBaseRangeMax: 366
-    m_VBaseRangeMin: -206
-    m_VBaseRangeMax: 206
+    m_HBaseRangeMin: -363.5
+    m_HBaseRangeMax: 363.5
+    m_VBaseRangeMin: -204.5
+    m_VBaseRangeMax: 204.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2063,7 +2166,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -2072,23 +2175,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 967
-      height: 412
+      width: 953
+      height: 409
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 483.5, y: 206}
+    m_Translation: {x: 476.5, y: 204.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -483.5
-      y: -206
-      width: 967
-      height: 412
+      x: -476.5
+      y: -204.5
+      width: 953
+      height: 409
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 967, y: 433}
+  m_LastWindowPixelSize: {x: 953, y: 430}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -2114,10 +2217,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2266
-    y: 527
-    width: 629
-    height: 472
+    x: 2251
+    y: 524
+    width: 628
+    height: 475
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:

@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.Constants;
 using Assets.Models;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 namespace Assets.Generators
 {
@@ -30,28 +33,51 @@ namespace Assets.Generators
         private readonly MonoBehaviour monoBehaviour;
         private readonly List<CubeInfo> cubeInfos = new List<CubeInfo>()
         {
+            new CubeInfo(-40, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
             new CubeInfo(30, TemperatureUnit.Celsius, 100, EnergyUnit.KiloWatt, 1),
             new CubeInfo(-20, TemperatureUnit.Celsius, 50, EnergyUnit.KiloWatt, 1),
             new CubeInfo(300, TemperatureUnit.Kelvin, 1000, EnergyUnit.KiloWatt, 11),
             new CubeInfo(5, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
-            new CubeInfo(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25)
+            new CubeInfo(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25),
+            new CubeInfo(35, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2)
         };
-        private GameObject cube;
+
+
         private int activeSceneIndex;
+        private Scene scene;
+        private List<GameObject> rootGameObjects;
+        private readonly GameObject playerCube;
         
         public SceneGenerator(MonoBehaviour monoBehaviour)
         {
             this.monoBehaviour = monoBehaviour;
-            Debug.Log(this.monoBehaviour.GetType());
+
+            playerCube = SceneManager.GetActiveScene().GetRootGameObjects().Single(go => go.CompareTag(GameObjectTag.PlayerCube));
+        }
+
+        public SceneGenerator(MonoBehaviour monoBehaviour, GameObject gameObject)
+        {
+            this.monoBehaviour = monoBehaviour;
+
+            if (gameObject.CompareTag(GameObjectTag.PlayerCube))
+            {
+                playerCube = gameObject;
+            }
+            else
+            {
+                // DFTODO - Wrong GameObject
+            }
         }
 
         public void LoadNextScene()
         {
             activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
+            //Object.DontDestroyOnLoad(monoBehaviour.gameObject);
+
             Debug.Log($"Active scene buildIndex is '{activeSceneIndex}'");
-            
-            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex + 1, activeSceneIndex));
+
+            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex + 1));
         }
 
         public void LoadPreviousScene()
@@ -60,18 +86,18 @@ namespace Assets.Generators
 
             Debug.Log($"Active scene buildIndex is '{activeSceneIndex}'");
 
-            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex - 1, activeSceneIndex));
+            monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex - 1));
         }
 
         private void CreateCubesOnScene()
         {
-            var scene = SceneManager.GetActiveScene();
+            scene = SceneManager.GetActiveScene();
 
             var cubePosition = cubeStartPosition;
 
             foreach (var cubeInfo in cubeInfos)
             {
-                cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.transform.position = cubePosition;
                 var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
                 
@@ -81,24 +107,37 @@ namespace Assets.Generators
                 cubeBehaviour.SolarPanelSizeInSquareMeter = cubeInfo.SolarPanelSizeInSquareMeter;
                 cubeBehaviour.EnergyPerMonth = cubeInfo.EnergyPerMonth;
 
-                SceneManager.MoveGameObjectToScene(cube, scene);
-
                 cubePosition.x += 3;
             }
         }
 
-        private IEnumerator LoadScene(int sceneToLoadBuildIndex, int activeSceneBuildIndex)
+        private IEnumerator LoadScene(int sceneToLoadBuildIndex)
         {
-            var asyncOperation = SceneManager.LoadSceneAsync(sceneToLoadBuildIndex, LoadSceneMode.Additive);
+            var loadSceneAsync = SceneManager.LoadSceneAsync(sceneToLoadBuildIndex, LoadSceneMode.Single);
 
-            while (!asyncOperation.isDone)
+            while (!loadSceneAsync.isDone)
             {
                 yield return null;
             }
 
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(activeSceneBuildIndex));
-            
             CreateCubesOnScene();
+
+            rootGameObjects = scene.GetRootGameObjects().ToList();
+
+            //Object.Destroy(monoBehaviour.gameObject);
+
+            AddBehaviours();
+        }
+
+        private void AddBehaviours()
+        {
+            var groundGameObject = rootGameObjects.Single(go => go.name == GameObjectTag.Ground);
+            var groundBehaviour = groundGameObject.AddComponent<GroundBehaviour>();
+            groundBehaviour.ActiveScene = scene;
+
+            var playerBehaviour = playerCube.GetComponent<PlayerBehaviour>();
+            playerBehaviour.ActiveScene = scene;
+            playerBehaviour.IsStartPositionSet = false;
         }
     }
 }

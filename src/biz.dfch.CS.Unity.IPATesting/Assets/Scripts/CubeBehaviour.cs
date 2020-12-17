@@ -28,16 +28,17 @@ namespace Assets.Scripts
 
         private CubeGenerator cubeGenerator;
         private CubeInfo cubeInfo;
+        private GameObject childGameObject;
 
-        public double Temperature { get; set; } = 330;
-        public TemperatureUnit TemperatureUnit { get; set; } = TemperatureUnit.Kelvin;
-        public double EnergyPerMonth { get; set; } = 125d;
-        public EnergyUnit EnergyUnit { get; set; } = EnergyUnit.KiloWatt;
-        public double SolarPanelSizeInSquareMeter { get; set; } = 1;
+        public double Temperature { get; set; }
+        public TemperatureUnit TemperatureUnit { get; set; } 
+        public double EnergyPerMonth { get; set; }
+        public EnergyUnit EnergyUnit { get; set; } 
+        public double SolarPanelSizeInSquareMeter { get; set; }
 
         private void Start()
         {
-            var childGameObject = new GameObject(TextMeshChildGameObjectName);
+            childGameObject = new GameObject(TextMeshChildGameObjectName);
             childGameObject.transform.parent = gameObject.transform;
             childGameObject.transform.position = gameObject.transform.position;
             childGameObject.AddComponent<TextMesh>();
@@ -46,6 +47,8 @@ namespace Assets.Scripts
             
             cubeGenerator = new CubeGenerator(cubeInfo, gameObject);
             cubeGenerator.Generate();
+
+            gameObject.tag = GameObjectTag.Cube;
         }
     }
 }

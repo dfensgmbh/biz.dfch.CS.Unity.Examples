@@ -14,28 +14,35 @@
  * limitations under the License.
  */
 
+using Assets.Constants;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
     public class CameraBehaviour : MonoBehaviour
     {
-        // ReSharper disable once InconsistentNaming
-        private const string PlayerGameObjectName = "Player";
-
         private Transform playerTransform;
         private readonly Vector3 cameraOffset = new Vector3(0f, 1.5f, -5f);
 
         void Start()
         {
-            playerTransform = GameObject.Find(PlayerGameObjectName).transform;
+            var playerCube = GameObject.FindGameObjectWithTag(GameObjectTag.PlayerCube);
+            if (null != playerCube)
+            {
+                playerTransform = playerCube.transform;
+            }
         }
         
         private void LateUpdate()
         {
             if (null == playerTransform)
             {
-                playerTransform = GameObject.Find(PlayerGameObjectName).transform;
+                var playerCube = GameObject.FindGameObjectWithTag(GameObjectTag.PlayerCube);
+                if (null == playerCube)
+                {
+                    return;
+                }
+                playerTransform = playerCube.transform;
             }
 
             transform.position = playerTransform.TransformPoint(cameraOffset);

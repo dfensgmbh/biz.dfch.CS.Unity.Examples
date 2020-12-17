@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-using System.Collections;
+using System;
+using System.Linq;
+using Assets.Constants;
 using Assets.Generators;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,23 +34,52 @@ namespace Assets.Scripts
         // ReSharper disable once InconsistentNaming
         private const float RotateSpeed = 75f;
         // ReSharper disable once InconsistentNaming
-        private const string CubeTagName = "Cube";
-        // ReSharper disable once InconsistentNaming
-        private const string SphereTagName = "Sphere";
+        private const int YVectorResetHeight = -10;
 
         private SceneGenerator sceneGenerator;
         private Rigidbody playerCubeRigidbody;
         private float verticalInput;
         private float horizontalInput;
+        private Vector3 startPosition = new Vector3(0, 0.2f, -4);
+
+        public Scene ActiveScene { get; set; }
+        public bool IsStartPositionSet { get; set; }
 
         private void Start()
         {
+            sceneGenerator = new SceneGenerator(this, gameObject);
+            
+            DontDestroyOnLoad(gameObject);
+
+            if (!ActiveScene.IsValid())
+            {
+                ActiveScene = SceneManager.GetActiveScene();
+            }
+
             playerCubeRigidbody = GetComponent<Rigidbody>();
-            sceneGenerator = new SceneGenerator(this);
+
+            gameObject.tag = GameObjectTag.PlayerCube;
         }
 
         private void Update()
         {
+            if (!IsStartPositionSet)
+            {
+                var groundGameObject = ActiveScene.GetRootGameObjects().FirstOrDefault(go => go.CompareTag(GameObjectTag.Ground)); 
+                if (null != groundGameObject)
+                {
+                    startPosition.x = groundGameObject.transform.position.x;
+                    gameObject.transform.position = startPosition;
+
+                    IsStartPositionSet = true;
+                }
+            }
+
+            if (gameObject.transform.position.y < YVectorResetHeight)
+            {
+                gameObject.transform.position = startPosition;
+            }
+
             verticalInput = Input.GetAxis(Vertical) * MovementSpeed;
             horizontalInput = Input.GetAxis(Horizontal) * RotateSpeed;
         }
@@ -66,14 +97,15 @@ namespace Assets.Scripts
         {
             Debug.Log($"Method Call: {nameof(OnCollisionEnter)} Collision Name: {collision.gameObject.name}");
 
-            if (collision.gameObject.CompareTag(CubeTagName))
+            if (collision.gameObject.CompareTag(GameObjectTag.Cube))
             {
                 sceneGenerator.LoadNextScene();
             }
-            if (collision.gameObject.CompareTag(SphereTagName))
+            if (collision.gameObject.CompareTag(GameObjectTag.Sphere))
             {
                 sceneGenerator.LoadPreviousScene();
             }
         }
+
     }
 }

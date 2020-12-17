@@ -36,23 +36,23 @@ namespace Assets.Generators
         private readonly MeshFilter meshFilter;
         private readonly BoxCollider boxCollider;
         private readonly TemperatureConverter temperatureConverter;
-
-        public readonly CubeInfo CubeInfo;
-        public readonly GameObject GameObject;
+        private readonly CubeInfo cubeInfo;
+        // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
+        private readonly GameObject gameObject;
 
         public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);
 
-            CubeInfo = cubeInfo;
-            GameObject = gameObject;
+            this.cubeInfo = cubeInfo;
+            this.gameObject = gameObject;
             temperatureConverter = new TemperatureConverter();
 
-            renderer = GameObject.GetComponent<Renderer>();
-            textMesh = GameObject.GetComponentInChildren<TextMesh>();
-            meshFilter = GameObject.GetComponent<MeshFilter>();
-            boxCollider = GameObject.GetComponent<BoxCollider>();
+            renderer = this.gameObject.GetComponent<Renderer>();
+            textMesh = this.gameObject.GetComponentInChildren<TextMesh>();
+            meshFilter = this.gameObject.GetComponent<MeshFilter>();
+            boxCollider = this.gameObject.GetComponent<BoxCollider>();
 
             Contract.Assert(null != renderer);
             Contract.Assert(null != textMesh);
@@ -98,14 +98,14 @@ namespace Assets.Generators
 
         private Color MapTemperatureToColor()
         {
-            Debug.Log($"START Mapping temperature ('{CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to color");
+            Debug.Log($"START Mapping temperature ('{cubeInfo.Temperature} {(cubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : cubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to color");
 
-            var temperature = CubeInfo.Temperature;
+            var temperature = cubeInfo.Temperature;
 
-            if (CubeInfo.TemperatureUnit != TemperatureUnit.Kelvin)
+            if (cubeInfo.TemperatureUnit != TemperatureUnit.Kelvin)
             {
-                Debug.Log($"START Converting temperature ('{temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
-                temperature = temperatureConverter.ConvertToKelvin(CubeInfo.Temperature, CubeInfo.TemperatureUnit);
+                Debug.Log($"START Converting temperature ('{temperature} {(cubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : cubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}') to Kelvin...");
+                temperature = temperatureConverter.ConvertToKelvin(cubeInfo.Temperature, cubeInfo.TemperatureUnit);
                 Debug.Log($"END Converting temperature '{temperature} K");
             }
 
@@ -123,11 +123,11 @@ namespace Assets.Generators
 
         private float MapEnergyToScaleValue()
         {
-            Debug.Log($"START Mapping energy ('{CubeInfo.EnergyPerMonth}') to scale value");
+            Debug.Log($"START Mapping energy ('{cubeInfo.EnergyPerMonth}') to scale value");
 
-            Debug.Log($"Calculating energy per one square meter. Size of solar panel is '{CubeInfo.SolarPanelSizeInSquareMeter}' ");
+            Debug.Log($"Calculating energy per one square meter. Size of solar panel is '{cubeInfo.SolarPanelSizeInSquareMeter}' ");
 
-            var energy = PropertyCalculator.CalculateEnergyPerSquareMeter(CubeInfo.EnergyPerMonth, CubeInfo.SolarPanelSizeInSquareMeter);
+            var energy = PropertyCalculator.CalculateEnergyPerSquareMeter(cubeInfo.EnergyPerMonth, cubeInfo.SolarPanelSizeInSquareMeter);
 
             Debug.Log($"Energy per one square meter is: '{energy}'");
             
@@ -143,7 +143,7 @@ namespace Assets.Generators
             Debug.Log($"START Recalculating bounds for Cube with scale value '{scaleValue}'");
 
             var mesh = meshFilter.mesh;
-            var baseVertices = mesh?.vertices;
+            var baseVertices = mesh.vertices;
             if (null == baseVertices)
             {
                 Debug.Log("ABORT Recalculating as vertices of Cube mesh is null");
@@ -210,8 +210,8 @@ namespace Assets.Generators
             textMesh.anchor = TextAnchor.MiddleCenter;
             textMesh.characterSize = 0.03f;
             textMesh.fontSize = fontSize;
-            textMesh.text = $"Temperature: {CubeInfo.Temperature} {(CubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : CubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
-            textMesh.text += $"\nEnergy: {CubeInfo.EnergyPerMonth} kWh";
+            textMesh.text = $"Temperature: {cubeInfo.Temperature} {(cubeInfo.TemperatureUnit == TemperatureUnit.Kelvin ? "K" : cubeInfo.TemperatureUnit == TemperatureUnit.Celsius ? "°C" : "°F")}";
+            textMesh.text += $"\nEnergy: {cubeInfo.EnergyPerMonth} kWh";
 
             Debug.Log($"END TextMesh:\nAnchor: '{textMesh.anchor}' \nCharacter Size: '{textMesh.characterSize}' \nFont Size: '{textMesh.fontSize}'");
 

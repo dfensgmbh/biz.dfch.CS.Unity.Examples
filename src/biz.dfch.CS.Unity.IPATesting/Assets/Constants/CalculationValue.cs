@@ -56,5 +56,14 @@ namespace Assets.Constants
 
         // ReSharper disable once InconsistentNaming
         public const int TemperatureRangeInKelvin = MaxKelvinTemperature - MinKelvinTemperature;
+
+        // ReSharper disable once InconsistentNaming
+        public const float GroundXScaleValueBase = 0.2f;
+        
+        // ReSharper disable once InconsistentNaming
+        public const float GroundXScaleValue = 0.3f;
+        
+        // ReSharper disable once InconsistentNaming
+        public const float DifferenceGroundXPositionAndFirstCubeXPositionBase = 1.5f;
     }
 }
