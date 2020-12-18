@@ -17,13 +17,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Assets.Constants;
 using Assets.Models;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 namespace Assets.Generators
 {
@@ -42,7 +42,6 @@ namespace Assets.Generators
             new CubeInfo(35, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2)
         };
 
-
         private int activeSceneIndex;
         private Scene scene;
         private List<GameObject> rootGameObjects;
@@ -52,7 +51,7 @@ namespace Assets.Generators
         {
             this.monoBehaviour = monoBehaviour;
 
-            playerCube = SceneManager.GetActiveScene().GetRootGameObjects().Single(go => go.CompareTag(GameObjectTag.PlayerCube));
+            playerCube = GameObject.FindGameObjectWithTag(GameObjectTag.PlayerCube);
         }
 
         public SceneGenerator(MonoBehaviour monoBehaviour, GameObject gameObject)
@@ -65,16 +64,14 @@ namespace Assets.Generators
             }
             else
             {
-                // DFTODO - Wrong GameObject
+                throw new InvalidDataException();
             }
         }
 
         public void LoadNextScene()
         {
             activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-            //Object.DontDestroyOnLoad(monoBehaviour.gameObject);
-
+            
             Debug.Log($"Active scene buildIndex is '{activeSceneIndex}'");
 
             monoBehaviour.StartCoroutine(LoadScene(activeSceneIndex + 1));
@@ -91,8 +88,6 @@ namespace Assets.Generators
 
         private void CreateCubesOnScene()
         {
-            scene = SceneManager.GetActiveScene();
-
             var cubePosition = cubeStartPosition;
 
             foreach (var cubeInfo in cubeInfos)
@@ -122,14 +117,13 @@ namespace Assets.Generators
 
             CreateCubesOnScene();
 
+            scene = SceneManager.GetActiveScene();
             rootGameObjects = scene.GetRootGameObjects().ToList();
 
-            //Object.Destroy(monoBehaviour.gameObject);
-
-            AddBehaviours();
+            SetUpBehaviours();
         }
 
-        private void AddBehaviours()
+        private void SetUpBehaviours()
         {
             var groundGameObject = rootGameObjects.Single(go => go.name == GameObjectTag.Ground);
             var groundBehaviour = groundGameObject.AddComponent<GroundBehaviour>();

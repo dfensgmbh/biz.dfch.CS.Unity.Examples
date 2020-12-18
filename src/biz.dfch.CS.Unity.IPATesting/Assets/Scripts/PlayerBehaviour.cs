@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-using System;
 using System.Linq;
 using Assets.Constants;
 using Assets.Generators;
@@ -34,7 +33,7 @@ namespace Assets.Scripts
         // ReSharper disable once InconsistentNaming
         private const float RotateSpeed = 75f;
         // ReSharper disable once InconsistentNaming
-        private const int YVectorResetHeight = -10;
+        private const int YAxisResetHeight = -10;
 
         private SceneGenerator sceneGenerator;
         private Rigidbody playerCubeRigidbody;
@@ -50,14 +49,13 @@ namespace Assets.Scripts
             sceneGenerator = new SceneGenerator(this, gameObject);
             
             DontDestroyOnLoad(gameObject);
-
+            
             if (!ActiveScene.IsValid())
             {
                 ActiveScene = SceneManager.GetActiveScene();
             }
 
             playerCubeRigidbody = GetComponent<Rigidbody>();
-
             gameObject.tag = GameObjectTag.PlayerCube;
         }
 
@@ -75,7 +73,7 @@ namespace Assets.Scripts
                 }
             }
 
-            if (gameObject.transform.position.y < YVectorResetHeight)
+            if (gameObject.transform.position.y < YAxisResetHeight)
             {
                 gameObject.transform.position = startPosition;
             }
