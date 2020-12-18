@@ -50,10 +50,7 @@ namespace Assets.Scripts
             
             DontDestroyOnLoad(gameObject);
             
-            if (!ActiveScene.IsValid())
-            {
-                ActiveScene = SceneManager.GetActiveScene();
-            }
+            ActiveScene = SceneManager.GetActiveScene();
 
             playerCubeRigidbody = GetComponent<Rigidbody>();
             gameObject.tag = GameObjectTag.PlayerCube;

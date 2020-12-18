@@ -125,7 +125,7 @@ namespace Assets.Generators
 
         private void SetUpBehaviours()
         {
-            var groundGameObject = rootGameObjects.Single(go => go.name == GameObjectTag.Ground);
+            var groundGameObject = rootGameObjects.Single(go => go.CompareTag(GameObjectTag.Ground));
             var groundBehaviour = groundGameObject.AddComponent<GroundBehaviour>();
             groundBehaviour.ActiveScene = scene;
 

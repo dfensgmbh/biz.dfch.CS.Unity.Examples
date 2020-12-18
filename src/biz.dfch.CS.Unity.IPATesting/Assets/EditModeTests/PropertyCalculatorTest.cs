@@ -114,12 +114,45 @@ namespace Assets.EditModeTests
 
         [TestCase(-5, 2)]
         [TestCase(-1, 2)]
-        public void CalculatingEnergyForOneSquareMeterReturnsExpectedWithPanelSizeEqualToZeroThrowsDivideByZeroException(double energy, double solarPanelSizeInSquareMeter)
+        public void CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(double energy, double solarPanelSizeInSquareMeter)
         {
             // Arrange
             // Act
             // Assert
             Assert.Throws<ArgumentOutOfRangeException>(() => PropertyCalculator.CalculateEnergyPerSquareMeter(energy, solarPanelSizeInSquareMeter));
+        }
+
+        [TestCase(10, 5, 7.5f)]
+        [TestCase(10, -5, 2.5f)]
+        [TestCase(0, 20, 10)]
+        [TestCase(-5, 20, 7.5f)]
+        [TestCase(-5, -30, -17.5f)]
+        public void CalculatingAverageOfTwoValuesReturnsExpectedAverage(float first, float second, float expectedAverage)
+        {
+            // Arrange
+            // Act
+            var result = PropertyCalculator.CalculateAverage(first, second);
+
+            // Assert
+            Assert.AreEqual(expectedAverage, result);
+        }
+
+
+        [TestCase(1, 0.2f)]
+        [TestCase(2, 0.5f)]
+        [TestCase(3, 0.8f)]
+        [TestCase(4, 1.1f)]
+        [TestCase(5, 1.4f)]
+        [TestCase(6, 1.7f)]
+        [TestCase(7, 2f)]
+        public void CalculatingGroundXScaleValueReturnsExpectedValueForXScale(int cubeCount, float expectedXScaleValue)
+        {
+            // Arrange
+            // Act
+            var result = PropertyCalculator.CalculateGroundXScaleValue(cubeCount);
+
+            // Assert
+            Assert.AreEqual(expectedXScaleValue, result);
         }
     }
 }

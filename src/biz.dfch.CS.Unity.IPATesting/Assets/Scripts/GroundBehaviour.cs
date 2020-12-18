@@ -32,10 +32,12 @@ namespace Assets.Scripts
         
         void Start()
         {
+            ActiveScene = SceneManager.GetActiveScene();
+            
             cubesOnScene = ActiveScene.GetRootGameObjects().Where(go => go.CompareTag(GameObjectTag.Cube)).ToList();
             
             groundGenerator = new GroundGenerator(cubesOnScene, gameObject);
-            var result = groundGenerator.Generate();
+            groundGenerator.Generate();
 
             gameObject.tag = GameObjectTag.Ground;
         }

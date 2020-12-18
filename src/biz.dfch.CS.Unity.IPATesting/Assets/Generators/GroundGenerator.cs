@@ -17,7 +17,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
-using Assets.Constants;
 using UnityEngine;
 
 namespace Assets.Generators
@@ -30,20 +29,19 @@ namespace Assets.Generators
         public GroundGenerator(List<GameObject> cubesOnScene, GameObject groundGameObject)
         {
             Contract.Assert(null != cubesOnScene);
+            Contract.Assert(!cubesOnScene.Any());
             Contract.Assert(null != groundGameObject);
 
-            this.cubesOnScene = cubesOnScene;
+            this.cubesOnScene = cubesOnScene.OrderBy(go => go.transform.position.x).ToList();
             this.groundGameObject = groundGameObject;
         }
 
-        public bool Generate()
+        public void Generate()
         {
             var firstCubeXPosition = cubesOnScene.First().transform.position.x;
             var lastCubeXPosition = cubesOnScene.Last().transform.position.x;
 
             RecalculateGroundXValue(firstCubeXPosition, lastCubeXPosition);
-            
-            return true;
         }
 
         private void RecalculateGroundXValue(float firstCubeXPosition, float lastCubeXPosition)
