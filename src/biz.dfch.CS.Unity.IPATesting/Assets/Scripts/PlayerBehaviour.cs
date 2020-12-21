@@ -14,9 +14,12 @@
  * limitations under the License.
  */
 
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using Assets.Constants;
 using Assets.Generators;
+using Assets.Models;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,7 +38,19 @@ namespace Assets.Scripts
         // ReSharper disable once InconsistentNaming
         private const int YAxisResetHeight = -10;
 
-        private SceneGenerator sceneGenerator;
+        private readonly List<CubeInfo> cubeInfos = new List<CubeInfo>()
+        {
+            new CubeInfo(-40, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
+            new CubeInfo(30, TemperatureUnit.Celsius, 100, EnergyUnit.KiloWatt, 1),
+            new CubeInfo(-20, TemperatureUnit.Celsius, 50, EnergyUnit.KiloWatt, 1),
+            new CubeInfo(300, TemperatureUnit.Kelvin, 1000, EnergyUnit.KiloWatt, 11),
+            new CubeInfo(5, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
+            new CubeInfo(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25),
+            new CubeInfo(35, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2)
+        };
+
+        private CustomSceneManager customSceneManager;
+        private GameObjectFactory gameObjectFactory;
         private Rigidbody playerCubeRigidbody;
         private float verticalInput;
         private float horizontalInput;
@@ -46,7 +61,8 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            sceneGenerator = new SceneGenerator(this, gameObject);
+            customSceneManager = new CustomSceneManager(this);
+            gameObjectFactory = new GameObjectFactory();
             
             DontDestroyOnLoad(gameObject);
             
@@ -77,6 +93,7 @@ namespace Assets.Scripts
 
             verticalInput = Input.GetAxis(Vertical) * MovementSpeed;
             horizontalInput = Input.GetAxis(Horizontal) * RotateSpeed;
+            Debug.Log(DateTime.Now + " " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
         }
 
         private void FixedUpdate()
@@ -94,12 +111,28 @@ namespace Assets.Scripts
 
             if (collision.gameObject.CompareTag(GameObjectTag.Cube))
             {
-                sceneGenerator.LoadNextScene();
+                var scene = customSceneManager.LoadNextScene();
+                Debug.Log("Build index after LoadNext" + scene.buildIndex);
+                Debug.Log(DateTime.Now + " Testing " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
+                var cubes = gameObjectFactory.CreateCubes(cubeInfos);
+                Debug.Log(DateTime.Now + " Testing " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
+                customSceneManager.AddGameObjectsToScene(cubes, scene);
+                Debug.Log(DateTime.Now + " Testing " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
+                SetUpBehaviours();
+                Debug.Log(DateTime.Now + " Testing " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
+                ActiveScene = scene;
+                IsStartPositionSet = false;
             }
             if (collision.gameObject.CompareTag(GameObjectTag.Sphere))
             {
-                sceneGenerator.LoadPreviousScene();
+                customSceneManager.LoadPreviousScene();
             }
+        }
+
+        private void SetUpBehaviours()
+        {
+            var groundGameObject = ActiveScene.GetRootGameObjects().Single(go => go.CompareTag(GameObjectTag.Ground));
+            groundGameObject.AddComponent<GroundBehaviour>();
         }
 
     }

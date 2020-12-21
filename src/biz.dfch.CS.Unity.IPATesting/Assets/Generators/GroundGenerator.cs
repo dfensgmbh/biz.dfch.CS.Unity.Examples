@@ -29,7 +29,7 @@ namespace Assets.Generators
         public GroundGenerator(List<GameObject> cubesOnScene, GameObject groundGameObject)
         {
             Contract.Assert(null != cubesOnScene);
-            Contract.Assert(!cubesOnScene.Any());
+            Contract.Assert(0 < cubesOnScene.Count);
             Contract.Assert(null != groundGameObject);
 
             this.cubesOnScene = cubesOnScene.OrderBy(go => go.transform.position.x).ToList();
