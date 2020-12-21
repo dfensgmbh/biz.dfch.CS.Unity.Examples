@@ -19,14 +19,20 @@ using Assets.Models;
 using Assets.Scripts;
 using UnityEngine;
 
-namespace Assets.Generators
+namespace Assets.Factories.GameObjects
 {
-    public class GameObjectFactory
+    public class CubeFactory : GameObjectFactory
     {
         private readonly Vector3 cubeStartPosition = new Vector3(-4, 1, 0);
-        private List<GameObject> gameObjects; 
+        private readonly List<CubeInfo> cubeInfos;
+        private List<GameObject> gameObjects;
 
-        public List<GameObject> CreateCubes(List<CubeInfo> cubeInfos)
+        public CubeFactory(List<CubeInfo> cubeInfos)
+        {
+            this.cubeInfos = cubeInfos;
+        }
+
+        public override List<GameObject> Create()
         {
             gameObjects = new List<GameObject>();
 
@@ -50,31 +56,6 @@ namespace Assets.Generators
             }
 
             return gameObjects;
-        }
-
-        public void GenerateSphere()
-        {
-
-        }        
-        
-        public void GenerateCapsule()
-        {
-
-        }        
-        
-        public void GenerateCylinder()
-        {
-
-        }        
-        
-        public void GeneratePlane()
-        {
-
-        }        
-        
-        public void GenerateQuad()
-        {
-
         }
     }
 }
