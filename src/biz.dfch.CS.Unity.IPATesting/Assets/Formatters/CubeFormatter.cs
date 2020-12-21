@@ -22,7 +22,7 @@ using Assets.Converters;
 using Assets.Models;
 using UnityEngine;
 
-namespace Assets.Generators
+namespace Assets.Formatters
 {
     public class CubeGenerator
     {
@@ -37,8 +37,6 @@ namespace Assets.Generators
         private readonly BoxCollider boxCollider;
         private readonly TemperatureConverter temperatureConverter;
         private readonly CubeInfo cubeInfo;
-        // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
-        private readonly GameObject gameObject;
 
         public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject)
         {
@@ -46,13 +44,12 @@ namespace Assets.Generators
             Contract.Assert(null != gameObject);
 
             this.cubeInfo = cubeInfo;
-            this.gameObject = gameObject;
             temperatureConverter = new TemperatureConverter();
 
-            renderer = this.gameObject.GetComponent<Renderer>();
-            textMesh = this.gameObject.GetComponentInChildren<TextMesh>();
-            meshFilter = this.gameObject.GetComponent<MeshFilter>();
-            boxCollider = this.gameObject.GetComponent<BoxCollider>();
+            renderer = gameObject.GetComponent<Renderer>();
+            textMesh = gameObject.GetComponentInChildren<TextMesh>();
+            meshFilter = gameObject.GetComponent<MeshFilter>();
+            boxCollider = gameObject.GetComponent<BoxCollider>();
 
             Contract.Assert(null != renderer);
             Contract.Assert(null != textMesh);
@@ -60,7 +57,7 @@ namespace Assets.Generators
             Contract.Assert(null != boxCollider);
         }
 
-        public bool Generate()
+        public bool Format()
         {
             try
             {

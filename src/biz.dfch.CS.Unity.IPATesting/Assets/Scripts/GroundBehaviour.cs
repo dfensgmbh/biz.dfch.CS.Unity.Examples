@@ -17,7 +17,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Constants;
-using Assets.Generators;
+using Assets.Formatters;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,7 +37,7 @@ namespace Assets.Scripts
             cubesOnScene = ActiveScene.GetRootGameObjects().Where(go => go.CompareTag(GameObjectTag.Cube)).ToList();
             
             groundGenerator = new GroundGenerator(cubesOnScene, gameObject);
-            groundGenerator.Generate();
+            groundGenerator.Format();
 
             gameObject.tag = GameObjectTag.Ground;
         }

@@ -16,7 +16,7 @@
  */
 
 using Assets.Constants;
-using Assets.Generators;
+using Assets.Formatters;
 using Assets.Models;
 using UnityEngine;
 
@@ -47,7 +47,7 @@ namespace Assets.Scripts
             cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
             cubeGenerator = new CubeGenerator(cubeInfo, gameObject);
-            cubeGenerator.Generate();
+            cubeGenerator.Format();
 
             gameObject.tag = GameObjectTag.Cube;
         }

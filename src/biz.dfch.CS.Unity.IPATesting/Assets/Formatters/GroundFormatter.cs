@@ -19,7 +19,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Generators
+namespace Assets.Formatters
 {
     public class GroundGenerator
     {
@@ -36,7 +36,7 @@ namespace Assets.Generators
             this.groundGameObject = groundGameObject;
         }
 
-        public void Generate()
+        public void Format()
         {
             var firstCubeXPosition = cubesOnScene.First().transform.position.x;
             var lastCubeXPosition = cubesOnScene.Last().transform.position.x;
