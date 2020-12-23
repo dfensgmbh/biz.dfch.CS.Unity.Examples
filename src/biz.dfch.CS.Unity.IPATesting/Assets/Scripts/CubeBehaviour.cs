@@ -44,6 +44,11 @@ namespace Assets.Scripts
             childGameObject.transform.position = gameObject.transform.position;
             childGameObject.AddComponent<TextMesh>();
 
+            var cubeRigidbody = gameObject.AddComponent<Rigidbody>();
+            cubeRigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            //cubeRigidbody.constraints = (RigidbodyConstraints) 122;
+            Debug.Log("RigidbodyConstraints are: " + cubeRigidbody.constraints);
+
             cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
             cubeGenerator = new CubeGenerator(cubeInfo, gameObject);

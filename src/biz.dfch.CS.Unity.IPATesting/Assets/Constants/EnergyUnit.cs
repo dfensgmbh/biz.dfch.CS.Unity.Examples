@@ -18,6 +18,7 @@ namespace Assets.Constants
 {
     public enum EnergyUnit
     {
+        None,
         KiloWatt
     }
 }

@@ -18,6 +18,7 @@ namespace Assets.Constants
 {
     public enum TemperatureUnit
     {
+        None,
         Celsius,
         Fahrenheit,
         Kelvin
