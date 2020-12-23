@@ -19,6 +19,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using Assets.Constants;
 using Assets.Factories.GameObjects;
+using Assets.Models;
 using Assets.Reader;
 using Assets.Scripts;
 using UnityEngine;
@@ -75,9 +76,8 @@ namespace Assets.Managers
             var csvReader = new CsvReader();
             var cubeInfos = csvReader.GetCubeInfos();
 
-            var cubeFactory = new CubeFactory(cubeInfos);
-            var cubes = cubeFactory.Create();
-
+            var cubeFactory = new CubeFactory();
+            var cubes = cubeFactory.CreateMany(cubeInfos);
 
             foreach (var cube in cubes)
             {

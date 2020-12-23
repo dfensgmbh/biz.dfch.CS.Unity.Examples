@@ -37,7 +37,6 @@ namespace Assets.Scripts
         // ReSharper disable once InconsistentNaming
         private const int YAxisResetHeight = -10;
 
-        private GameObjectFactory gameObjectFactory;
         private CollisionManager collisionManager;
         private Rigidbody playerCubeRigidbody;
         private float verticalInput;
@@ -98,8 +97,5 @@ namespace Assets.Scripts
 
             collisionManager.ManageCollision(collision);
         }
-
-
-
     }
 }

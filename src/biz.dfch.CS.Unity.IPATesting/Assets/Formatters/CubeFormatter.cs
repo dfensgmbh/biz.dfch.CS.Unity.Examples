@@ -203,7 +203,7 @@ namespace Assets.Formatters
             var fontSize = PropertyCalculator.CalculateFontSize(scaleValue);
 
             Debug.Log($"Calculated FontSize '{fontSize}'");
-
+            
             textMesh.anchor = TextAnchor.MiddleCenter;
             textMesh.characterSize = 0.03f;
             textMesh.fontSize = fontSize;

@@ -14,15 +14,10 @@
  * limitations under the License.
  */
 
-using System.Collections.Generic;
-using Assets.Models;
-using UnityEngine;
-
-namespace Assets.Factories.GameObjects
+namespace Assets.Models
 {
-    public abstract class GameObjectFactory<T> where T : IGameObjectInfo
+    public interface IGameObjectInfo
     {
-        public abstract List<GameObject> CreateMany(List<T> gameObjectInfos);
-        public abstract GameObject Create(T gameInfo);
+        // Empty Interface
     }
 }

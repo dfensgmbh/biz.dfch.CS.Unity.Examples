@@ -21,20 +21,12 @@ using UnityEngine;
 
 namespace Assets.Factories.GameObjects
 {
-    public class CubeFactory : GameObjectFactory
+    public class CubeFactory : GameObjectFactory<CubeInfo>
     {
-        private readonly Vector3 cubeStartPosition = new Vector3(-4, 1, 0);
-        private readonly List<CubeInfo> cubeInfos;
-        private List<GameObject> gameObjects;
-
-        public CubeFactory(List<CubeInfo> cubeInfos)
+        public override List<GameObject> CreateMany(List<CubeInfo> cubeInfos)
         {
-            this.cubeInfos = cubeInfos;
-        }
-
-        public override List<GameObject> Create()
-        {
-            gameObjects = new List<GameObject>();
+            var gameObjects = new List<GameObject>();
+            var cubeStartPosition = new Vector3(-4, 1, 0);
 
             var cubePosition = cubeStartPosition;
 
@@ -56,6 +48,20 @@ namespace Assets.Factories.GameObjects
             }
 
             return gameObjects;
+        }
+
+        public override GameObject Create(CubeInfo cubeInfo)
+        {
+            var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
+
+            cubeBehaviour.TemperatureUnit = cubeInfo.TemperatureUnit;
+            cubeBehaviour.Temperature = cubeInfo.Temperature;
+            cubeBehaviour.EnergyUnit = cubeInfo.EnergyUnit;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = cubeInfo.SolarPanelSizeInSquareMeter;
+            cubeBehaviour.EnergyPerMonth = cubeInfo.EnergyPerMonth;
+
+            return cube;
         }
     }
 }

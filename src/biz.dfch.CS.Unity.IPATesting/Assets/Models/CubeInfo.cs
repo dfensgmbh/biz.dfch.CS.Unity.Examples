@@ -20,7 +20,7 @@ using Assets.Converters;
 
 namespace Assets.Models
 {
-    public class CubeInfo
+    public class CubeInfo : IGameObjectInfo
     {
         private readonly TemperatureConverter temperatureConverter;
 
