@@ -27,13 +27,11 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 {
     public class CubeBehaviorWorksTest : MonoBehaviour, IMonoBehaviourTest
     {
-        // ReSharper disable once InconsistentNaming
-        private const string MainColorName = "_Color";
-
         private int frameCount;
         private CubeBehaviour cubeBehaviour;
-
+        private GameObject cube;
         private readonly Vector3 baseBoxColliderSize = new Vector3(1, 1, 1);
+        public bool IsTestFinished => frameCount > cubeTestInfo.TestCaseWithExpectedCubeProperties.Count - 1;
 
         private readonly Vector3[] baseVerticesForCube = 
         {
@@ -63,85 +61,86 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             new Vector3(0.5f, -0.5f, 0.5f)
         };
 
-        private readonly List<CubeBehaviourTestInfo> testCases = new List<CubeBehaviourTestInfo>
+        private readonly CubeTestInfo cubeTestInfo = new CubeTestInfo
         {
-            new CubeBehaviourTestInfo
+            TestCaseWithExpectedCubeProperties = new Dictionary<CubeInfo, ExpectedCubeProperty>
             {
-                TestData = new CubeInfo(20d, TemperatureUnit.Celsius, 75d, EnergyUnit.KiloWatt, 8),
-                ExpectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f),
-                ExpectedVertices = new []
                 {
-                    new Vector3(0.0625f, -0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, 0.0625f),
-                    new Vector3(0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(0.0625f, -0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(-0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(-0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(0.0625f, -0.0625f, -0.0625f),
-                    new Vector3(0.0625f, 0.0625f, -0.0625f),
-                    new Vector3(0.0625f, 0.0625f, 0.0625f),
-                    new Vector3(0.0625f, -0.0625f, 0.0625f)
+                    new CubeInfo(20d, TemperatureUnit.Celsius, 75d, EnergyUnit.KiloWatt, 8),
+                    new ExpectedCubeProperty
+                    {
+                        ExpectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f),
+                        ExpectedVertices = new []
+                        {
+                            new Vector3(0.0625f, -0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, 0.0625f),
+                            new Vector3(0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(0.0625f, -0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(-0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(-0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(0.0625f, -0.0625f, -0.0625f),
+                            new Vector3(0.0625f, 0.0625f, -0.0625f),
+                            new Vector3(0.0625f, 0.0625f, 0.0625f),
+                            new Vector3(0.0625f, -0.0625f, 0.0625f)
+                        },
+                        ExpectedText = "Temperature: 20 °C\nEnergy: 75 kWh",
+                        ExpectedFontSize = 45,
+                        ExpectedBoxColliderSize = new Vector3(0.125f, 0.125f, 0.125f)
+                    }
                 },
-                ExpectedText = "Temperature: 20 °C\nEnergy: 75 kWh",
-                ExpectedFontSize = 45, 
-                ExpectedBoxColliderSize = new Vector3(0.125f, 0.125f, 0.125f)
-            },
-            new CubeBehaviourTestInfo
-            {
-                TestData = new CubeInfo(330d, TemperatureUnit.Kelvin, 75, EnergyUnit.KiloWatt, 0.5),
-                ExpectedColor = new Color(1, 0, 0, 1),
-                ExpectedVertices = new []
                 {
-                    new Vector3(1f, -1f, 1f),
-                    new Vector3(-1f, -1f, 1f),
-                    new Vector3(1f, 1f, 1f),
-                    new Vector3(-1f, 1f, 1f),
-                    new Vector3(1f, 1f, -1f),
-                    new Vector3(-1f, 1f, -1f),
-                    new Vector3(1f, -1f, -1f),
-                    new Vector3(-1f, -1f, -1f),
-                    new Vector3(1f, 1f, 1f),
-                    new Vector3(-1f, 1f, 1f),
-                    new Vector3(1f, 1f, -1f),
-                    new Vector3(-1f, 1f, -1f),
-                    new Vector3(1f, -1f, -1f),
-                    new Vector3(1f, -1f, 1f),
-                    new Vector3(-1f, -1f, 1f),
-                    new Vector3(-1f, -1f, -1f),
-                    new Vector3(-1f, -1f, 1f),
-                    new Vector3(-1f, 1f, 1f),
-                    new Vector3(-1f, 1f, -1f),
-                    new Vector3(-1f, -1f, -1f),
-                    new Vector3(1f, -1f, -1f),
-                    new Vector3(1f, 1f, -1f),
-                    new Vector3(1f, 1f, 1f),
-                    new Vector3(1f, -1f, 1f)
-                },
-                ExpectedText = "Temperature: 330 K\nEnergy: 75 kWh",
-                ExpectedFontSize = 125,
-                ExpectedBoxColliderSize = new Vector3(2, 2 , 2)
+                    new CubeInfo(330d, TemperatureUnit.Kelvin, 75, EnergyUnit.KiloWatt, 0.5),
+                    new ExpectedCubeProperty
+                    {
+                        ExpectedColor = new Color(1, 0, 0, 1),
+                        ExpectedVertices = new []
+                        {
+                            new Vector3(1f, -1f, 1f),
+                            new Vector3(-1f, -1f, 1f),
+                            new Vector3(1f, 1f, 1f),
+                            new Vector3(-1f, 1f, 1f),
+                            new Vector3(1f, 1f, -1f),
+                            new Vector3(-1f, 1f, -1f),
+                            new Vector3(1f, -1f, -1f),
+                            new Vector3(-1f, -1f, -1f),
+                            new Vector3(1f, 1f, 1f),
+                            new Vector3(-1f, 1f, 1f),
+                            new Vector3(1f, 1f, -1f),
+                            new Vector3(-1f, 1f, -1f),
+                            new Vector3(1f, -1f, -1f),
+                            new Vector3(1f, -1f, 1f),
+                            new Vector3(-1f, -1f, 1f),
+                            new Vector3(-1f, -1f, -1f),
+                            new Vector3(-1f, -1f, 1f),
+                            new Vector3(-1f, 1f, 1f),
+                            new Vector3(-1f, 1f, -1f),
+                            new Vector3(-1f, -1f, -1f),
+                            new Vector3(1f, -1f, -1f),
+                            new Vector3(1f, 1f, -1f),
+                            new Vector3(1f, 1f, 1f),
+                            new Vector3(1f, -1f, 1f)
+                        },
+                        ExpectedText = "Temperature: 330 K\nEnergy: 75 kWh",
+                        ExpectedFontSize = 125,
+                        ExpectedBoxColliderSize = new Vector3(2, 2 , 2)
+                    }
+                }
             }
         };
-
-        private GameObject cube;
-        private Renderer cubeRenderer;
-        private MeshFilter meshFilter;
-        private BoxCollider boxCollider;
-        private TextMesh textMesh;
 
         private void Awake()
         {
@@ -149,88 +148,31 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             cubeBehaviour = cube.AddComponent<CubeBehaviour>();
 
-            cubeBehaviour.TemperatureUnit = testCases.First().TestData.TemperatureUnit;
-            cubeBehaviour.Temperature = testCases.First().TestData.Temperature;
-            cubeBehaviour.EnergyPerMonth = testCases.First().TestData.EnergyPerMonth;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = testCases.First().TestData.SolarPanelSizeInSquareMeter;
-            cubeBehaviour.EnergyUnit = testCases.First().TestData.EnergyUnit;
+            cubeBehaviour.TemperatureUnit = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().TemperatureUnit;
+            cubeBehaviour.Temperature = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().Temperature;
+            cubeBehaviour.EnergyPerMonth = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().EnergyPerMonth;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().SolarPanelSizeInSquareMeter;
+            cubeBehaviour.EnergyUnit = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().EnergyUnit;
 
-            Debug.Log($"TestCases Count: {testCases.Count}");
+            Debug.Log($"TestCases Count: {cubeTestInfo.TestCaseWithExpectedCubeProperties.Count}");
         }
 
         private void Update()
         {
             Debug.Log($"Frame Count: {frameCount}");
 
-            var testCase = testCases[frameCount];
+            var testCase = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.ToList()[frameCount];
+            var expectedValues = cubeTestInfo.TestCaseWithExpectedCubeProperties.Values.ToList()[frameCount];
 
-            Debug.Log($"Temperature: {testCase.TestData.Temperature}");
-            Debug.Log($"TemperatureUnit: {testCase.TestData.TemperatureUnit}");
-            Debug.Log($"EnergyPerMonth: {testCase.TestData.EnergyPerMonth}");
-            Debug.Log($"EnergyUnit: {testCase.TestData.EnergyUnit}");
-            Debug.Log($"SolarPanelSizeInSquareMeter: {testCase.TestData.SolarPanelSizeInSquareMeter}");
+            Debug.Log($"Temperature: {testCase.Temperature}");
+            Debug.Log($"TemperatureUnit: {testCase.TemperatureUnit}");
+            Debug.Log($"EnergyPerMonth: {testCase.EnergyPerMonth}");
+            Debug.Log($"EnergyUnit: {testCase.EnergyUnit}");
+            Debug.Log($"SolarPanelSizeInSquareMeter: {testCase.SolarPanelSizeInSquareMeter}");
 
-            cubeRenderer = cube.GetComponent<Renderer>();
-            meshFilter = cube.GetComponent<MeshFilter>();
-            boxCollider = cube.GetComponent<BoxCollider>();
-            textMesh = cube.GetComponentInChildren<TextMesh>();
+            var result = CubeTest.CubeHasExpectedProperties(cube, expectedValues);
 
-            // Color Tests
-
-            var expectedColor = testCase.ExpectedColor;
-            var resultColor = cubeRenderer.material.GetColor(MainColorName);
-
-            Debug.Log($"Expected Color: '{expectedColor}'");
-            Debug.Log($"Result Color: '{resultColor}'");
-
-            Assert.AreEqual(expectedColor, resultColor);
-
-            // Scale Tests
-            
-            var expectedVertices = testCase.ExpectedVertices;
-            var resultVertices = meshFilter.mesh.vertices;
-
-            for (int i = 0; i < expectedVertices.Length; i++)
-            {
-                var expectedVertex = expectedVertices[i];
-                var vertexToBeAsserted = resultVertices[i];
-
-                Debug.Log($"Expected vertex: '{expectedVertex}'");
-                Debug.Log($"Vertex to be asserted: '{vertexToBeAsserted}'");
-
-                Assert.IsNotNull(expectedVertex);
-                Assert.IsNotNull(vertexToBeAsserted);
-
-                Assert.AreEqual(expectedVertex, vertexToBeAsserted);
-            }
-
-            // BoxCollider Size Tests
-
-            var expectedBoxColliderSize = testCase.ExpectedBoxColliderSize;
-            var resultBoxColliderSize = boxCollider.size;
-
-            Assert.AreEqual(expectedBoxColliderSize, resultBoxColliderSize);
-
-            // Text Tests
-
-            Debug.Log("Children Count: " + cube.GetComponentsInChildren<Component>().Length);
-            
-            var expectedText = testCase.ExpectedText;
-            var resultText = textMesh.text;
-
-            Debug.Log($"Expected text: '{expectedText}'");
-            Debug.Log($"Result text: '{resultText}'");
-
-            var expectedFontSize = testCase.ExpectedFontSize;
-            var resultFontSize = textMesh.fontSize;
-
-            Debug.Log($"Expected font size: '{expectedFontSize}'");
-            Debug.Log($"Result font size: '{resultFontSize}'");
-
-            Assert.AreEqual(expectedText, resultText);
-            Assert.AreEqual(expectedFontSize, resultFontSize);
-
-            Debug.Log("Test Finished - Loading next Case...");
+            Assert.IsTrue(result);
 
             frameCount++;
 
@@ -239,27 +181,26 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             LoadNextTestCase();
         }
 
-        public bool IsTestFinished => frameCount > testCases.Count - 1;
-
         private void LoadNextTestCase()
         {
-            if (frameCount > testCases.Count - 1) return;
-
-            var testCase = testCases[frameCount];
+            var testCase = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.ToList()[frameCount];
 
             cubeBehaviour = cube.AddComponent<CubeBehaviour>();
             
-            cubeBehaviour.TemperatureUnit = testCase.TestData.TemperatureUnit;
-            cubeBehaviour.Temperature = testCase.TestData.Temperature;
-            cubeBehaviour.EnergyPerMonth = testCase.TestData.EnergyPerMonth;
-            cubeBehaviour.EnergyUnit = testCase.TestData.EnergyUnit;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = testCase.TestData.SolarPanelSizeInSquareMeter;
+            cubeBehaviour.TemperatureUnit = testCase.TemperatureUnit;
+            cubeBehaviour.Temperature = testCase.Temperature;
+            cubeBehaviour.EnergyPerMonth = testCase.EnergyPerMonth;
+            cubeBehaviour.EnergyUnit = testCase.EnergyUnit;
+            cubeBehaviour.SolarPanelSizeInSquareMeter = testCase.SolarPanelSizeInSquareMeter;
 
             Debug.Log("TestCase loaded");
         }
 
         private void ResetCubeSize()
         {
+            var meshFilter = cube.GetComponent<MeshFilter>();
+            var boxCollider = cube.GetComponent<BoxCollider>();
+
             meshFilter.mesh.vertices = baseVerticesForCube;
             meshFilter.mesh.RecalculateBounds();
 
@@ -271,21 +212,12 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         private void DestroyComponents()
         {
             Destroy(cubeBehaviour);
+            DestroyImmediate(cube.GetComponent<Rigidbody>());
             
             var childGameObject = cube.transform.GetChild(0).gameObject;
             DestroyImmediate(childGameObject);
         
             Debug.Log("Destroying CubeBehaviour component and child GameObject completed");
-        }
-
-        private class CubeBehaviourTestInfo
-        {
-            public CubeInfo TestData { get; set; }
-            public Color ExpectedColor { get; set; }
-            public Vector3[] ExpectedVertices { get; set; }
-            public string ExpectedText { get; set; }
-            public int ExpectedFontSize { get; set; }
-            public Vector3 ExpectedBoxColliderSize { get; set; }
         }
     }
 

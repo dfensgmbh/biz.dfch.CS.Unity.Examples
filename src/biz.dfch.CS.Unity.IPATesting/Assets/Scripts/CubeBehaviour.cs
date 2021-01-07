@@ -27,7 +27,7 @@ namespace Assets.Scripts
         // ReSharper disable once InconsistentNaming
         private const string TextMeshChildGameObjectName = "TextMesh Child";
 
-        private CubeGenerator cubeGenerator;
+        private CubeFormatter cubeFormatter;
         private CubeInfo cubeInfo;
         private GameObject childGameObject;
 
@@ -51,8 +51,8 @@ namespace Assets.Scripts
 
             cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
             
-            cubeGenerator = new CubeGenerator(cubeInfo, gameObject);
-            cubeGenerator.Format();
+            cubeFormatter = new CubeFormatter(cubeInfo, gameObject);
+            cubeFormatter.Format();
 
             gameObject.tag = GameObjectTag.Cube;
         }

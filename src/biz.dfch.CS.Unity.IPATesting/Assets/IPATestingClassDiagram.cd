@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assets.Constants.CalculationValue" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAAAAAAhAQAAACAAEICAAAAgAAAAACAQAQAACA=</HashCode>
+      <FileName>Assets\Constants\CalculationValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Constants.GameObjectTag" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAEAA=</HashCode>
+      <FileName>Assets\Constants\GameObjectTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Converters.TemperatureConverter" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAABCAAQ=</HashCode>
+      <FileName>Assets\Converters\TemperatureConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Factories.GameObjects.CubeFactory" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Factories\GameObjects\CubeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Factories.GameObjects.GameObjectFactory&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Factories\GameObjects\GameObjectFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Formatters.CubeFormatter" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEACAAAARAACACBAIAAIgAAAAAIAAAAIAAgAA=</HashCode>
+      <FileName>Assets\Formatters\CubeFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Formatters.GroundFormatter" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAABAAAAAAAAAAAAAAAgAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Formatters\GroundFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Managers.CollisionManager" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAAAAAQAAAAAAAAAAEAAAEAAAAAhAAAAAAAAA=</HashCode>
+      <FileName>Assets\Managers\CollisionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.CubeInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAIAAAAAAAAAAAAAAAAAAIAAAACAAAAAAQAAAAUAAA=</HashCode>
+      <FileName>Assets\Models\CubeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.192" Collapsed="true" />
+  </Class>
+  <Class Name="Assets.PropertyCalculator" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAIAAAAAAAAQAQQAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\PropertyCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Reader.CsvReader" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Reader\CsvReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.CameraBehaviour" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAABAAAAIAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.CubeBehaviour" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>DAEIAAAAACAAAAAAACAAAAAAAAACAAAAAAAAAAAUAAQ=</HashCode>
+      <FileName>Assets\Scripts\CubeBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.GroundBehaviour" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\GroundBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Scripts.PlayerBehaviour" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQBAAAAAiBAgBAAAAAAAAJAAAgAAIAIgAAAAABAAAg=</HashCode>
+      <FileName>Assets\Scripts\PlayerBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Assets.Models.IGameObjectInfo">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\IGameObjectInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Assets.Constants.EnergyUnit" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Constants\EnergyUnit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assets.Constants.TemperatureUnit" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAACAAAAIAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Constants\TemperatureUnit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

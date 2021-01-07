@@ -25,9 +25,8 @@ namespace Assets.Scripts
 {
     public class GroundBehaviour : MonoBehaviour
     {
-        private GroundGenerator groundGenerator;
+        private GroundFormatter groundFormatter;
         private List<GameObject> cubesOnScene;
-
         public Scene ActiveScene { get; set; }
         
         void Start()
@@ -36,8 +35,8 @@ namespace Assets.Scripts
             
             cubesOnScene = ActiveScene.GetRootGameObjects().Where(go => go.CompareTag(GameObjectTag.Cube)).ToList();
             
-            groundGenerator = new GroundGenerator(cubesOnScene, gameObject);
-            groundGenerator.Format();
+            groundFormatter = new GroundFormatter(cubesOnScene, gameObject);
+            groundFormatter.Format();
 
             gameObject.tag = GameObjectTag.Ground;
         }

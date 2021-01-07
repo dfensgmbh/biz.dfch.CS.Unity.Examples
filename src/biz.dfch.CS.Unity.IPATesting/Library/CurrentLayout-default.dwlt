@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Scene
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -34,23 +34,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 717
+    x: 718
     y: 0
     width: 630
-    height: 495
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 24}
+    height: 594
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 24}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 452
-    width: 1347
-    height: 495
+    y: 353
+    width: 1348
+    height: 594
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 17
+  controlID: 90
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,10 +97,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 15
+  controlID: 22
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1347
+    x: 1348
     y: 0
-    width: 573
+    width: 572
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -147,9 +147,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 390
-    height: 452
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 353
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -172,8 +172,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 717
-    height: 495
+    width: 718
+    height: 594
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -275,12 +275,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1347
+    width: 1348
     height: 947
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 89
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,12 +300,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1347
-    height: 452
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1348
+    height: 353
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 147
+  controlID: 126
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,8 +323,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 390
     y: 0
-    width: 957
-    height: 452
+    width: 958
+    height: 353
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
@@ -359,7 +359,6 @@ MonoBehaviour:
     width: 581
     height: 926
   m_ViewDataDictionary: {fileID: 0}
-  m_SplitPaneLeftWidth: 300
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -381,9 +380,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1536
-    y: 661
-    width: 599
-    height: 338
+    y: 525
+    width: 716
+    height: 474
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -391,10 +390,9 @@ MonoBehaviour:
     m_CachedPref: 1
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 14206
+  m_LastInspectedObjectInstanceID: 0
   m_LastVerticalScrollValue: 0
-  m_AssetGUID: 86fb0e42b67efa2469be2da7d8d56329
-  m_InstanceID: 0
+  m_GlobalObjectId: 
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -415,18 +413,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2251
-    y: 524
+    x: 2254
+    y: 426
     width: 628
-    height: 475
+    height: 573
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 606
+    ID: 632
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
-    - 225
-    - 180
+    - 279
+    - 224
     relativeSizes:
     - 0.55455804
     - 0.44544196
@@ -436,7 +434,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 405
+    lastTotalSize: 503
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -453,7 +451,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.6513368
+      duration: 0.2848514
       messages: 
       output: 
       stacktrace: 
@@ -469,7 +467,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
       resultStatus: 1
-      duration: 0.5568063
+      duration: 0.2417568
       messages: 
       output: 
       stacktrace: 
@@ -485,7 +483,7 @@ MonoBehaviour:
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.4973152
+      duration: 0.2253802
       messages: 
       output: 
       stacktrace: 
@@ -501,7 +499,7 @@ MonoBehaviour:
       name: PlayModeTests
       fullName: Assets.PlayModeTests
       resultStatus: 1
-      duration: 0.4697796
+      duration: 0.2124653
       messages: 
       output: 
       stacktrace: 
@@ -512,12 +510,304 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: PlayModeTests.dll/[Assets][suite]
+    - id: 1077
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Factories][suite]
+      name: Factories
+      fullName: Assets.PlayModeTests.Factories
+      resultStatus: 1
+      duration: 0.1984946
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: PlayModeTests.dll/Assets/[PlayModeTests][suite]
+    - id: 1071
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Factories/[PlayModeTests][Assets.PlayModeTests.Factories.CubeFactoryTest][suite]
+      name: CubeFactoryTest
+      fullName: Assets.PlayModeTests.Factories.CubeFactoryTest
+      resultStatus: 1
+      duration: 0.1811074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Factories][suite]
+    - id: 1005
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Factories/CubeFactoryTest/[PlayModeTests][Assets.PlayModeTests.Factories.CubeFactoryTest.CubeFactoryCreatesManyCubesSuccessfully]
+      name: CubeFactoryCreatesManyCubesSuccessfully
+      fullName: Assets.PlayModeTests.Factories.CubeFactoryTest.CubeFactoryCreatesManyCubesSuccessfully
+      resultStatus: 1
+      duration: 0.0897279
+      messages: 
+      output: "RigidbodyConstraints are: 122\r\nSTART Mapping temperature ('20 \xB0C')
+        to color\r\nSTART Converting temperature ('20 \xB0C') to Kelvin...\r\nEND
+        Converting temperature '293.15 K\r\nCreating color with R '0.7476028' G '0'
+        and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART
+        Mapping energy ('75') to scale value\r\nCalculating energy per one square
+        meter. Size of solar panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd
+        Mapping Energy to scale value ('0.125')\r\nSTART Recalculating bounds for
+        Cube with scale value '0.125'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '0.125'\r\nResult Vector3 for BoxCollider
+        size: '(0.1, 0.1, 0.1)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '0.125'\r\nCalculated FontSize '45'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '45'\r\nRigidbodyConstraints
+        are: 122\r\nSTART Mapping temperature ('330 K') to color\r\nCreating color
+        with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000,
+        1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating energy
+        per one square meter. Size of solar panel is '0.5' \r\nEnergy per one square
+        meter is: '150'\r\nEnd Mapping Energy to scale value ('2')\r\nSTART Recalculating
+        bounds for Cube with scale value '2'\r\nCurrent vertex that gets calculated
+        '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '2'\r\nResult Vector3 for BoxCollider size:
+        '(2.0, 2.0, 2.0)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '2'\r\nCalculated FontSize '125'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '125'\r\nExpected
+        Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748, 0.000,
+        0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted:
+        '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be
+        asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20
+        \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest
+        Finished\r\nExpected Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult
+        Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0,
+        1.0)'\r\nVertex to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0,
+        -1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex:
+        '(1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(-1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, -1.0, 1.0)'\r\nVertex to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, -1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(-1.0, -1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(-1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(-1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, -1.0, -1.0)'\r\nVertex to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, 1.0, -1.0)'\r\nVertex to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected
+        vertex: '(1.0, 1.0, 1.0)'\r\nVertex to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected
+        vertex: '(1.0, -1.0, 1.0)'\r\nVertex to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren
+        Count: 9\r\nExpected text: 'Temperature: 330 K\nEnergy: 75 kWh'\r\nResult
+        text: 'Temperature: 330 K\nEnergy: 75 kWh'\r\nExpected font size: '125'\r\nResult
+        font size: '125'\r\nTest Finished\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Factories/[PlayModeTests][Assets.PlayModeTests.Factories.CubeFactoryTest][suite]
+    - id: 1072
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Factories/CubeFactoryTest/[PlayModeTests][Assets.PlayModeTests.Factories.CubeFactoryTest.CubeFactoryCreatesOneCubeSuccessfully]
+      name: CubeFactoryCreatesOneCubeSuccessfully
+      fullName: Assets.PlayModeTests.Factories.CubeFactoryTest.CubeFactoryCreatesOneCubeSuccessfully
+      resultStatus: 1
+      duration: 0.0519179
+      messages: 
+      output: "RigidbodyConstraints are: 122\r\nSTART Mapping temperature ('20 \xB0C')
+        to color\r\nSTART Converting temperature ('20 \xB0C') to Kelvin...\r\nEND
+        Converting temperature '293.15 K\r\nCreating color with R '0.7476028' G '0'
+        and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART
+        Mapping energy ('75') to scale value\r\nCalculating energy per one square
+        meter. Size of solar panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd
+        Mapping Energy to scale value ('0.125')\r\nSTART Recalculating bounds for
+        Cube with scale value '0.125'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '0.125'\r\nResult Vector3 for BoxCollider
+        size: '(0.1, 0.1, 0.1)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '0.125'\r\nCalculated FontSize '45'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '45'\r\nExpected
+        Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748, 0.000,
+        0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted:
+        '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be
+        asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20
+        \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest
+        Finished\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Factories/[PlayModeTests][Assets.PlayModeTests.Factories.CubeFactoryTest][suite]
     - id: 1135
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Scripts][suite]
       name: Scripts
       fullName: Assets.PlayModeTests.Scripts
       resultStatus: 1
-      duration: 0.4403827
+      duration: 0.0899141
       messages: 
       output: 
       stacktrace: 
@@ -533,7 +823,7 @@ MonoBehaviour:
       name: CubeBehaviourTest
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest
       resultStatus: 1
-      duration: 0.4131428
+      duration: 0.080784
       messages: 
       output: 
       stacktrace: 
@@ -549,134 +839,135 @@ MonoBehaviour:
       name: CubeBehaviourRunsOnCubeAndReturnsExpectedValues
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues
       resultStatus: 1
-      duration: 0.3037035
+      duration: 0.070414
       messages: 
-      output: "TestCases Count: 2\r\nSTART Mapping temperature ('20 \xB0C') to color\r\nSTART
-        Converting temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature
-        '293.15 K\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND
-        Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy
-        ('75') to scale value\r\nCalculating energy per one square meter. Size of
-        solar panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd Mapping
-        Energy to scale value ('0.125')\r\nSTART Recalculating bounds for Cube with
-        scale value '0.125'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+      output: "TestCases Count: 2\r\nRigidbodyConstraints are: 122\r\nSTART Mapping
+        temperature ('20 \xB0C') to color\r\nSTART Converting temperature ('20 \xB0C')
+        to Kelvin...\r\nEND Converting temperature '293.15 K\r\nCreating color with
+        R '0.7476028' G '0' and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748, 0.000,
+        0.252, 1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating
+        energy per one square meter. Size of solar panel is '8' \r\nEnergy per one
+        square meter is: '9.375'\r\nEnd Mapping Energy to scale value ('0.125')\r\nSTART
+        Recalculating bounds for Cube with scale value '0.125'\r\nCurrent vertex
+        that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
+        '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
         vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
         calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
-        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
-        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
+        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
         calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
-        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
         vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
-        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
-        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
-        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
-        -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating BoxCollider
-        size with scale value '0.125'\r\nResult Vector3 for BoxCollider size: '(0.1,
-        0.1, 0.1)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying information
-        on cube with scale value '0.125'\r\nCalculated FontSize '45'\r\nEND TextMesh:\nAnchor:
-        'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '45'\r\nFrame Count:
-        0\r\nTemperature: 20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit:
-        KiloWatt\r\nSolarPanelSizeInSquareMeter: 8\r\nExpected Color: 'RGBA(0.748,
-        0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nExpected
-        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(-0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(-0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, -0.1, -0.1)'\r\nVertex to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, -0.1)'\r\nVertex to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected
-        vertex: '(0.1, 0.1, 0.1)'\r\nVertex to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected
-        vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren
-        Count: 8\r\nExpected text: 'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult
-        text: 'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult
-        font size: '45'\r\nTest Finished - Loading next Case...\r\nResetting Cube
-        size completed\r\nDestroying CubeBehaviour component and child GameObject
-        completed\r\nTestCase loaded\r\nSTART Mapping temperature ('330 K') to color\r\nCreating
-        color with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000,
-        0.000, 1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating
-        energy per one square meter. Size of solar panel is '0.5' \r\nEnergy per
-        one square meter is: '150'\r\nEnd Mapping Energy to scale value ('2')\r\nSTART
-        Recalculating bounds for Cube with scale value '2'\r\nCurrent vertex that
-        gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
-        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0,
-        -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
-        vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets
-        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-        1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
-        vertex that got calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-        -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
-        vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0,
-        1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-        vertex that got calculated '(1.0, -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART
-        Recalculating BoxCollider size with scale value '2'\r\nResult Vector3 for
-        BoxCollider size: '(2.0, 2.0, 2.0)'\r\nEND Recalculating BoxCollider size'\r\nSTART
-        Displaying information on cube with scale value '2'\r\nCalculated FontSize
-        '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont
-        Size: '125'\r\nFrame Count: 1\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.1, -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART
+        Recalculating BoxCollider size with scale value '0.125'\r\nResult Vector3
+        for BoxCollider size: '(0.1, 0.1, 0.1)'\r\nEND Recalculating BoxCollider
+        size'\r\nSTART Displaying information on cube with scale value '0.125'\r\nCalculated
+        FontSize '45'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size:
+        '0.03' \nFont Size: '45'\r\nFrame Count: 0\r\nTemperature: 20\r\nTemperatureUnit:
+        Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
+        8\r\nExpected Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color:
+        'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20
+        \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest
+        Finished\r\nResetting Cube size completed\r\nDestroying CubeBehaviour component
+        and child GameObject completed\r\nTestCase loaded\r\nRigidbodyConstraints
+        are: 122\r\nSTART Mapping temperature ('330 K') to color\r\nCreating color
+        with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000,
+        1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating energy
+        per one square meter. Size of solar panel is '0.5' \r\nEnergy per one square
+        meter is: '150'\r\nEnd Mapping Energy to scale value ('2')\r\nSTART Recalculating
+        bounds for Cube with scale value '2'\r\nCurrent vertex that gets calculated
+        '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '2'\r\nResult Vector3 for BoxCollider size:
+        '(2.0, 2.0, 2.0)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '2'\r\nCalculated FontSize '125'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame
+        Count: 1\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
         75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter: 0.5\r\nExpected
         Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult Color: 'RGBA(1.000, 0.000,
         0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex to be asserted:
@@ -703,11 +994,11 @@ MonoBehaviour:
         to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
         to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
         to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
-        to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 8\r\nExpected text:
+        to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 9\r\nExpected text:
         'Temperature: 330 K\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 330 K\nEnergy:
-        75 kWh'\r\nExpected font size: '125'\r\nResult font size: '125'\r\nTest Finished
-        - Loading next Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour
-        component and child GameObject completed\r\n"
+        75 kWh'\r\nExpected font size: '125'\r\nResult font size: '125'\r\nTest Finished\r\nResetting
+        Cube size completed\r\nDestroying CubeBehaviour component and child GameObject
+        completed\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -717,165 +1008,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1130
       parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
-    m_ResultText: "CubeBehaviourRunsOnCubeAndReturnsExpectedValues (0.304s)\n---\nTestCases
-      Count: 2\r\nSTART Mapping temperature ('20 \xB0C') to color\r\nSTART Converting
-      temperature ('20 \xB0C') to Kelvin...\r\nEND Converting temperature '293.15
-      K\r\nCreating color with R '0.7476028' G '0' and B '0.2523972'\r\nEND Result
-      Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART Mapping energy ('75') to
-      scale value\r\nCalculating energy per one square meter. Size of solar panel
-      is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd Mapping Energy to
-      scale value ('0.125')\r\nSTART Recalculating bounds for Cube with scale value
-      '0.125'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated
-      '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
-      vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated
-      '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
-      vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
-      '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
-      vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
-      '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-      vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
-      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-      -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-      vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
-      '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent
-      vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
-      '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-      vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
-      calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
-      -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated
-      '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
-      vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
-      calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
-      -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
-      vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated
-      '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-      vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
-      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
-      -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-      vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
-      calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1,
-      -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
-      that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated
-      '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, 0.1)'\r\nEND
-      Recalculating cube bounds\r\nSTART Recalculating BoxCollider size with scale
-      value '0.125'\r\nResult Vector3 for BoxCollider size: '(0.1, 0.1, 0.1)'\r\nEND
-      Recalculating BoxCollider size'\r\nSTART Displaying information on cube with
-      scale value '0.125'\r\nCalculated FontSize '45'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
-      \nCharacter Size: '0.03' \nFont Size: '45'\r\nFrame Count: 0\r\nTemperature:
-      20\r\nTemperatureUnit: Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
-      8\r\nExpected Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748,
-      0.000, 0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be
-      asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
-      to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
-      to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
-      to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 8\r\nExpected text: 'Temperature:
-      20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20 \xB0C\nEnergy: 75
-      kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest Finished
-      - Loading next Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour
-      component and child GameObject completed\r\nTestCase loaded\r\nSTART Mapping
-      temperature ('330 K') to color\r\nCreating color with R '1' G '0' and B '0'\r\nEND
-      Result Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nSTART Mapping energy ('75')
-      to scale value\r\nCalculating energy per one square meter. Size of solar panel
-      is '0.5' \r\nEnergy per one square meter is: '150'\r\nEnd Mapping Energy to
-      scale value ('2')\r\nSTART Recalculating bounds for Cube with scale value '2'\r\nCurrent
-      vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
-      '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets
-      calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0,
-      1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex
-      that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
-      '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
-      vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
-      '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-      vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult
-      vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
-      '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, 1.0, 1.0)'\r\nCurrent
-      vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated
-      '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-      vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-      calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0,
-      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
-      vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated
-      '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
-      vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
-      calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
-      -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
-      vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got calculated
-      '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
-      vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets
-      calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0,
-      -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, -0.5)'\r\nResult
-      vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent vertex that gets
-      calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0,
-      -1.0)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, 0.5)'\r\nResult vertex
-      that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated
-      '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nEND
-      Recalculating cube bounds\r\nSTART Recalculating BoxCollider size with scale
-      value '2'\r\nResult Vector3 for BoxCollider size: '(2.0, 2.0, 2.0)'\r\nEND
-      Recalculating BoxCollider size'\r\nSTART Displaying information on cube with
-      scale value '2'\r\nCalculated FontSize '125'\r\nEND TextMesh:\nAnchor: 'MiddleCenter'
-      \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame Count: 1\r\nTemperature:
-      330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
-      0.5\r\nExpected Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult Color:
-      'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
-      to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 8\r\nExpected text: 'Temperature:
-      330 K\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 330 K\nEnergy: 75 kWh'\r\nExpected
-      font size: '125'\r\nResult font size: '125'\r\nTest Finished - Loading next
-      Case...\r\nResetting Cube size completed\r\nDestroying CubeBehaviour component
-      and child GameObject completed"
+    m_ResultText: CubeFactoryTest (0.181s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9f99b6bc
-      m_LastClickedID: -1128883809
-      m_ExpandedIDs: 91238485517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600a21cc53dc272103effffff7f
+      m_SelectedIDs: d353eb75
+      m_LastClickedID: 1978356691
+      m_ExpandedIDs: 91238485517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600a21cc53dc272103e8b05f765d353eb75ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -910,7 +1049,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.0970579
+      duration: 0.0833693
       messages: 
       output: 
       stacktrace: 
@@ -926,7 +1065,7 @@ MonoBehaviour:
       name: EditModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 1
-      duration: 0.0579066
+      duration: 0.043292
       messages: 
       output: 
       stacktrace: 
@@ -942,7 +1081,7 @@ MonoBehaviour:
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.0558208
+      duration: 0.0417774
       messages: 
       output: 
       stacktrace: 
@@ -958,7 +1097,7 @@ MonoBehaviour:
       name: EditModeTests
       fullName: Assets.EditModeTests
       resultStatus: 1
-      duration: 0.0542816
+      duration: 0.0413174
       messages: 
       output: 
       stacktrace: 
@@ -974,7 +1113,7 @@ MonoBehaviour:
       name: Converters
       fullName: Assets.EditModeTests.Converters
       resultStatus: 1
-      duration: 0.0566398
+      duration: 0.0601899
       messages: 
       output: 
       stacktrace: 
@@ -990,7 +1129,7 @@ MonoBehaviour:
       name: TemperatureConverterTest
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest
       resultStatus: 1
-      duration: 0.04921
+      duration: 0.0523788
       messages: 
       output: 
       stacktrace: 
@@ -1006,7 +1145,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0298025
+      duration: 0.0334502
       messages: 
       output: 
       stacktrace: 
@@ -1022,7 +1161,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       resultStatus: 1
-      duration: 0.0146375
+      duration: 0.015562
       messages: 
       output: 
       stacktrace: 
@@ -1039,7 +1178,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       resultStatus: 1
-      duration: 0.0002922
+      duration: 0.0002824
       messages: 
       output: 
       stacktrace: 
@@ -1056,7 +1195,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.005924
+      duration: 0.0057233
       messages: 
       output: 
       stacktrace: 
@@ -1072,7 +1211,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       resultStatus: 1
-      duration: 0.0005088
+      duration: 0.0003966
       messages: 
       output: 
       stacktrace: 
@@ -1089,7 +1228,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       resultStatus: 1
-      duration: 0.0001014
+      duration: 0.0001079
       messages: 
       output: 
       stacktrace: 
@@ -1106,7 +1245,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0051195
+      duration: 0.0051943
       messages: 
       output: 
       stacktrace: 
@@ -1122,7 +1261,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       resultStatus: 1
-      duration: 0.0005199
+      duration: 0.000735
       messages: 
       output: 
       stacktrace: 
@@ -1139,7 +1278,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       resultStatus: 1
-      duration: 0.0001131
+      duration: 0.0001244
       messages: 
       output: 
       stacktrace: 
@@ -1155,9 +1294,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
       name: PropertyCalculatorTest
       fullName: Assets.EditModeTests.PropertyCalculatorTest
-      resultStatus: 1
-      duration: 0.046629
-      messages: 
+      resultStatus: 2
+      duration: 0.0956449
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1167,12 +1306,113 @@ MonoBehaviour:
       categories: []
       parentId: 1039
       parentUniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
+    - id: 1051
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage
+      resultStatus: 1
+      duration: 0.0042739
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1046
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
+      resultStatus: 1
+      duration: 0.0010941
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1047
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
+      resultStatus: 1
+      duration: 0.0001468
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1048
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
+      resultStatus: 1
+      duration: 0.0001018
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1049
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
+      resultStatus: 1
+      duration: 0.0000962
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1050
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
+      resultStatus: 1
+      duration: 0.0000968
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1051
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
     - id: 1013
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult][suite]
       name: CalculatingCubeScaleValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0027291
+      duration: 0.0050653
       messages: 
       output: 
       stacktrace: 
@@ -1188,7 +1428,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
       resultStatus: 1
-      duration: 0.0011036
+      duration: 0.000463
       messages: 
       output: 
       stacktrace: 
@@ -1205,7 +1445,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
       resultStatus: 1
-      duration: 0.0001164
+      duration: 0.0001133
       messages: 
       output: 
       stacktrace: 
@@ -1222,7 +1462,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.008795
+      duration: 0.0096575
       messages: 
       output: 
       stacktrace: 
@@ -1238,7 +1478,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
       resultStatus: 1
-      duration: 0.0030605
+      duration: 0.0026143
       messages: 
       output: 
       stacktrace: 
@@ -1255,7 +1495,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
       resultStatus: 1
-      duration: 0.0001432
+      duration: 0.0001336
       messages: 
       output: 
       stacktrace: 
@@ -1272,7 +1512,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       resultStatus: 1
-      duration: 0.0001282
+      duration: 0.0001256
       messages: 
       output: 
       stacktrace: 
@@ -1289,7 +1529,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       resultStatus: 1
-      duration: 0.0001074
+      duration: 0.0001272
       messages: 
       output: 
       stacktrace: 
@@ -1306,7 +1546,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0379417
+      duration: 0.0081568
       messages: 
       output: 
       stacktrace: 
@@ -1322,7 +1562,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
       resultStatus: 1
-      duration: 0.0188846
+      duration: 0.0004668
       messages: 
       output: 
       stacktrace: 
@@ -1339,7 +1579,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
       resultStatus: 1
-      duration: 0.0003375
+      duration: 0.0001166
       messages: 
       output: 
       stacktrace: 
@@ -1356,7 +1596,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
       resultStatus: 1
-      duration: 0.0001288
+      duration: 0.0000988
       messages: 
       output: 
       stacktrace: 
@@ -1373,7 +1613,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
       resultStatus: 1
-      duration: 0.0001151
+      duration: 0.0000987
       messages: 
       output: 
       stacktrace: 
@@ -1385,12 +1625,113 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1039
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1039
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
+      resultStatus: 1
+      duration: 0.0001037
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1040
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
+      resultStatus: 1
+      duration: 0.0001025
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1041
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
+      resultStatus: 1
+      duration: 0.0000992
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1045
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
+      resultStatus: 1
+      duration: 0.0068028
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1043
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
+      resultStatus: 1
+      duration: 0.0005228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
+    - id: 1044
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
+      resultStatus: 1
+      duration: 0.0001212
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
     - id: 1005
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
       name: CalculatingFontSizeReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
       resultStatus: 2
-      duration: 0.0159135
+      duration: 0.0148534
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1406,7 +1747,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(2.0f,125)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)
       resultStatus: 1
-      duration: 0.0010827
+      duration: 0.0009587
       messages: 
       output: 
       stacktrace: 
@@ -1423,7 +1764,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(0.0f,40)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)
       resultStatus: 1
-      duration: 0.0001528
+      duration: 0.0001171
       messages: 
       output: 
       stacktrace: 
@@ -1440,7 +1781,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(1.0f,83)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)
       resultStatus: 2
-      duration: 0.0080756
+      duration: 0.0073165
       messages: "  Expected: 83\r\n  But was:  82\r\n"
       output: 
       stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
@@ -1460,7 +1801,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.0087292
+      duration: 0.0063729
       messages: 
       output: 
       stacktrace: 
@@ -1476,7 +1817,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
       resultStatus: 1
-      duration: 0.000678
+      duration: 0.0004055
       messages: 
       output: 
       stacktrace: 
@@ -1493,7 +1834,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
       resultStatus: 1
-      duration: 0.0001654
+      duration: 0.000115
       messages: 
       output: 
       stacktrace: 
@@ -1510,7 +1851,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       resultStatus: 1
-      duration: 0.0001594
+      duration: 0.0001121
       messages: 
       output: 
       stacktrace: 
@@ -1527,7 +1868,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       resultStatus: 1
-      duration: 0.0001129
+      duration: 0.000178
       messages: 
       output: 
       stacktrace: 
@@ -1539,12 +1880,151 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1010
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1059
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+      resultStatus: 2
+      duration: 0.0091329
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1052
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
+      resultStatus: 1
+      duration: 0.0004989
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1053
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
+      resultStatus: 1
+      duration: 0.0001348
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1054
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
+      resultStatus: 1
+      duration: 0.0001011
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1055
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
+      resultStatus: 1
+      duration: 0.0000954
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1056
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
+      resultStatus: 2
+      duration: 0.0006029
+      messages: "  Expected: 1.39999998f\r\n  But was:  1.4000001f\r\n"
+      output: 
+      stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+        (System.Int32 cubeCount, System.Single expectedXScaleValue) [0x00008] in
+        C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\PropertyCalculatorTest.cs:155
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1057
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
+      resultStatus: 1
+      duration: 0.0001071
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1058
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
+      resultStatus: 1
+      duration: 0.0000997
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
     - id: 1021
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult][suite]
       name: CalculatingRedColorValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0053659
+      duration: 0.0048801
       messages: 
       output: 
       stacktrace: 
@@ -1560,7 +2040,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
       resultStatus: 1
-      duration: 0.0004168
+      duration: 0.0003661
       messages: 
       output: 
       stacktrace: 
@@ -1577,7 +2057,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
       resultStatus: 1
-      duration: 0.0002173
+      duration: 0.0001188
       messages: 
       output: 
       stacktrace: 
@@ -1594,7 +2074,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.0078328
+      duration: 0.0076654
       messages: 
       output: 
       stacktrace: 
@@ -1610,7 +2090,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
       resultStatus: 1
-      duration: 0.0008484
+      duration: 0.0005096
       messages: 
       output: 
       stacktrace: 
@@ -1627,7 +2107,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
       resultStatus: 1
-      duration: 0.0001353
+      duration: 0.000161
       messages: 
       output: 
       stacktrace: 
@@ -1644,7 +2124,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
       resultStatus: 1
-      duration: 0.0001154
+      duration: 0.000107
       messages: 
       output: 
       stacktrace: 
@@ -1661,7 +2141,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
       resultStatus: 1
-      duration: 0.0000983
+      duration: 0.0001135
       messages: 
       output: 
       stacktrace: 
@@ -1673,18 +2153,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
-    m_ResultText: "CalculatingFontSizeReturnsExpectedResult(1.0f,83) (0.008s)\n---\nExpected:
-      83\r\n  But was:  82\n---\nat Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
-      (System.Single scaleValue, System.Int32 expectedFontSize) [0x00007] in C:\\src\\biz.dfch.CS.Unity.Examples\\src\\biz.dfch.CS.Unity.IPATesting\\Assets\\EditModeTests\\PropertyCalculatorTest.cs:34"
-    m_ResultStacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
-      (System.Single scaleValue, System.Int32 expectedFontSize) [0x00007] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\PropertyCalculatorTest.cs:34
-
-'
+    m_ResultText: CubeFactoryCreatesOneCube (0.013s)
+    m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 163}
-      m_SelectedIDs: ca044bac
-      m_LastClickedID: -1404369718
-      m_ExpandedIDs: 517ef48ec7f20490bc1b99b0df9607bd6bfbc9c4f96298d010beb5dae557abf72314d60064626503ab9237098359db4128c4b35f27fc9c6035562264ce887573ffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 8ae9516a
+      m_LastClickedID: 1783753098
+      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d600ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1785,9 +2260,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1536
-    y: 525
-    width: 716
-    height: 474
+    y: 426
+    width: 717
+    height: 573
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1802,21 +2277,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Readers
     m_Globs: []
+    m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Readers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 86370000
-    m_LastClickedID: 14214
-    m_ExpandedIDs: 000000008637000000ca9a3b
+    m_SelectedIDs: 2c480000
+    m_LastClickedID: 18476
+    m_ExpandedIDs: 00000000084800000a48000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1844,7 +2320,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086370000
+    m_ExpandedIDs: 00000000084800000a4800000c480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1871,7 +2347,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1920,9 +2396,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2883
+    x: 2884
     y: 73
-    width: 572
+    width: 571
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1933,8 +2409,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
-  m_AssetGUID: 
-  m_InstanceID: 0
+  m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
@@ -1961,14 +2436,14 @@ MonoBehaviour:
     x: 1536
     y: 73
     width: 389
-    height: 431
+    height: 332
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cc7fffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ce7fffff0684ffff9e8dffffb491ffffee93ffffb69bffffbe9cffff96a2fffff2b3ffff38bbfffff8e5ffff50fbfffff4ffffff
+      m_ExpandedIDs: c0daffffe0daffffc0dbffff5adfffff7adfffff36e0ffffd6e1fffff6e1ffffb2e2ffff4ee4ffff6ee4ffff2ae5ffffe4e5ffff04e6ffffa6e6ffffe2ecfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1984,7 +2459,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 6}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2014,8 +2489,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1926
     y: 73
-    width: 955
-    height: 431
+    width: 956
+    height: 332
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -2040,8 +2515,8 @@ MonoBehaviour:
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
   m_SceneViewState:
+    m_AlwaysRefresh: 0
     showFog: 0
-    showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 0
     showImageEffects: 0
@@ -2081,9 +2556,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.04048324, y: 0.011971024, z: 0.000744886, w: -0.99910825}
   m_Size:
-    m_Target: 0.39464384
+    m_Target: 1.2946439
     speed: 2
-    m_Value: 0.39464384
+    m_Value: 1.2946439
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2130,8 +2605,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1926
     y: 73
-    width: 955
-    height: 431
+    width: 956
+    height: 332
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -2139,7 +2614,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 729, y: 410}
+  m_TargetSize: {x: 2560, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2154,10 +2629,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -364.5
-    m_HBaseRangeMax: 364.5
-    m_VBaseRangeMin: -205
-    m_VBaseRangeMax: 205
+    m_HBaseRangeMin: -1280
+    m_HBaseRangeMax: 1280
+    m_VBaseRangeMin: -720
+    m_VBaseRangeMax: 720
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2175,23 +2650,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 955
-      height: 410
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 477.5, y: 205}
+      width: 956
+      height: 311
+    m_Scale: {x: 0.21597223, y: 0.21597221}
+    m_Translation: {x: 478, y: 155.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -477.5
-      y: -205
-      width: 955
-      height: 410
+      x: -2213.2476
+      y: -720
+      width: 4426.495
+      height: 1440
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 955, y: 431}
+  m_defaultScale: 0.21597221
+  m_LastWindowPixelSize: {x: 956, y: 332}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -2217,10 +2692,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2253
-    y: 525
+    x: 2254
+    y: 426
     width: 628
-    height: 474
+    height: 573
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:
