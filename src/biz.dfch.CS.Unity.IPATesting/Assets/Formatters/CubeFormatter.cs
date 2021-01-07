@@ -24,7 +24,7 @@ using UnityEngine;
 
 namespace Assets.Formatters
 {
-    public class CubeGenerator
+    public class CubeFormatter
     {
         // DFTODO - Some log messages can be put in a resource file
 
@@ -38,7 +38,7 @@ namespace Assets.Formatters
         private readonly TemperatureConverter temperatureConverter;
         private readonly CubeInfo cubeInfo;
 
-        public CubeGenerator(CubeInfo cubeInfo, GameObject gameObject)
+        public CubeFormatter(CubeInfo cubeInfo, GameObject gameObject)
         {
             Contract.Assert(null != cubeInfo);
             Contract.Assert(null != gameObject);

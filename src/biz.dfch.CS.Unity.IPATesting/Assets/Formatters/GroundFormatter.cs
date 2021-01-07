@@ -21,12 +21,12 @@ using UnityEngine;
 
 namespace Assets.Formatters
 {
-    public class GroundGenerator
+    public class GroundFormatter
     {
         private readonly List<GameObject> cubesOnScene;
         private readonly GameObject groundGameObject;
 
-        public GroundGenerator(List<GameObject> cubesOnScene, GameObject groundGameObject)
+        public GroundFormatter(List<GameObject> cubesOnScene, GameObject groundGameObject)
         {
             Contract.Assert(null != cubesOnScene);
             Contract.Assert(0 < cubesOnScene.Count);

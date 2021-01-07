@@ -68,6 +68,10 @@ namespace Assets.Models
 
         public double SolarPanelSizeInSquareMeter { get; set; }
 
+        public CubeInfo()
+        {
+        }
+
         public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
         {
             // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
