@@ -27,8 +27,6 @@ namespace Assets.Formatters
     public class CubeFormatter
     {
         // DFTODO - Some log messages can be put in a resource file
-
-        // ReSharper disable once InconsistentNaming
         private const string MainColorName = "_Color";
 
         private readonly Renderer renderer;

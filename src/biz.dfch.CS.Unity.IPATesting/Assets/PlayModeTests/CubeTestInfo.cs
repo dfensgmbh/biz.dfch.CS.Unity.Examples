@@ -21,6 +21,6 @@ namespace Assets.PlayModeTests
 {
     public class CubeTestInfo
     {
-        public IDictionary<CubeInfo, ExpectedCubeProperty> TestCaseWithExpectedCubeProperties;
+        public IDictionary<CubeInfo, ExpectedCubeData> TestCaseWithExpectedCubeProperties;
     }
 }

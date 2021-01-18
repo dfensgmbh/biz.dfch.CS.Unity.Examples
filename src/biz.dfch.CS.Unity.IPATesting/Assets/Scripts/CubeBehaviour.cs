@@ -24,9 +24,8 @@ namespace Assets.Scripts
 {
     public class CubeBehaviour : MonoBehaviour
     {
-        // ReSharper disable once InconsistentNaming
         private const string TextMeshChildGameObjectName = "TextMesh Child";
-
+        
         private CubeFormatter cubeFormatter;
         private CubeInfo cubeInfo;
         private GameObject childGameObject;

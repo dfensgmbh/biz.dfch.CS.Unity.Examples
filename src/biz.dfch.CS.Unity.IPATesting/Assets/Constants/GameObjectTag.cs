@@ -18,16 +18,9 @@ namespace Assets.Constants
 {
     public class GameObjectTag
     {
-        // ReSharper disable once InconsistentNaming
         public const string Cube = "Cube";
-
-        // ReSharper disable once InconsistentNaming
-        public const string Sphere = "Sphere";        
-
-        // ReSharper disable once InconsistentNaming
+        public const string Sphere = "Sphere"; 
         public const string Ground = "Ground";
-
-        // ReSharper disable once InconsistentNaming
         public const string PlayerCube = "PlayerCube";
     }
 }

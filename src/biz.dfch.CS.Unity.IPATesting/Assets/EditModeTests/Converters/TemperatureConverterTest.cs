@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+using System.IO;
 using Assets.Constants;
 using Assets.Converters;
 using NUnit.Framework;
@@ -62,6 +63,45 @@ namespace Assets.EditModeTests.Converters
 
             // Assert
             Assert.AreEqual(expectedTemperature, result);
+        }
+
+        [Test]
+        public void ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException()
+        {
+            // Arrange
+            var sut = new TemperatureConverter();
+            var temperatureUnit = TemperatureUnit.None;
+            var temperature = 23d;
+
+            // Act
+            // Assert
+            Assert.Throws<InvalidDataException>(() => sut.ConvertToCelsius(temperature, temperatureUnit));
+        }
+        
+        [Test]
+        public void ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException()
+        {
+            // Arrange
+            var sut = new TemperatureConverter();
+            var temperatureUnit = TemperatureUnit.None;
+            var temperature = 23d;
+
+            // Act
+            // Assert
+            Assert.Throws<InvalidDataException>(() => sut.ConvertToKelvin(temperature, temperatureUnit));
+        }
+        
+        [Test]
+        public void ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException()
+        {
+            // Arrange
+            var sut = new TemperatureConverter();
+            var temperatureUnit = TemperatureUnit.None;
+            var temperature = 23d;
+
+            // Act
+            // Assert
+            Assert.Throws<InvalidDataException>(() => sut.ConvertToFahrenheit(temperature, temperatureUnit));
         }
     }
 }

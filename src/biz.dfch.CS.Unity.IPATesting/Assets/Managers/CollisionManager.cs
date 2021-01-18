@@ -30,7 +30,6 @@ namespace Assets.Managers
     {
         private readonly GameObject gameObject;
         private readonly MonoBehaviour monoBehaviour;
-
         private Scene activeScene;
         private PlayerBehaviour playerBehaviour;
         

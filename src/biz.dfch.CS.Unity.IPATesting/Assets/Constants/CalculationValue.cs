@@ -17,50 +17,23 @@
 namespace Assets.Constants
 {
     public class CalculationValue
-    {
-        // ReSharper disable once InconsistentNaming
-        public const int MaxFontSize = 125;
-
-        // ReSharper disable once InconsistentNaming
+    {        
+        public const int MaxFontSize = 125;             
         public const int MinFontSize = 40;
-
-        // ReSharper disable once InconsistentNaming
         public const int FontSizeRange = MaxFontSize - MinFontSize;
-
-        // ReSharper disable once InconsistentNaming
         // Average gain of solar energy in swiss alps is 135 kWh/m2 during April  
         public const int MaxEnergyPerSquareMeterPerOneMonth = 150;
-
-        // ReSharper disable once InconsistentNaming
         public const int MinEnergyPerSquareMeterPerOneMonth = 0;
-
-        // ReSharper disable once InconsistentNaming
         public const int EnergyRange = MaxEnergyPerSquareMeterPerOneMonth - MinEnergyPerSquareMeterPerOneMonth;
-
-        // ReSharper disable once InconsistentNaming
         public const int MaxCubeScaleValue = 2;
-
-        // ReSharper disable once InconsistentNaming
         public const int MinCubeScaleValue = 0;
-
-        // ReSharper disable once InconsistentNaming
         public const int CubeScaleValueRange = MaxCubeScaleValue - MinCubeScaleValue;
-
-        // ReSharper disable once InconsistentNaming
         // Highest measured temperature on earth
         public const int MaxKelvinTemperature = 330;
-
-        // ReSharper disable once InconsistentNaming
         // Lowest measured temperature on earth
         public const int MinKelvinTemperature = 184;
-
-        // ReSharper disable once InconsistentNaming
         public const int TemperatureRangeInKelvin = MaxKelvinTemperature - MinKelvinTemperature;
-
-        // ReSharper disable once InconsistentNaming
         public const float GroundXScaleValueBase = 0.2f;
-        
-        // ReSharper disable once InconsistentNaming
         public const float GroundXScaleValue = 0.3f;
     }
 }

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1536
-    y: 43
-    width: 1920
-    height: 997
+    x: 0
+    y: 43.2
+    width: 1536
+    height: 780.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Test Runner
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 718
+    x: 574.4
     y: 0
-    width: 630
-    height: 594
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 504
+    height: 458.8
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 24}
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 353
-    width: 1348
-    height: 594
+    y: 272
+    width: 1078.4
+    height: 458.8
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 90
+  controlID: 83
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,12 +95,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+    width: 1536
+    height: 730.8
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 22
+  controlID: 124
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,12 +116,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1348
+    x: 1078.4
     y: 0
-    width: 572
-    height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 457.59998
+    height: 730.8
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -146,10 +146,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 390
-    height: 353
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 312
+    height: 272
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -172,8 +172,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 718
-    height: 594
+    width: 574.4
+    height: 458.8
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -202,8 +202,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1536
+    height: 780.8
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -227,7 +227,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -251,8 +251,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 760.8
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -275,12 +275,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1348
-    height: 947
-  m_MinSize: {x: 402, y: 492}
+    width: 1078.4
+    height: 730.8
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 89
+  controlID: 125
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,10 +300,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1348
-    height: 353
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 1078.4
+    height: 272
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 126
 --- !u!114 &13
@@ -321,10 +321,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 390
+    x: 312
     y: 0
-    width: 958
-    height: 353
+    width: 766.4
+    height: 272
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Package Manager
-    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -413,18 +413,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2254
-    y: 426
-    width: 628
-    height: 573
+    x: 574.4
+    y: 345.6
+    width: 502
+    height: 437.8
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 632
+    ID: 164
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
-    - 279
-    - 224
+    - 204
+    - 164
     relativeSizes:
     - 0.55455804
     - 0.44544196
@@ -434,7 +434,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 503
+    lastTotalSize: 368
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 16}
     newResultList:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: d353eb75
       m_LastClickedID: 1978356691
-      m_ExpandedIDs: 91238485517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600a21cc53dc272103e8b05f765d353eb75ffffff7f
+      m_ExpandedIDs: 517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600a21cc53dc272103ed353eb75ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1049,7 +1049,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.0833693
+      duration: 0.1212693
       messages: 
       output: 
       stacktrace: 
@@ -1065,7 +1065,7 @@ MonoBehaviour:
       name: EditModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 1
-      duration: 0.043292
+      duration: 0.0804111
       messages: 
       output: 
       stacktrace: 
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       name: Assets
       fullName: Assets
       resultStatus: 1
-      duration: 0.0417774
+      duration: 0.0770537
       messages: 
       output: 
       stacktrace: 
@@ -1097,7 +1097,7 @@ MonoBehaviour:
       name: EditModeTests
       fullName: Assets.EditModeTests
       resultStatus: 1
-      duration: 0.0413174
+      duration: 0.0743838
       messages: 
       output: 
       stacktrace: 
@@ -1113,7 +1113,7 @@ MonoBehaviour:
       name: Converters
       fullName: Assets.EditModeTests.Converters
       resultStatus: 1
-      duration: 0.0601899
+      duration: 0.0685808
       messages: 
       output: 
       stacktrace: 
@@ -1129,7 +1129,7 @@ MonoBehaviour:
       name: TemperatureConverterTest
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest
       resultStatus: 1
-      duration: 0.0523788
+      duration: 0.0626683
       messages: 
       output: 
       stacktrace: 
@@ -1140,12 +1140,63 @@ MonoBehaviour:
       categories: []
       parentId: 1040
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.Converters][suite]
+    - id: 1074
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 1
+      duration: 0.0122841
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1076
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 1
+      duration: 0.0004828
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1075
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 1
+      duration: 0.0002525
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
     - id: 1036
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
       name: ConvertToCelsiusReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0334502
+      duration: 0.0153955
       messages: 
       output: 
       stacktrace: 
@@ -1161,7 +1212,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       resultStatus: 1
-      duration: 0.015562
+      duration: 0.0055513
       messages: 
       output: 
       stacktrace: 
@@ -1178,7 +1229,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       resultStatus: 1
-      duration: 0.0002824
+      duration: 0.0002362
       messages: 
       output: 
       stacktrace: 
@@ -1195,7 +1246,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0057233
+      duration: 0.0059565
       messages: 
       output: 
       stacktrace: 
@@ -1211,7 +1262,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       resultStatus: 1
-      duration: 0.0003966
+      duration: 0.0003145
       messages: 
       output: 
       stacktrace: 
@@ -1228,7 +1279,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       resultStatus: 1
-      duration: 0.0001079
+      duration: 0.0000894
       messages: 
       output: 
       stacktrace: 
@@ -1245,7 +1296,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0051943
+      duration: 0.0080685
       messages: 
       output: 
       stacktrace: 
@@ -1261,7 +1312,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       resultStatus: 1
-      duration: 0.000735
+      duration: 0.000729
       messages: 
       output: 
       stacktrace: 
@@ -1278,7 +1329,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       resultStatus: 1
-      duration: 0.0001244
+      duration: 0.0001368
       messages: 
       output: 
       stacktrace: 
@@ -2153,13 +2204,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
-    m_ResultText: CubeFactoryCreatesOneCube (0.013s)
+    m_ResultText: TemperatureConverterTest (0.063s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8ae9516a
-      m_LastClickedID: 1783753098
-      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d600ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: 0cec4303
+      m_LastClickedID: 54782988
+      m_ExpandedIDs: e4d26b8e517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d010beb5dae557abf72314d6000cec4303ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2201,7 +2252,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
-    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2230,7 +2281,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2255,14 +2306,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1536
-    y: 426
-    width: 717
-    height: 573
+    x: 0
+    y: 345.6
+    width: 573.4
+    height: 437.8
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2290,9 +2341,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c480000
-    m_LastClickedID: 18476
-    m_ExpandedIDs: 00000000084800000a48000000ca9a3b
+    m_SelectedIDs: 403a0000
+    m_LastClickedID: 14912
+    m_ExpandedIDs: 000000001a3a00001c3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2320,7 +2371,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000084800000a4800000c480000
+    m_ExpandedIDs: 000000001a3a00001c3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2392,14 +2443,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2884
-    y: 73
-    width: 571
-    height: 926
+    x: 1078.4
+    y: 73.6
+    width: 456.59998
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -2429,21 +2480,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1536
-    y: 73
-    width: 389
-    height: 332
+    x: 0
+    y: 73.6
+    width: 311
+    height: 251
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c0daffffe0daffffc0dbffff5adfffff7adfffff36e0ffffd6e1fffff6e1ffffb2e2ffff4ee4ffff6ee4ffff2ae5ffffe4e5ffff04e6ffffa6e6ffffe2ecfffff4ffffff
+      m_ExpandedIDs: daf8ffffa0f9ffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2483,14 +2534,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1926
-    y: 73
-    width: 956
-    height: 332
+    x: 312
+    y: 73.6
+    width: 764.4
+    height: 251
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -2599,7 +2650,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2629,10 +2680,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1280
-    m_HBaseRangeMax: 1280
-    m_VBaseRangeMin: -720
-    m_VBaseRangeMax: 720
+    m_HBaseRangeMin: -1024
+    m_HBaseRangeMax: 1024
+    m_VBaseRangeMin: -576
+    m_VBaseRangeMax: 576
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2652,7 +2703,7 @@ MonoBehaviour:
       y: 21
       width: 956
       height: 311
-    m_Scale: {x: 0.21597223, y: 0.21597221}
+    m_Scale: {x: 0.2699653, y: 0.2699653}
     m_Translation: {x: 478, y: 155.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -2660,13 +2711,13 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -2213.2476
-      y: -720
-      width: 4426.495
-      height: 1440
+      x: -1770.598
+      y: -576
+      width: 3541.196
+      height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 0.21597221
-  m_LastWindowPixelSize: {x: 956, y: 332}
+  m_defaultScale: 0.2699653
+  m_LastWindowPixelSize: {x: 1195, y: 415}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -2688,7 +2739,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2

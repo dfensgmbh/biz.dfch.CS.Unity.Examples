@@ -25,15 +25,10 @@ namespace Assets.Scripts
 {
     public class PlayerBehaviour : MonoBehaviour
     {
-        // ReSharper disable once InconsistentNaming
         private const string Vertical = "Vertical";
-        // ReSharper disable once InconsistentNaming
         private const string Horizontal = "Horizontal";
-        // ReSharper disable once InconsistentNaming
         private const float MovementSpeed = 4f;
-        // ReSharper disable once InconsistentNaming
         private const float RotateSpeed = 75f;
-        // ReSharper disable once InconsistentNaming
         private const int YAxisResetHeight = -10;
 
         private CollisionManager collisionManager;

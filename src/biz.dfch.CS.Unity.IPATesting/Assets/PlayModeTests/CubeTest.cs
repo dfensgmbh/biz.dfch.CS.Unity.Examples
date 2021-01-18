@@ -21,7 +21,7 @@ namespace Assets.PlayModeTests
 {
     public static class CubeTest
     {
-        public static bool CubeHasExpectedProperties(GameObject cube, ExpectedCubeProperty expectedCubeProperty)
+        public static void HasExpectedData(GameObject cube, ExpectedCubeData expectedCubeData)
         {
             var cubeRenderer = cube.GetComponent<Renderer>();
             var meshFilter = cube.GetComponent<MeshFilter>();
@@ -30,22 +30,17 @@ namespace Assets.PlayModeTests
 
             // Color Tests
 
-            var expectedColor = expectedCubeProperty.ExpectedColor;
+            var expectedColor = expectedCubeData.ExpectedColor;
             var resultColor = cubeRenderer.material.GetColor("_Color");
 
             Debug.Log($"Expected Color: '{expectedColor}'");
             Debug.Log($"Result Color: '{resultColor}'");
 
             Assert.AreEqual(expectedColor, resultColor);
-            if (expectedColor != resultColor)
-            {
-                Debug.Log($"Result color ('{resultColor}') is not equal to expected color ('{expectedColor}').");
-                return false;
-            }
 
             // Scale Tests
 
-            var expectedVertices = expectedCubeProperty.ExpectedVertices;
+            var expectedVertices = expectedCubeData.ExpectedVertices;
             var resultVertices = meshFilter.mesh.vertices;
 
             for (int i = 0; i < expectedVertices.Length; i++)
@@ -56,55 +51,37 @@ namespace Assets.PlayModeTests
                 Debug.Log($"Expected vertex: '{expectedVertex}'");
                 Debug.Log($"Vertex to be asserted: '{vertexToBeAsserted}'");
 
-                if (expectedVertex != vertexToBeAsserted)
-                {
-                    Debug.Log($"Result vertex ('{vertexToBeAsserted}') at position '{i}' is not equal to expected vertex ('{expectedVertex}').");
-                    return false;
-                }
+                Assert.AreEqual(expectedVertex, vertexToBeAsserted);
             }
 
             // BoxCollider Size Tests
 
-            var expectedBoxColliderSize = expectedCubeProperty.ExpectedBoxColliderSize;
+            var expectedBoxColliderSize = expectedCubeData.ExpectedBoxColliderSize;
             var resultBoxColliderSize = boxCollider.size;
 
-            if (expectedBoxColliderSize != resultBoxColliderSize)
-            {
-                Debug.Log($"Result box collider size ('{resultBoxColliderSize}') is not equal to expected box collider size ('{expectedBoxColliderSize}').");
-                return false;
-            }
+            Assert.AreEqual(expectedBoxColliderSize, resultBoxColliderSize);
 
             // Text Tests
 
             Debug.Log("Children Count: " + cube.GetComponentsInChildren<Component>().Length);
 
-            var expectedText = expectedCubeProperty.ExpectedText;
+            var expectedText = expectedCubeData.ExpectedText;
             var resultText = textMesh.text;
 
             Debug.Log($"Expected text: '{expectedText}'");
             Debug.Log($"Result text: '{resultText}'");
 
-            if (expectedText != resultText)
-            {
-                Debug.Log($"Result text ('{resultText}') is not equal to expected text ('{expectedText}').");
-                return false;
-            }
+            Assert.AreEqual(expectedText, resultText);
 
-            var expectedFontSize = expectedCubeProperty.ExpectedFontSize;
+            var expectedFontSize = expectedCubeData.ExpectedFontSize;
             var resultFontSize = textMesh.fontSize;
 
             Debug.Log($"Expected font size: '{expectedFontSize}'");
             Debug.Log($"Result font size: '{resultFontSize}'");
 
-            if (expectedFontSize != resultFontSize)
-            {
-                Debug.Log($"Result font size ('{resultFontSize}') is not equal to expected font size ('{expectedFontSize}').");
-                return false;
-            }
+            Assert.AreEqual(expectedFontSize, resultFontSize);
 
             Debug.Log("Test Finished");
-
-            return true;
         }
     }
 }

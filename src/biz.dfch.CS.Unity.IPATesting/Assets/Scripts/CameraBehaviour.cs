@@ -21,10 +21,10 @@ namespace Assets.Scripts
 {
     public class CameraBehaviour : MonoBehaviour
     {
-        private Transform playerTransform;
         private readonly Vector3 cameraOffset = new Vector3(0f, 1.5f, -5f);
+        private Transform playerTransform;
 
-        void Start()
+        private void Start()
         {
             var playerCube = GameObject.FindGameObjectWithTag(GameObjectTag.PlayerCube);
             if (null != playerCube)

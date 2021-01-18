@@ -19,7 +19,6 @@ using System.Linq;
 using Assets.Constants;
 using Assets.Models;
 using Assets.Scripts;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -31,6 +30,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
         private CubeBehaviour cubeBehaviour;
         private GameObject cube;
         private readonly Vector3 baseBoxColliderSize = new Vector3(1, 1, 1);
+
         public bool IsTestFinished => frameCount > cubeTestInfo.TestCaseWithExpectedCubeProperties.Count - 1;
 
         private readonly Vector3[] baseVerticesForCube = 
@@ -63,11 +63,11 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
         private readonly CubeTestInfo cubeTestInfo = new CubeTestInfo
         {
-            TestCaseWithExpectedCubeProperties = new Dictionary<CubeInfo, ExpectedCubeProperty>
+            TestCaseWithExpectedCubeProperties = new Dictionary<CubeInfo, ExpectedCubeData>
             {
                 {
                     new CubeInfo(20d, TemperatureUnit.Celsius, 75d, EnergyUnit.KiloWatt, 8),
-                    new ExpectedCubeProperty
+                    new ExpectedCubeData
                     {
                         ExpectedColor = new Color(0.747602761f, 0.000f, 0.252397239f, 1.000f),
                         ExpectedVertices = new []
@@ -104,7 +104,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
                 },
                 {
                     new CubeInfo(330d, TemperatureUnit.Kelvin, 75, EnergyUnit.KiloWatt, 0.5),
-                    new ExpectedCubeProperty
+                    new ExpectedCubeData
                     {
                         ExpectedColor = new Color(1, 0, 0, 1),
                         ExpectedVertices = new []
@@ -170,9 +170,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
             Debug.Log($"EnergyUnit: {testCase.EnergyUnit}");
             Debug.Log($"SolarPanelSizeInSquareMeter: {testCase.SolarPanelSizeInSquareMeter}");
 
-            var result = CubeTest.CubeHasExpectedProperties(cube, expectedValues);
-
-            Assert.IsTrue(result);
+            CubeTest.HasExpectedData(cube, expectedValues);
 
             frameCount++;
 

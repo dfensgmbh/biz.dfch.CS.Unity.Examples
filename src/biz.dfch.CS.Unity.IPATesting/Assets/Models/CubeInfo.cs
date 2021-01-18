@@ -1,4 +1,5 @@
-﻿/**
+﻿// ReSharper disable once InvalidXmlDocComment
+/**
  * Copyright 2020 d-fens GmbH
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,14 +18,36 @@
 using System;
 using Assets.Constants;
 using Assets.Converters;
+using UnityEngine;
 
 namespace Assets.Models
 {
     public class CubeInfo : IGameObjectInfo
     {
         private readonly TemperatureConverter temperatureConverter;
-
+        private double energyPerMonth;
         private double temperature;
+
+        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
+        {
+            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
+
+            temperatureConverter = new TemperatureConverter();
+
+            TemperatureUnit = temperatureUnit;
+            Temperature = temperature;
+
+            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary necessary inside the set accessor of the 'EnergyPerMonth' property.
+
+            EnergyUnit = energyUnit;
+            SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
+            EnergyPerMonth = energyPerMonth;
+            if (true)
+            {
+                Debug.Log("Hello World");
+            }
+        }
+
         public double Temperature
         {
             get => temperature;
@@ -45,7 +68,6 @@ namespace Assets.Models
 
         public TemperatureUnit TemperatureUnit { get; set; }
 
-        private double energyPerMonth;
         public double EnergyPerMonth
         {
             get => energyPerMonth;
@@ -67,25 +89,5 @@ namespace Assets.Models
         public EnergyUnit EnergyUnit { get; set; }
 
         public double SolarPanelSizeInSquareMeter { get; set; }
-
-        public CubeInfo()
-        {
-        }
-
-        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
-        {
-            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
-
-            temperatureConverter = new TemperatureConverter();
-
-            TemperatureUnit = temperatureUnit;
-            Temperature = temperature;
-
-            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary necessary inside the set accessor of the 'EnergyPerMonth' property.
-
-            EnergyUnit = energyUnit;
-            SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
-            EnergyPerMonth = energyPerMonth;
-        }
     }
 }
