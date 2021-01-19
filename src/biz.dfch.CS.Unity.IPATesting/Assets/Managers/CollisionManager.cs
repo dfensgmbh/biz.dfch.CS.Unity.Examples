@@ -15,10 +15,13 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using Assets.Constants;
+using Assets.Converters;
 using Assets.Factories;
+using Assets.Models;
 using Assets.Readers;
 using Assets.Scripts;
 using UnityEngine;
@@ -70,9 +73,19 @@ namespace Assets.Managers
                 yield return null;
             }
             activeScene = SceneManager.GetActiveScene();
-            
+
             var csvReader = new CsvReader();
-            var cubeInfos = csvReader.GetCubeInfos();
+
+            var csvData = csvReader.GetCsvData();
+            var cubeInfos = new List<CubeInfo>();
+
+            foreach (var data in csvData)
+            {
+                var mapper = new Mapper();
+                var cubeInfo = mapper.MapCsvDataToCubeInfo(data);
+
+                cubeInfos.Add(cubeInfo);
+            }
 
             var cubeFactory = new CubeFactory();
             var cubes = cubeFactory.CreateMany(cubeInfos);
