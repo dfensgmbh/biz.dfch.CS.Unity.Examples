@@ -18,12 +18,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Assets.AutoMapper;
 using Assets.Constants;
-using Assets.Converters;
 using Assets.Factories;
 using Assets.Models;
 using Assets.Readers;
 using Assets.Scripts;
+using AutoMapper;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -81,8 +82,10 @@ namespace Assets.Managers
 
             foreach (var data in csvData)
             {
-                var mapper = new Mapper();
-                var cubeInfo = mapper.MapCsvDataToCubeInfo(data);
+                var config = new MapperConfiguration(cfg =>
+                    cfg.AddProfile<AutoMapperDefaultProfile>());
+                var mapper = new Mapper(config);
+                var cubeInfo = mapper.Map<CubeInfo>(data);
 
                 cubeInfos.Add(cubeInfo);
             }

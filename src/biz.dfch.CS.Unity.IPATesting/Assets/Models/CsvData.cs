@@ -20,15 +20,15 @@ namespace Assets.Models
 {
     public class CsvData
     {
-        public double Temperature { get; set; }
+        public double HouseTemperature { get; set; }
         public TemperatureUnit TemperatureUnit { get; set; }
         public double EnergyPerMonth { get; set; }
         public EnergyUnit EnergyUnit { get; set; }
         public double SolarPanelSizeInSquareMeter { get; set; }
 
-        public CsvData(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
+        public CsvData(double houseTemperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
         {
-            Temperature = temperature;
+            HouseTemperature = houseTemperature;
             TemperatureUnit = temperatureUnit;
             EnergyPerMonth = energyPerMonth;
             EnergyUnit = energyUnit;
