@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+using System.IO;
 using Assets.Constants;
 
 namespace Assets.Converters
@@ -28,6 +29,7 @@ namespace Assets.Converters
             { 
                 TemperatureUnit.Celsius => temperature + DeltaKelvinCelsius,
                 TemperatureUnit.Fahrenheit => (temperature - 32) * 5 / 9 + DeltaKelvinCelsius,
+                TemperatureUnit.None => throw new InvalidDataException(),
                 _ => temperature
             };
         }
@@ -38,6 +40,7 @@ namespace Assets.Converters
             {
                 TemperatureUnit.Celsius => temperature * 9 / 5 + 32,
                 TemperatureUnit.Kelvin => (temperature - DeltaKelvinCelsius) * 9 / 5 + 32,
+                TemperatureUnit.None => throw new InvalidDataException(),
                 _ => temperature
             };
         }       
@@ -48,6 +51,7 @@ namespace Assets.Converters
             {
                 TemperatureUnit.Kelvin => temperature - DeltaKelvinCelsius,
                 TemperatureUnit.Fahrenheit => (temperature - 32) * 5 / 9,
+                TemperatureUnit.None => throw new InvalidDataException(),
                 _ => temperature
             };
         }

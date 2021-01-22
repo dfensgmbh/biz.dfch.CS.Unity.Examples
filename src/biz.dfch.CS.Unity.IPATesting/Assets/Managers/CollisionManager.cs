@@ -20,7 +20,6 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using Assets.AutoMapper;
 using Assets.Constants;
-using Assets.Factories;
 using Assets.Models;
 using Assets.Readers;
 using Assets.Scripts;
@@ -76,25 +75,29 @@ namespace Assets.Managers
             activeScene = SceneManager.GetActiveScene();
 
             var csvReader = new CsvReader();
-
             var csvData = csvReader.GetCsvData();
-            var cubeInfos = new List<CubeInfo>();
 
+            var config = new MapperConfiguration(cfg =>
+                cfg.AddProfile<AutoMapperDefaultProfile>());
+            var mapper = new Mapper(config);
+
+            var cubeInfos = new List<CubeInfo>();
             foreach (var data in csvData)
             {
-                var config = new MapperConfiguration(cfg =>
-                    cfg.AddProfile<AutoMapperDefaultProfile>());
-                var mapper = new Mapper(config);
                 var cubeInfo = mapper.Map<CubeInfo>(data);
 
                 cubeInfos.Add(cubeInfo);
             }
 
-            var cubeFactory = new CubeFactory();
-            var cubes = cubeFactory.CreateMany(cubeInfos);
+            var cubePosition = new Vector3(-4, 1, 0);
 
-            foreach (var cube in cubes)
+            foreach (var cubeInfo in cubeInfos)
             {
+                var cube = mapper.Map<GameObject>(cubeInfo);
+
+                cube.transform.position = cubePosition;
+                cubePosition.x += 3;
+
                 SceneManager.MoveGameObjectToScene(cube, activeScene);
             }
 

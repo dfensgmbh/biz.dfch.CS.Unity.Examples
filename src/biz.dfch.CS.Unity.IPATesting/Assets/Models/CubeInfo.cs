@@ -28,25 +28,7 @@ namespace Assets.Models
         private double energyPerMonth;
         private double temperature;
 
-        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
-        {
-            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
-
-            temperatureConverter = new TemperatureConverter();
-
-            TemperatureUnit = temperatureUnit;
-            Temperature = temperature;
-
-            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary necessary inside the set accessor of the 'EnergyPerMonth' property.
-
-            EnergyUnit = energyUnit;
-            SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
-            EnergyPerMonth = energyPerMonth;
-            if (true)
-            {
-                Debug.Log("Hello World");
-            }
-        }
+        public TemperatureUnit TemperatureUnit { get; set; }
 
         public double Temperature
         {
@@ -66,7 +48,9 @@ namespace Assets.Models
             }
         }
 
-        public TemperatureUnit TemperatureUnit { get; set; }
+        public EnergyUnit EnergyUnit { get; set; }
+
+        public double SolarPanelSizeInSquareMeter { get; set; }
 
         public double EnergyPerMonth
         {
@@ -86,8 +70,24 @@ namespace Assets.Models
             }
         }
 
-        public EnergyUnit EnergyUnit { get; set; }
+        public CubeInfo(double temperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
+        {
+            // 'temperatureConverter' and 'TemperatureUnit' need to be set before 'Temperature'. As both values are necessary inside the set accessor of the 'Temperature' property.
 
-        public double SolarPanelSizeInSquareMeter { get; set; }
+            temperatureConverter = new TemperatureConverter();
+
+            TemperatureUnit = temperatureUnit;
+            Temperature = temperature;
+
+            // 'EnergyUnit' and 'SolarPanelSizeInSquareMeter' need to be set before 'EnergyPerMonth'. As both values are necessary necessary inside the set accessor of the 'EnergyPerMonth' property.
+
+            EnergyUnit = energyUnit;
+            SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
+            EnergyPerMonth = energyPerMonth;
+            if (true)
+            {
+                Debug.Log("Hello World");
+            }
+        }
     }
 }

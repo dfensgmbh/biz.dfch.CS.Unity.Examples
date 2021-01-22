@@ -26,9 +26,10 @@ namespace Assets.AutoMapper
         public AutoMapperDefaultProfile()
         {
             CreateMap<CsvData, CubeInfo>(MemberList.None)
-                .ForMember(destinationMember => destinationMember.Temperature,
-                    opts => opts.MapFrom(sourceMember => sourceMember.HouseTemperature));
-            
+                .ConstructUsing(csvData => 
+                    new CubeInfo(csvData.HouseTemperature, csvData.TemperatureUnit, csvData.EnergyPerMonth,
+                        csvData.EnergyUnit, csvData.SolarPanelSizeInSquareMeter));
+                
             CreateMap<CubeInfo, GameObject>(MemberList.None).ConvertUsing<GameObjectTypeConverter>();
         }
     }

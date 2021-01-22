@@ -181,6 +181,8 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
         private void LoadNextTestCase()
         {
+            if (frameCount > cubeTestInfo.TestCaseWithExpectedCubeProperties.Count - 1) return;
+
             var testCase = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.ToList()[frameCount];
 
             cubeBehaviour = cube.AddComponent<CubeBehaviour>();

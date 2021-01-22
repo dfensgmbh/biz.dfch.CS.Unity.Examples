@@ -1,5 +1,6 @@
 {
     "name": "PlayModeTests",
+    "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
@@ -10,7 +11,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "nunit.framework.dll"
+        "nunit.framework.dll",
+        "AutoMapper.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [
