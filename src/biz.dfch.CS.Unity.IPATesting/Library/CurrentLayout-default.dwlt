@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 7.2000003
-    y: 50.4
-    width: 1521.6
-    height: 766.4
+    x: 0
+    y: 43.2
+    width: 1536
+    height: 780.8
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: NuGet
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -39,16 +39,16 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 482.4
+    x: 420.8
     y: 0
-    width: 585.6
-    height: 448.8
+    width: 491.2
+    height: 397.19998
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 24}
-  - {fileID: 16}
+  - {fileID: 25}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &3
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 267.2
-    width: 1068
-    height: 448.8
+    y: 333.6
+    width: 912
+    height: 397.19998
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 101
+  controlID: 45
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,12 +95,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1522
-    height: 716
-  m_MinSize: {x: 679, y: 492}
+    width: 1536
+    height: 730.8
+  m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 145
+  controlID: 245
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,24 +111,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: NugetWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1068
+    x: 912
     y: 0
-    width: 454
-    height: 716
-  m_MinSize: {x: 276, y: 71}
+    width: 624
+    height: 730.8
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 20}
-  - {fileID: 17}
+  - {fileID: 21}
+  - {fileID: 18}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 15}
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,13 +147,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 308.8
-    height: 267.2
+    width: 263.2
+    height: 333.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &7
@@ -172,14 +173,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 482.4
-    height: 448.8
+    width: 420.8
+    height: 397.19998
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 15}
+  - {fileID: 20}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &8
@@ -202,9 +203,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1522
-    height: 766
-  m_MinSize: {x: 875, y: 542}
+    width: 1536
+    height: 780.8
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -227,13 +228,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1522
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 25}
-  m_MainToolbar: {fileID: 25}
+  - {fileID: 26}
+  m_MainToolbar: {fileID: 26}
   m_LastLoadedLayoutName: 
 --- !u!114 &10
 MonoBehaviour:
@@ -251,8 +252,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 746
-    width: 1522
+    y: 760.8
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -275,12 +276,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1068
-    height: 716
+    width: 912
+    height: 730.8
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 146
+  controlID: 246
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,12 +301,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1068
-    height: 267.2
+    width: 912
+    height: 333.6
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 147
+  controlID: 247
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,20 +322,345 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 308.8
+    x: 263.2
     y: 0
-    width: 759.2
-    height: 267.2
+    width: 648.8
+    height: 333.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 22}
   - {fileID: 23}
-  - {fileID: 18}
+  - {fileID: 24}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 139222468, guid: 8dc1be91775c4bb469f6b74cef450eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: NuGet
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 912
+    y: 73.6
+    width: 623
+    height: 709.8
+  m_ViewDataDictionary: {fileID: 0}
+  hasRefreshed: 1
+  availablePackages:
+  - Id: Unity.Container
+    Version: 5.11.10
+    Title: Unity.Container
+    Description: Unity Core Engine
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET Standard 1.0 and 2.0, .NET
+      Core 1.0 and 2.0, .NET 4.0, 4.5, 4.6, 4.7
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Container/5.11.10
+    DownloadCount: 8016534
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/unity
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity
+    Version: 5.11.9
+    Title: Unity
+    Description: This package contains Unity Container and Abstractions libraries
+      as a single package.
+    Summary: 
+    ReleaseNotes: Entire Unity Library as single package. This is a convenience package
+      containing both Unity.Abstractions and Unity.Container assemblies. This package
+      is distributed for these who do now wish to separate declarations and implementation.
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/v5.x/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity/5.11.9
+    DownloadCount: 35406404
+    Authors: Unity Container Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/unity
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Abstractions
+    Version: 5.11.6
+    Title: Unity.Abstractions
+    Description: Unity Container Public Abstractions
+    Summary: 
+    ReleaseNotes: This package is distributed as .NET Standard 1.0, 2.0, .Net Core
+      1.0, 2.0, and .NET 4.0, 4.5, 4.6, and 4.7
+    LicenseUrl: https://github.com/unitycontainer/abstractions/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Abstractions/5.11.6
+    DownloadCount: 9234082
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Interception
+    Version: 5.11.1
+    Title: Unity.Interception
+    Description: Unity Interception
+    Summary: 
+    ReleaseNotes: This package is compatible with Net Standard 2.0, Net Core 2.0,
+      .NET 4.5, 4.6, and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Interception/5.11.1
+    DownloadCount: 9035416
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/unity
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Mvc
+    Version: 5.11.1
+    Title: Unity.Mvc
+    Description: Unity for ASP.NET MVC
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/aspnet-mvc/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc/5.11.1
+    DownloadCount: 5481882
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/aspnet-mvc
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.AspNet.WebApi
+    Version: 5.11.2
+    Title: Unity.AspNet.WebApi
+    Description: Unity for ASP.NET WebApi
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/aspnet-webapi/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.AspNet.WebApi/5.11.2
+    DownloadCount: 3654028
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/aspnet-webapi
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: CommonServiceLocator
+    Version: 2.0.5
+    Title: CommonServiceLocator
+    Description: The library provides an abstraction over IoC containers and service
+      locators. Using the library allows an application to indirectly access the
+      capabilities without relying on hard references.
+    Summary: 
+    ReleaseNotes: This release contains targets for .NET 4.0, 4.5, 4.7, and 4.8,
+      .NET Core 1.0, 2.0 and 3.0, .NET Standard 1.0, .NET Standard 2.0 and .NET Standard
+      2.1
+    LicenseUrl: https://opensource.org/licenses/MS-PL
+    DownloadUrl: https://www.nuget.org/api/v2/package/CommonServiceLocator/2.0.5
+    DownloadCount: 37828503
+    Authors: Microsoft.Practices.ServiceLocation
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/commonservicelocator
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.WebAPI
+    Version: 5.4.0
+    Title: Unity.WebAPI
+    Description: Unity.WebAPI allows the simple Integration of the Unity IoC container
+      with ASP.NET Web API.
+    Summary: 
+    ReleaseNotes: 
+    LicenseUrl: http://opensource.org/licenses/MIT
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.WebAPI/5.4.0
+    DownloadCount: 5218908
+    Authors: Paul Hiles
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/devtrends/Unity.WebAPI
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Microsoft.DependencyInjection
+    Version: 5.11.5
+    Title: Unity.Microsoft.DependencyInjection
+    Description: Unity for Microsoft Dependency Injection framework.
+    Summary: 
+    ReleaseNotes: This release is compatible with Core 3.1
+    LicenseUrl: https://github.com/unitycontainer/microsoft-dependency-injection/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Microsoft.DependencyInjection/5.11.5
+    DownloadCount: 968693
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Configuration
+    Version: 5.11.2
+    Title: Unity.Configuration
+    Description: Unity Configuration
+    Summary: 
+    ReleaseNotes: This package is compatible with NET Standard 2.0, Net Core 2.0,
+      .NET 4.0, 4.5, 4.6, and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Configuration/5.11.2
+    DownloadCount: 684691
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/unity
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Mvc5
+    Version: 1.4.0
+    Title: Unity.Mvc5
+    Description: Unity.Mvc5 allows the simple integration of the Unity IoC container
+      with ASP.NET MVC 5.
+    Summary: 
+    ReleaseNotes: 
+    LicenseUrl: http://opensource.org/licenses/MIT
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc5/1.4.0
+    DownloadCount: 1563565
+    Authors: Paul Hiles
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/devtrends/Unity.Mvc5
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.RegistrationByConvention
+    Version: 5.11.1
+    Title: Unity.RegistrationByConvention
+    Description: Unity Registration By Convention
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET Standard 2.0, .Net Core 2.9,
+      and .NET Framework 4.5, 4.6, 4.7
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.RegistrationByConvention/5.11.1
+    DownloadCount: 530575
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/registration-by-convention
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Wcf
+    Version: 5.11.1
+    Title: Unity.Wcf
+    Description: Unity integration with WCF
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/wcf/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Wcf/5.11.1
+    DownloadCount: 430177
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/wcf
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.Mvc4
+    Version: 1.6.0.0
+    Title: Unity.MVC4
+    Description: Unity.Mvc4 is a library that allows simple Integration of Microsoft's
+      Unity IoC container with ASP.NET MVC 4. A copy of Unity.MVC3 except it references
+      MVC4
+    Summary: 
+    ReleaseNotes: "* 1.6.0.0 - Updated library to 4.0.1 of Unity\n* 1.5.0.0 - Upgraded
+      libary to 3.5.1404.0.\n            Added MIT licence to source."
+    LicenseUrl: http://opensource.org/licenses/mit
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc4/1.6.0
+    DownloadCount: 795817
+    Authors: Oliver Rivett-Carnac
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/OliverRC/Unity.MVC4
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Unity.ServiceLocation
+    Version: 5.11.1
+    Title: Unity.ServiceLocation
+    Description: Unity Service Location
+    Summary: 
+    ReleaseNotes: This package is compatible with .NET Standard 1.0 and 2.0, Net
+      Core 1.0 and 2.0 as well as .NET 4.0, 4.5, 4.6, and 4.7 frameworks.
+    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
+    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.ServiceLocation/5.11.1
+    DownloadCount: 417595
+    Authors: Unity Open Source Project
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/unitycontainer/unity
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  updatePackages:
+  - Id: System.Runtime.CompilerServices.Unsafe
+    Version: 5.0.0
+    Title: System.Runtime.CompilerServices.Unsafe
+    Description: "Provides the System.Runtime.CompilerServices.Unsafe class, which
+      provides generic, low-level functionality for manipulating pointers.\n\nCommonly
+      Used Types:\nSystem.Runtime.CompilerServices.Unsafe\n \nWhen using NuGet 3.x
+      this package requires at least version 3.4."
+    Summary: 
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    LicenseUrl: https://licenses.nuget.org/MIT
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/5.0.0
+    DownloadCount: 555546386
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/dotnet/runtime
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: System.Threading.Tasks.Extensions
+    Version: 4.5.4
+    Title: System.Threading.Tasks.Extensions
+    Description: "Provides additional types that simplify the work of writing concurrent
+      and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.ValueTask<TResult>\n
+      \n7601f4f6225089ffb291dc7d58293c7bbf5c5d4f"
+    Summary: 
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT
+    DownloadUrl: https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4
+    DownloadCount: 486154632
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: https://dot.net/
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  numberToSkip: 0
+  defaultIcon: {fileID: 2800000, guid: eec19781926cd2248b7c9abfde8db555, type: 3}
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,16 +676,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Package Manager
-    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2874
-    y: 73
-    width: 581
-    height: 926
+    x: 1096
+    y: 73.6
+    width: 439
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,7 +719,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: 0
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -413,18 +739,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 489.6
-    y: 348
-    width: 583.6
-    height: 427.8
+    x: 420.80002
+    y: 407.2
+    width: 489.2
+    height: 376.19998
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 349
+    ID: 290
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
-    - 198.4
-    - 159.20001
+    - 169.6
+    - 136
     relativeSizes:
     - 0.55455804
     - 0.44544196
@@ -434,7 +760,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 357.6
+    lastTotalSize: 305.6
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -442,9 +768,9 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 17}
     newResultList:
     - id: 1003
       uniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
@@ -462,13 +788,159 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
+    - id: 1005
+      uniqueId: '[PlayModeTests.dll][suite]'
+      name: PlayModeTests.dll
+      fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
+    - id: 1006
+      uniqueId: PlayModeTests.dll/[Assets][suite]
+      name: Assets
+      fullName: Assets
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: '[PlayModeTests.dll][suite]'
+    - id: 1007
+      uniqueId: PlayModeTests.dll/Assets/[PlayModeTests][suite]
+      name: PlayModeTests
+      fullName: Assets.PlayModeTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: PlayModeTests.dll/[Assets][suite]
+    - id: 1009
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.AutoMapper][suite]
+      name: AutoMapper
+      fullName: Assets.PlayModeTests.AutoMapper
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/Assets/[PlayModeTests][suite]
+    - id: 1003
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/AutoMapper/[PlayModeTests][Assets.PlayModeTests.AutoMapper.AutoMapperTest][suite]
+      name: AutoMapperTest
+      fullName: Assets.PlayModeTests.AutoMapper.AutoMapperTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.AutoMapper][suite]
+    - id: 1004
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/AutoMapper/AutoMapperTest/[PlayModeTests][Assets.PlayModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject]
+      name: AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject
+      fullName: Assets.PlayModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/AutoMapper/[PlayModeTests][Assets.PlayModeTests.AutoMapper.AutoMapperTest][suite]
+    - id: 1008
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Scripts][suite]
+      name: Scripts
+      fullName: Assets.PlayModeTests.Scripts
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/Assets/[PlayModeTests][suite]
+    - id: 1001
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
+      name: CubeBehaviourTest
+      fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Scripts][suite]
+    - id: 1002
+      uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/CubeBehaviourTest/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues]
+      name: CubeBehaviourRunsOnCubeAndReturnsExpectedValues
+      fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
     m_ResultText: CubeFactoryTest (0.181s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: d353eb75
       m_LastClickedID: 1978356691
-      m_ExpandedIDs: 517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600a21cc53dc272103ed353eb75ffffff7f
+      m_ExpandedIDs: 517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600dc31ee0a0d1cec0fa21cc53dc272103ed353eb75ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -496,14 +968,14 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 17}
     newResultList:
     - id: 1000
       uniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.1212693
+      duration: 0.3485336
       messages: 
       output: 
       stacktrace: 
@@ -514,13 +986,1282 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: TemperatureConverterTest (0.063s)
+    - id: 1083
+      uniqueId: '[EditModeTests.dll][suite]'
+      name: EditModeTests.dll
+      fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
+      resultStatus: 1
+      duration: 0.3111086
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
+    - id: 1084
+      uniqueId: EditModeTests.dll/[Assets][suite]
+      name: Assets
+      fullName: Assets
+      resultStatus: 1
+      duration: 0.3084188
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1083
+      parentUniqueId: '[EditModeTests.dll][suite]'
+    - id: 1085
+      uniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
+      name: EditModeTests
+      fullName: Assets.EditModeTests
+      resultStatus: 1
+      duration: 0.3063737
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1084
+      parentUniqueId: EditModeTests.dll/[Assets][suite]
+    - id: 1087
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.AutoMapper][suite]
+      name: AutoMapper
+      fullName: Assets.EditModeTests.AutoMapper
+      resultStatus: 1
+      duration: 0.3011479
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1085
+      parentUniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
+    - id: 1076
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest][suite]
+      name: AutoMapperTest
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest
+      resultStatus: 1
+      duration: 0.2934219
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1087
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.AutoMapper][suite]
+    - id: 1079
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo][suite]
+      name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo
+      resultStatus: 1
+      duration: 0.259535
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest][suite]
+    - id: 1077
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/AutoMapperSuccessfullyMapsCsvDataToCubeInfo/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(30.0d,Celsius,50.0d,KiloWatt,1.0d)]
+      name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo(30.0d,Celsius,50.0d,KiloWatt,1.0d)
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(30.0d,Celsius,50.0d,KiloWatt,1.0d)
+      resultStatus: 1
+      duration: 0.2223944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo][suite]
+    - id: 1078
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/AutoMapperSuccessfullyMapsCsvDataToCubeInfo/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(20.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)]
+      name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo(20.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(20.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
+      resultStatus: 1
+      duration: 0.0076692
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo][suite]
+    - id: 1082
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException][suite]
+      name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException
+      resultStatus: 1
+      duration: 0.0241763
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest][suite]
+    - id: 1080
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(30.0d,Celsius,500.0d,KiloWatt,1.0d)]
+      name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(30.0d,Celsius,500.0d,KiloWatt,1.0d)
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(30.0d,Celsius,500.0d,KiloWatt,1.0d)
+      resultStatus: 1
+      duration: 0.0092068
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1082
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException][suite]
+    - id: 1081
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(700.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)]
+      name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(700.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
+      fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(700.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
+      resultStatus: 1
+      duration: 0.0087162
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1082
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/AutoMapper/AutoMapperTest/[EditModeTests][Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException][suite]
+    - id: 1086
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.Converters][suite]
+      name: Converters
+      fullName: Assets.EditModeTests.Converters
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1085
+      parentUniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
+    - id: 1063
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+      name: TemperatureConverterTest
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1086
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.Converters][suite]
+    - id: 1073
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1075
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1074
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException]
+      name: ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1072
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+      name: ConvertToCelsiusReturnsExpectedTemperature
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1070
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)]
+      name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1072
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+    - id: 1071
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)]
+      name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1072
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
+    - id: 1069
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+      name: ConvertToFahrenheitReturnsExpectedTemperature
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1067
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)]
+      name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1069
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+    - id: 1068
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)]
+      name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1069
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
+    - id: 1066
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+      name: ConvertToKelvinReturnsExpectedTemperature
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1063
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
+    - id: 1064
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)]
+      name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1066
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+    - id: 1065
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)]
+      name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
+      fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1066
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
+    - id: 1012
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+      name: PropertyCalculatorTest
+      fullName: Assets.EditModeTests.PropertyCalculatorTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1085
+      parentUniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
+    - id: 1054
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1049
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1050
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1051
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1052
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1053
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)]
+      name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1054
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
+    - id: 1024
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult][suite]
+      name: CalculatingCubeScaleValueReturnsExpectedResult
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1022
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)]
+      name: CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult][suite]
+    - id: 1023
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)]
+      name: CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult][suite]
+    - id: 1029
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+      name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1025
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)]
+      name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1026
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)]
+      name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1027
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)]
+      name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1028
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)]
+      name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1045
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1038
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1039
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1040
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1041
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1042
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1043
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1044
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)]
+      name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
+    - id: 1048
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1046
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
+    - id: 1047
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)]
+      name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
+    - id: 1016
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
+      name: CalculatingFontSizeReturnsExpectedResult
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1013
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)]
+      name: CalculatingFontSizeReturnsExpectedResult(2.0f,125)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
+    - id: 1014
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)]
+      name: CalculatingFontSizeReturnsExpectedResult(0.0f,40)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
+    - id: 1015
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)]
+      name: CalculatingFontSizeReturnsExpectedResult(1.0f,83)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
+    - id: 1021
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+      name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1017
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)]
+      name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1018
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)]
+      name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1019
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)]
+      name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1020
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)]
+      name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1062
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1055
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1056
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1057
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1058
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1059
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1060
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1061
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)]
+      name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1062
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
+    - id: 1032
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult][suite]
+      name: CalculatingRedColorValueReturnsExpectedResult
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1030
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)]
+      name: CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult][suite]
+    - id: 1031
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)]
+      name: CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult][suite]
+    - id: 1037
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+      name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1012
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
+    - id: 1033
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)]
+      name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1034
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)]
+      name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1035
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)]
+      name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    - id: 1036
+      uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)]
+      name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
+      fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
+    m_ResultText: AutoMapperTest (0.293s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0cec4303
-      m_LastClickedID: 54782988
-      m_ExpandedIDs: e4d26b8e517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d600ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
+      m_SelectedIDs: 1ce44a0c
+      m_LastClickedID: 206234652
+      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d600ab9237091ce44a0cb369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -546,7 +2287,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -562,20 +2303,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
-    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2897
-    y: 73
-    width: 558
-    height: 926
+    x: 912
+    y: 73.6
+    width: 623
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.09415584
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,7 +2332,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -600,7 +2341,7 @@ MonoBehaviour:
     width: 967
     height: 433
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -616,14 +2357,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 348
-    width: 481.4
-    height: 427.8
+    x: 0
+    y: 407.2
+    width: 419.8
+    height: 376.19998
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -638,22 +2379,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/EditModeTests
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/EditModeTests
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 323a0000
-    m_LastClickedID: 14898
-    m_ExpandedIDs: 00000000243a000000ca9a3b
+    m_SelectedIDs: 523a0000
+    m_LastClickedID: 14930
+    m_ExpandedIDs: 00000000523a0000543a0000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -681,7 +2422,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000243a0000
+    m_ExpandedIDs: 00000000523a0000543a0000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,11 +2474,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 554}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
---- !u!114 &20
+  m_DirectoriesAreaWidth: 200.6
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -757,10 +2498,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1075.2001
-    y: 80.8
-    width: 452
-    height: 695
+    x: 912
+    y: 73.6
+    width: 623
+    height: 709.8
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -768,13 +2509,13 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 15064
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -790,21 +2531,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.2000003
-    y: 80.8
-    width: 307.8
-    height: 246.20001
+    x: 0
+    y: 73.6
+    width: 262.2
+    height: 312.6
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 523a0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 36fbffff
+      m_SelectedIDs: d83a0000
+      m_LastClickedID: 15064
+      m_ExpandedIDs: a2f7ffffe2f7ffff3cfbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -828,7 +2569,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 46b7a0fefa812c44ca6fda42b4d7b176
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -844,14 +2585,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 316
-    y: 80.8
-    width: 757.2
-    height: 246.20001
+    x: 263.2
+    y: 73.6
+    width: 646.8
+    height: 312.6
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -864,9 +2605,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9325193, y: 0.67870724, z: -1.108755}
+    m_Target: {x: 1.9526578, y: 0.6104156, z: -1.949556}
     speed: 2
-    m_Value: {x: 1.9325193, y: 0.67870724, z: -1.108755}
+    m_Value: {x: 1.9526578, y: 0.6104156, z: -1.949556}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -915,11 +2656,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.040488396, y: 0.0119725475, z: 0.0007449808, w: -0.99923545}
     speed: 2
-    m_Value: {x: 0.040488396, y: 0.0119725475, z: 0.00074498076, w: -0.99923545}
+    m_Value: {x: 0.04048324, y: 0.011971024, z: 0.000744886, w: -0.99910825}
   m_Size:
-    m_Target: 1.2946439
+    m_Target: 3.0946436
     speed: 2
-    m_Value: 1.2946439
+    m_Value: 3.0946436
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -944,7 +2685,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &23
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -960,14 +2701,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1926
-    y: 73
-    width: 956
-    height: 332
+    x: 263.2
+    y: 73.6
+    width: 646.8
+    height: 312.6
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -990,10 +2731,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1280
-    m_HBaseRangeMax: 1280
-    m_VBaseRangeMin: -720
-    m_VBaseRangeMax: 720
+    m_HBaseRangeMin: -1024
+    m_HBaseRangeMax: 1024
+    m_VBaseRangeMin: -576
+    m_VBaseRangeMax: 576
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1010,30 +2751,30 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
-      width: 956
-      height: 332
-    m_Scale: {x: 0.23055555, y: 0.23055555}
-    m_Translation: {x: 478, y: 166}
+      y: 21
+      width: 646.8
+      height: 291.6
+    m_Scale: {x: 0.253125, y: 0.253125}
+    m_Translation: {x: 323.4, y: 145.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -2073.2532
-      y: -720
-      width: 4146.5063
-      height: 1440
+      x: -1277.6295
+      y: -576
+      width: 2555.259
+      height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 0.23055555
-  m_LastWindowPixelSize: {x: 956, y: 332}
+  m_defaultScale: 0.253125
+  m_LastWindowPixelSize: {x: 808.5, y: 390.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &24
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1049,16 +2790,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 489.6
-    y: 348
-    width: 583.6
-    height: 427.8
+    x: 420.80002
+    y: 407.2
+    width: 489.2
+    height: 376.19998
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &25
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+using System;
 using Assets.AutoMapper;
 using Assets.Constants;
 using Assets.Models;
@@ -24,14 +25,15 @@ namespace Assets.EditModeTests.AutoMapper
 {
     public class AutoMapperTest
     {
-        [Test]
-        public void AutoMapperSuccessfullyMapsCsvDataToCubeInfo()
+        [TestCase(30d, TemperatureUnit.Celsius, 50d, EnergyUnit.KiloWatt, 1d)]
+        [TestCase(20d, TemperatureUnit.Fahrenheit, 1000d, EnergyUnit.KiloWatt, 10d)]
+        public void AutoMapperSuccessfullyMapsCsvDataToCubeInfo(double houseTemperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
         {
             // Arrange
             var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperDefaultProfile>());
             var sut = new Mapper(config);
 
-            var csvData = new CsvData(30d, TemperatureUnit.Celsius, 50d, EnergyUnit.KiloWatt, 1d);
+            var csvData = new CsvData(houseTemperature, temperatureUnit, energyPerMonth, energyUnit, solarPanelSizeInSquareMeter);
         
             // Act
             var result = sut.Map<CubeInfo>(csvData);
@@ -42,6 +44,22 @@ namespace Assets.EditModeTests.AutoMapper
             Assert.AreEqual(result.EnergyPerMonth, csvData.EnergyPerMonth);
             Assert.AreEqual(result.EnergyUnit, csvData.EnergyUnit);
             Assert.AreEqual(result.SolarPanelSizeInSquareMeter, csvData.SolarPanelSizeInSquareMeter);
+        }
+
+
+        [TestCase(30d, TemperatureUnit.Celsius, 500d, EnergyUnit.KiloWatt, 1d)]
+        [TestCase(700d, TemperatureUnit.Fahrenheit, 1000d, EnergyUnit.KiloWatt, 10d)]
+        public void MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(double houseTemperature, TemperatureUnit temperatureUnit, double energyPerMonth, EnergyUnit energyUnit, double solarPanelSizeInSquareMeter)
+        {
+            // Arrange
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperDefaultProfile>());
+            var sut = new Mapper(config);
+
+            var csvData = new CsvData(houseTemperature, temperatureUnit, energyPerMonth, energyUnit, solarPanelSizeInSquareMeter);
+
+            // Act
+            // Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => sut.Map<CubeInfo>(csvData));
         }
     }
 }

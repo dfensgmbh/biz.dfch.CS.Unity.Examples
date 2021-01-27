@@ -18,7 +18,6 @@
 using System;
 using Assets.Constants;
 using Assets.Converters;
-using UnityEngine;
 
 namespace Assets.Models
 {
@@ -84,10 +83,6 @@ namespace Assets.Models
             EnergyUnit = energyUnit;
             SolarPanelSizeInSquareMeter = solarPanelSizeInSquareMeter;
             EnergyPerMonth = energyPerMonth;
-            if (true)
-            {
-                Debug.Log("Hello World");
-            }
         }
     }
 }

@@ -18,7 +18,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
-using Assets.AutoMapper;
 using Assets.Constants;
 using Assets.Models;
 using Assets.Readers;
@@ -77,9 +76,7 @@ namespace Assets.Managers
             var csvReader = new CsvReader();
             var csvData = csvReader.GetCsvData();
 
-            var config = new MapperConfiguration(cfg =>
-                cfg.AddProfile<AutoMapperDefaultProfile>());
-            var mapper = new Mapper(config);
+            var mapper = UnityContainerManager.Resolve<IMapper>();
 
             var cubeInfos = new List<CubeInfo>();
             foreach (var data in csvData)
