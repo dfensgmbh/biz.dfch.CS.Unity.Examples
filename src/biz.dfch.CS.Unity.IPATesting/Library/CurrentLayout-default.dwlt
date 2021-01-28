@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: NuGet
+  m_Title: Test Runner
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -43,14 +43,14 @@ MonoBehaviour:
     y: 0
     width: 491.2
     height: 397.19998
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 25}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 25}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,10 +72,10 @@ MonoBehaviour:
     y: 333.6
     width: 912
     height: 397.19998
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 45
+  controlID: 146
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,10 +97,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 730.8
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 245
+  controlID: 250
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: NugetWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,16 +120,16 @@ MonoBehaviour:
     y: 0
     width: 624
     height: 730.8
-  m_MinSize: {x: 101, y: 121}
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
   - {fileID: 18}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,9 +279,9 @@ MonoBehaviour:
     width: 912
     height: 730.8
   m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 246
+  controlID: 145
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 247
+  controlID: 232
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -362,260 +362,297 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   hasRefreshed: 1
   availablePackages:
-  - Id: Unity.Container
-    Version: 5.11.10
-    Title: Unity.Container
-    Description: Unity Core Engine
-    Summary: 
-    ReleaseNotes: This package is compatible with .NET Standard 1.0 and 2.0, .NET
-      Core 1.0 and 2.0, .NET 4.0, 4.5, 4.6, 4.7
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Container/5.11.10
-    DownloadCount: 8016534
-    Authors: Unity Open Source Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/unity
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity
-    Version: 5.11.9
-    Title: Unity
-    Description: This package contains Unity Container and Abstractions libraries
-      as a single package.
-    Summary: 
-    ReleaseNotes: Entire Unity Library as single package. This is a convenience package
-      containing both Unity.Abstractions and Unity.Container assemblies. This package
-      is distributed for these who do now wish to separate declarations and implementation.
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/v5.x/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity/5.11.9
-    DownloadCount: 35406404
-    Authors: Unity Container Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/unity
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity.Abstractions
-    Version: 5.11.6
-    Title: Unity.Abstractions
-    Description: Unity Container Public Abstractions
-    Summary: 
-    ReleaseNotes: This package is distributed as .NET Standard 1.0, 2.0, .Net Core
-      1.0, 2.0, and .NET 4.0, 4.5, 4.6, and 4.7
-    LicenseUrl: https://github.com/unitycontainer/abstractions/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Abstractions/5.11.6
-    DownloadCount: 9234082
-    Authors: Unity Open Source Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity.Interception
-    Version: 5.11.1
-    Title: Unity.Interception
-    Description: Unity Interception
-    Summary: 
-    ReleaseNotes: This package is compatible with Net Standard 2.0, Net Core 2.0,
-      .NET 4.5, 4.6, and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Interception/5.11.1
-    DownloadCount: 9035416
-    Authors: Unity Open Source Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/unity
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity.Mvc
-    Version: 5.11.1
-    Title: Unity.Mvc
-    Description: Unity for ASP.NET MVC
-    Summary: 
-    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/aspnet-mvc/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc/5.11.1
-    DownloadCount: 5481882
-    Authors: Unity Open Source Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/aspnet-mvc
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity.AspNet.WebApi
-    Version: 5.11.2
-    Title: Unity.AspNet.WebApi
-    Description: Unity for ASP.NET WebApi
-    Summary: 
-    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/aspnet-webapi/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.AspNet.WebApi/5.11.2
-    DownloadCount: 3654028
-    Authors: Unity Open Source Project
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/aspnet-webapi
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: CommonServiceLocator
-    Version: 2.0.5
-    Title: CommonServiceLocator
-    Description: The library provides an abstraction over IoC containers and service
-      locators. Using the library allows an application to indirectly access the
-      capabilities without relying on hard references.
-    Summary: 
-    ReleaseNotes: This release contains targets for .NET 4.0, 4.5, 4.7, and 4.8,
-      .NET Core 1.0, 2.0 and 3.0, .NET Standard 1.0, .NET Standard 2.0 and .NET Standard
-      2.1
-    LicenseUrl: https://opensource.org/licenses/MS-PL
-    DownloadUrl: https://www.nuget.org/api/v2/package/CommonServiceLocator/2.0.5
-    DownloadCount: 37828503
-    Authors: Microsoft.Practices.ServiceLocation
-    Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/commonservicelocator
-    RepositoryUrl: 
-    RepositoryType: 0
-    RepositoryBranch: 
-    RepositoryCommit: 
-  - Id: Unity.WebAPI
-    Version: 5.4.0
-    Title: Unity.WebAPI
-    Description: Unity.WebAPI allows the simple Integration of the Unity IoC container
-      with ASP.NET Web API.
+  - Id: Newtonsoft.Json
+    Version: 12.0.3
+    Title: Json.NET
+    Description: Json.NET is a popular high-performance JSON framework for .NET
     Summary: 
     ReleaseNotes: 
-    LicenseUrl: http://opensource.org/licenses/MIT
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.WebAPI/5.4.0
-    DownloadCount: 5218908
-    Authors: Paul Hiles
+    LicenseUrl: https://www.nuget.org/packages/Newtonsoft.Json/12.0.3/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3
+    DownloadCount: 836144387
+    Authors: James Newton-King
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/devtrends/Unity.WebAPI
+    ProjectUrl: https://www.newtonsoft.com/json
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.Microsoft.DependencyInjection
-    Version: 5.11.5
-    Title: Unity.Microsoft.DependencyInjection
-    Description: Unity for Microsoft Dependency Injection framework.
+  - Id: Microsoft.Extensions.Logging
+    Version: 5.0.0
+    Title: Microsoft.Extensions.Logging
+    Description: "Logging infrastructure default implementation for Microsoft.Extensions.Logging.
+      \nWhen using NuGet 3.x this package requires at least version 3.4."
     Summary: 
-    ReleaseNotes: This release is compatible with Core 3.1
-    LicenseUrl: https://github.com/unitycontainer/microsoft-dependency-injection/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Microsoft.DependencyInjection/5.11.5
-    DownloadCount: 968693
-    Authors: Unity Open Source Project
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    LicenseUrl: https://www.nuget.org/packages/Microsoft.Extensions.Logging/5.0.0/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/5.0.0
+    DownloadCount: 439805423
+    Authors: Microsoft
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer
+    ProjectUrl: https://github.com/dotnet/runtime
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.Configuration
-    Version: 5.11.2
-    Title: Unity.Configuration
-    Description: Unity Configuration
+  - Id: Microsoft.Extensions.DependencyInjection
+    Version: 5.0.1
+    Title: Microsoft.Extensions.DependencyInjection
+    Description: "Default implementation of dependency injection for Microsoft.Extensions.DependencyInjection.
+      \nWhen using NuGet 3.x this package requires at least version 3.4."
     Summary: 
-    ReleaseNotes: This package is compatible with NET Standard 2.0, Net Core 2.0,
-      .NET 4.0, 4.5, 4.6, and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Configuration/5.11.2
-    DownloadCount: 684691
-    Authors: Unity Open Source Project
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    LicenseUrl: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection/5.0.1/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/5.0.1
+    DownloadCount: 433606846
+    Authors: Microsoft
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/unity
+    ProjectUrl: https://github.com/dotnet/runtime
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.Mvc5
-    Version: 1.4.0
-    Title: Unity.Mvc5
-    Description: Unity.Mvc5 allows the simple integration of the Unity IoC container
-      with ASP.NET MVC 5.
+  - Id: Castle.Core
+    Version: 4.4.1
+    Title: Castle.Core
+    Description: Castle Core, including DynamicProxy, Logging Abstractions and DictionaryAdapter
     Summary: 
     ReleaseNotes: 
-    LicenseUrl: http://opensource.org/licenses/MIT
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc5/1.4.0
-    DownloadCount: 1563565
-    Authors: Paul Hiles
+    LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+    DownloadUrl: https://www.nuget.org/api/v2/package/Castle.Core/4.4.1
+    DownloadCount: 187069761
+    Authors: Castle Project Contributors
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/devtrends/Unity.Mvc5
+    ProjectUrl: http://www.castleproject.org/
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.RegistrationByConvention
-    Version: 5.11.1
-    Title: Unity.RegistrationByConvention
-    Description: Unity Registration By Convention
+  - Id: Serilog
+    Version: 2.10.0
+    Title: Serilog
+    Description: Simple .NET logging with fully-structured events
     Summary: 
-    ReleaseNotes: This package is compatible with .NET Standard 2.0, .Net Core 2.9,
-      and .NET Framework 4.5, 4.6, 4.7
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.RegistrationByConvention/5.11.1
-    DownloadCount: 530575
-    Authors: Unity Open Source Project
+    ReleaseNotes: 
+    LicenseUrl: https://www.nuget.org/packages/Serilog/2.10.0/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Serilog/2.10.0
+    DownloadCount: 186936470
+    Authors: Serilog Contributors
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/registration-by-convention
+    ProjectUrl: https://serilog.net/
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.Wcf
-    Version: 5.11.1
-    Title: Unity.Wcf
-    Description: Unity integration with WCF
+  - Id: Microsoft.EntityFrameworkCore
+    Version: 5.0.2
+    Title: Microsoft.EntityFrameworkCore
+    Description: 'Entity Framework Core is a modern object-database mapper for .NET.
+      It supports LINQ queries, change tracking, updates, and schema migrations.
+      EF Core works with SQL Server, Azure SQL Database, SQLite, Azure Cosmos DB,
+      MySQL, PostgreSQL, and other databases through a provider plugin API.
+
+
+      Commonly
+      Used Types:
+
+      Microsoft.EntityFrameworkCore.DbContext
+
+      Microsoft.EntityFrameworkCore.DbSet'
     Summary: 
-    ReleaseNotes: This package is compatible with .NET 4.5, 4.6 and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/wcf/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Wcf/5.11.1
-    DownloadCount: 430177
-    Authors: Unity Open Source Project
+    ReleaseNotes: 
+    LicenseUrl: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/5.0.2/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore/5.0.2
+    DownloadCount: 175574830
+    Authors: Microsoft
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/wcf
+    ProjectUrl: https://docs.microsoft.com/ef/core/
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.Mvc4
-    Version: 1.6.0.0
-    Title: Unity.MVC4
-    Description: Unity.Mvc4 is a library that allows simple Integration of Microsoft's
-      Unity IoC container with ASP.NET MVC 4. A copy of Unity.MVC3 except it references
-      MVC4
+  - Id: Moq
+    Version: 4.16.0
+    Title: 'Moq: an enjoyable mocking library'
+    Description: 'Moq is the most popular and friendly mocking framework for .NET.
+
+
+      Built
+      from https://github.com/moq/moq4/tree/74d58630f'
     Summary: 
-    ReleaseNotes: "* 1.6.0.0 - Updated library to 4.0.1 of Unity\n* 1.5.0.0 - Upgraded
-      libary to 3.5.1404.0.\n            Added MIT licence to source."
-    LicenseUrl: http://opensource.org/licenses/mit
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.Mvc4/1.6.0
-    DownloadCount: 795817
-    Authors: Oliver Rivett-Carnac
+    ReleaseNotes: A changelog is available at https://github.com/moq/moq4/blob/master/CHANGELOG.md.
+    LicenseUrl: https://raw.githubusercontent.com/moq/moq4/master/License.txt
+    DownloadUrl: https://www.nuget.org/api/v2/package/Moq/4.16.0
+    DownloadCount: 159119710
+    Authors: Daniel Cazzulino, kzu
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/OliverRC/Unity.MVC4
+    ProjectUrl: https://github.com/moq/moq4
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
     RepositoryCommit: 
-  - Id: Unity.ServiceLocation
-    Version: 5.11.1
-    Title: Unity.ServiceLocation
-    Description: Unity Service Location
+  - Id: AutoMapper
+    Version: 10.1.1
+    Title: AutoMapper
+    Description: A convention-based object-object mapper.
     Summary: 
-    ReleaseNotes: This package is compatible with .NET Standard 1.0 and 2.0, Net
-      Core 1.0 and 2.0 as well as .NET 4.0, 4.5, 4.6, and 4.7 frameworks.
-    LicenseUrl: https://github.com/unitycontainer/unity/blob/master/LICENSE
-    DownloadUrl: https://www.nuget.org/api/v2/package/Unity.ServiceLocation/5.11.1
-    DownloadCount: 417595
-    Authors: Unity Open Source Project
+    ReleaseNotes: 
+    LicenseUrl: https://www.nuget.org/packages/AutoMapper/10.1.1/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/AutoMapper/10.1.1
+    DownloadCount: 125863210
+    Authors: Jimmy Bogard
     Icon: {fileID: 0}
-    ProjectUrl: https://github.com/unitycontainer/unity
+    ProjectUrl: https://automapper.org/
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Microsoft.ApplicationInsights
+    Version: 2.16.0
+    Title: Application Insights API
+    Description: 'Application Insights Base API. This package provides core functionality
+      for transmission of all Application Insights Telemetry Types and is a dependent
+      package for all other Application Insights packages. Please install the platform
+      specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156'
+    Summary: 
+    ReleaseNotes: "You should not use this nuget package for Win Phone, WinStore
+      and UWP applications. It is not supported starting 2.0.0.\n      For the release
+      notes please follow http://go.microsoft.com/fwlink/?LinkId=535037"
+    LicenseUrl: https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.16.0/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.16.0
+    DownloadCount: 123441357
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: https://go.microsoft.com/fwlink/?LinkId=392727
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: xunit
+    Version: 2.4.1
+    Title: xUnit.net
+    Description: 'xUnit.net is a developer testing framework, built to support Test
+      Driven Development, with a design goal of extreme simplicity and alignment
+      with framework features.
+
+
+      Installing this package installs xunit.core,
+      xunit.assert, and xunit.analyzers.'
+    Summary: xUnit.net is a developer testing framework, built to support Test Driven
+      Development.
+    ReleaseNotes: 
+    LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt
+    DownloadUrl: https://www.nuget.org/api/v2/package/xunit/2.4.1
+    DownloadCount: 116492831
+    Authors: James Newkirk, Brad Wilson
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/xunit/xunit
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: EntityFramework
+    Version: 6.4.4
+    Title: EntityFramework
+    Description: Entity Framework 6 (EF6) is a tried and tested object-relational
+      mapper for .NET with many years of feature development and stabilization.
+    Summary: 
+    ReleaseNotes: 
+    LicenseUrl: https://www.nuget.org/packages/EntityFramework/6.4.4/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/EntityFramework/6.4.4
+    DownloadCount: 112973371
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: http://go.microsoft.com/fwlink/?LinkID=263480
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Microsoft.IdentityModel.Clients.ActiveDirectory
+    Version: 5.2.8
+    Title: Active Directory Authentication Library
+    Description: "There is a newer version of this library available here: https://www.nuget.org/packages/Microsoft.Identity.Client/\n     
+      Migration guide: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-net-migration\n     
+      ADAL no longer receives new feature improvements."
+    Summary: 
+    ReleaseNotes: 
+    LicenseUrl: https://go.microsoft.com/fwlink/?linkid=841311
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Clients.ActiveDirectory/5.2.8
+    DownloadCount: 112953326
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: https://aka.ms/adalnet
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: AWSSDK.Core
+    Version: 3.5.2.1
+    Title: AWSSDK - Core Runtime
+    Description: The Amazon Web Services SDK for .NET - Core Runtime
+    Summary: 
+    ReleaseNotes: 
+    LicenseUrl: http://aws.amazon.com/apache2.0/
+    DownloadUrl: https://www.nuget.org/api/v2/package/AWSSDK.Core/3.5.2.1
+    DownloadCount: 110800867
+    Authors: Amazon Web Services
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/aws/aws-sdk-net/
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: Microsoft.Bcl.AsyncInterfaces
+    Version: 5.0.0
+    Title: Microsoft.Bcl.AsyncInterfaces
+    Description: "Provides the IAsyncEnumerable<T> and IAsyncDisposable interfaces
+      and helper types for .NET Standard 2.0. This package is not required starting
+      with .NET Standard 2.1 and .NET Core 3.0.\n\nCommonly Used Types:\nSystem.IAsyncDisposable\nSystem.Collections.Generic.IAsyncEnumerable\nSystem.Collections.Generic.IAsyncEnumerator\n
+      \nWhen using NuGet 3.x this package requires at least version 3.4."
+    Summary: 
+    ReleaseNotes: https://go.microsoft.com/fwlink/?LinkID=799421
+    LicenseUrl: https://www.nuget.org/packages/Microsoft.Bcl.AsyncInterfaces/5.0.0/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/5.0.0
+    DownloadCount: 106663404
+    Authors: Microsoft
+    Icon: {fileID: 0}
+    ProjectUrl: https://github.com/dotnet/runtime
+    RepositoryUrl: 
+    RepositoryType: 0
+    RepositoryBranch: 
+    RepositoryCommit: 
+  - Id: NUnit
+    Version: 3.13.0
+    Title: NUnit
+    Description: 'NUnit features a fluent assert syntax, parameterized, generic and
+      theory tests and is user-extensible.
+
+
+      This package includes the NUnit
+      3 framework assembly, which is referenced by your tests. You will need to install
+      version 3 of the nunit3-console program or a third-party runner that supports
+      NUnit 3 in order to execute tests. Runners intended for use with NUnit 2.x
+      will not run NUnit 3 tests correctly.
+
+
+      Supported platforms:
+
+      -
+      .NET Framework 3.5+
+
+      - .NET Standard 2.0+'
+    Summary: NUnit is a unit-testing framework for all .NET languages with a strong
+      TDD focus.
+    ReleaseNotes: This package includes the NUnit 3 framework assembly, which is
+      referenced by your tests. You will need to install version 3 of the nunit3-console
+      program or a third-party runner that supports NUnit 3 in order to execute tests.
+      Runners intended for use with NUnit 2.x will not run NUnit 3 tests correctly.
+    LicenseUrl: https://www.nuget.org/packages/NUnit/3.13.0/license
+    DownloadUrl: https://www.nuget.org/api/v2/package/NUnit/3.13.0
+    DownloadCount: 102271437
+    Authors: Charlie Poole, Rob Prouse
+    Icon: {fileID: 0}
+    ProjectUrl: https://nunit.org/
     RepositoryUrl: 
     RepositoryType: 0
     RepositoryBranch: 
@@ -745,7 +782,7 @@ MonoBehaviour:
     height: 376.19998
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 290
+    ID: 603
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
@@ -768,7 +805,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 17}
     newResultList:
@@ -777,7 +814,7 @@ MonoBehaviour:
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
       resultStatus: 1
-      duration: 0.2848514
+      duration: 0.2446268
       messages: 
       output: 
       stacktrace: 
@@ -792,8 +829,8 @@ MonoBehaviour:
       uniqueId: '[PlayModeTests.dll][suite]'
       name: PlayModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1903211
       messages: 
       output: 
       stacktrace: 
@@ -808,8 +845,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/[Assets][suite]
       name: Assets
       fullName: Assets
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1748756
       messages: 
       output: 
       stacktrace: 
@@ -824,8 +861,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/[PlayModeTests][suite]
       name: PlayModeTests
       fullName: Assets.PlayModeTests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1629172
       messages: 
       output: 
       stacktrace: 
@@ -840,8 +877,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.AutoMapper][suite]
       name: AutoMapper
       fullName: Assets.PlayModeTests.AutoMapper
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.4019402
       messages: 
       output: 
       stacktrace: 
@@ -856,8 +893,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/AutoMapper/[PlayModeTests][Assets.PlayModeTests.AutoMapper.AutoMapperTest][suite]
       name: AutoMapperTest
       fullName: Assets.PlayModeTests.AutoMapper.AutoMapperTest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.3889293
       messages: 
       output: 
       stacktrace: 
@@ -872,10 +909,86 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/AutoMapper/AutoMapperTest/[PlayModeTests][Assets.PlayModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject]
       name: AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject
       fullName: Assets.PlayModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCubeInfoToCubeGameObject
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.3559032
       messages: 
-      output: 
+      output: "RigidbodyConstraints are: 122\r\nSTART Mapping temperature ('20 \xB0C')
+        to color\r\nSTART Converting temperature ('20 \xB0C') to Kelvin...\r\nEND
+        Converting temperature '293.15 K\r\nCreating color with R '0.7476028' G '0'
+        and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nSTART
+        Mapping energy ('75') to scale value\r\nCalculating energy per one square
+        meter. Size of solar panel is '8' \r\nEnergy per one square meter is: '9.375'\r\nEnd
+        Mapping Energy to scale value ('0.125')\r\nSTART Recalculating bounds for
+        Cube with scale value '0.125'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1, -0.1, -0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(0.1, 0.1, 0.1)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(0.1, -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '0.125'\r\nResult Vector3 for BoxCollider
+        size: '(0.1, 0.1, 0.1)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '0.125'\r\nCalculated FontSize '45'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '45'\r\nExpected
+        Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color: 'RGBA(0.748, 0.000,
+        0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex to be asserted:
+        '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex to be
+        asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20
+        \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest
+        Finished\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -889,8 +1002,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/[PlayModeTests][Assets.PlayModeTests.Scripts][suite]
       name: Scripts
       fullName: Assets.PlayModeTests.Scripts
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1476384
       messages: 
       output: 
       stacktrace: 
@@ -905,8 +1018,8 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
       name: CubeBehaviourTest
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1257201
       messages: 
       output: 
       stacktrace: 
@@ -921,10 +1034,167 @@ MonoBehaviour:
       uniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/CubeBehaviourTest/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues]
       name: CubeBehaviourRunsOnCubeAndReturnsExpectedValues
       fullName: Assets.PlayModeTests.Scripts.CubeBehaviourTest.CubeBehaviourRunsOnCubeAndReturnsExpectedValues
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0937208
       messages: 
-      output: 
+      output: "TestCases Count: 2\r\nRigidbodyConstraints are: 122\r\nSTART Mapping
+        temperature ('20 \xB0C') to color\r\nSTART Converting temperature ('20 \xB0C')
+        to Kelvin...\r\nEND Converting temperature '293.15 K\r\nCreating color with
+        R '0.7476028' G '0' and B '0.2523972'\r\nEND Result Color: 'RGBA(0.748, 0.000,
+        0.252, 1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating
+        energy per one square meter. Size of solar panel is '8' \r\nEnergy per one
+        square meter is: '9.375'\r\nEnd Mapping Energy to scale value ('0.125')\r\nSTART
+        Recalculating bounds for Cube with scale value '0.125'\r\nCurrent vertex
+        that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated
+        '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.1, -0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
+        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(-0.1,
+        -0.1, 0.1)'\r\nCurrent vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult
+        vertex that got calculated '(-0.1, 0.1, 0.1)'\r\nCurrent vertex that gets
+        calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got calculated '(-0.1,
+        0.1, -0.1)'\r\nCurrent vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult
+        vertex that got calculated '(-0.1, -0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, -0.5, -0.5)'\r\nResult vertex that got calculated '(0.1,
+        -0.1, -0.1)'\r\nCurrent vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult
+        vertex that got calculated '(0.1, 0.1, -0.1)'\r\nCurrent vertex that gets
+        calculated '(0.5, 0.5, 0.5)'\r\nResult vertex that got calculated '(0.1,
+        0.1, 0.1)'\r\nCurrent vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult
+        vertex that got calculated '(0.1, -0.1, 0.1)'\r\nEND Recalculating cube bounds\r\nSTART
+        Recalculating BoxCollider size with scale value '0.125'\r\nResult Vector3
+        for BoxCollider size: '(0.1, 0.1, 0.1)'\r\nEND Recalculating BoxCollider
+        size'\r\nSTART Displaying information on cube with scale value '0.125'\r\nCalculated
+        FontSize '45'\r\nEND TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size:
+        '0.03' \nFont Size: '45'\r\nFrame Count: 0\r\nTemperature: 20\r\nTemperatureUnit:
+        Celsius\r\nEnergyPerMonth: 75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter:
+        8\r\nExpected Color: 'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nResult Color:
+        'RGBA(0.748, 0.000, 0.252, 1.000)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, 0.1)'\r\nExpected vertex: '(-0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, 0.1, -0.1)'\r\nExpected vertex: '(-0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(-0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, -0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, -0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, -0.1)'\r\nExpected vertex: '(0.1, 0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, 0.1, 0.1)'\r\nExpected vertex: '(0.1, -0.1, 0.1)'\r\nVertex
+        to be asserted: '(0.1, -0.1, 0.1)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 20 \xB0C\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 20
+        \xB0C\nEnergy: 75 kWh'\r\nExpected font size: '45'\r\nResult font size: '45'\r\nTest
+        Finished\r\nResetting Cube size completed\r\nDestroying CubeBehaviour component
+        and child GameObject completed\r\nTestCase loaded\r\nRigidbodyConstraints
+        are: 122\r\nSTART Mapping temperature ('330 K') to color\r\nCreating color
+        with R '1' G '0' and B '0'\r\nEND Result Color: 'RGBA(1.000, 0.000, 0.000,
+        1.000)'\r\nSTART Mapping energy ('75') to scale value\r\nCalculating energy
+        per one square meter. Size of solar panel is '0.5' \r\nEnergy per one square
+        meter is: '150'\r\nEnd Mapping Energy to scale value ('2')\r\nSTART Recalculating
+        bounds for Cube with scale value '2'\r\nCurrent vertex that gets calculated
+        '(0.5, -0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        -0.5, 0.5)'\r\nResult vertex that got calculated '(-1.0, -1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, 0.5, 0.5)'\r\nResult vertex that got
+        calculated '(-1.0, 1.0, 1.0)'\r\nCurrent vertex that gets calculated '(-0.5,
+        0.5, -0.5)'\r\nResult vertex that got calculated '(-1.0, 1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(-0.5, -0.5, -0.5)'\r\nResult vertex that got
+        calculated '(-1.0, -1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        -0.5, -0.5)'\r\nResult vertex that got calculated '(1.0, -1.0, -1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, 0.5, -0.5)'\r\nResult vertex that got
+        calculated '(1.0, 1.0, -1.0)'\r\nCurrent vertex that gets calculated '(0.5,
+        0.5, 0.5)'\r\nResult vertex that got calculated '(1.0, 1.0, 1.0)'\r\nCurrent
+        vertex that gets calculated '(0.5, -0.5, 0.5)'\r\nResult vertex that got
+        calculated '(1.0, -1.0, 1.0)'\r\nEND Recalculating cube bounds\r\nSTART Recalculating
+        BoxCollider size with scale value '2'\r\nResult Vector3 for BoxCollider size:
+        '(2.0, 2.0, 2.0)'\r\nEND Recalculating BoxCollider size'\r\nSTART Displaying
+        information on cube with scale value '2'\r\nCalculated FontSize '125'\r\nEND
+        TextMesh:\nAnchor: 'MiddleCenter' \nCharacter Size: '0.03' \nFont Size: '125'\r\nFrame
+        Count: 1\r\nTemperature: 330\r\nTemperatureUnit: Kelvin\r\nEnergyPerMonth:
+        75\r\nEnergyUnit: KiloWatt\r\nSolarPanelSizeInSquareMeter: 0.5\r\nExpected
+        Color: 'RGBA(1.000, 0.000, 0.000, 1.000)'\r\nResult Color: 'RGBA(1.000, 0.000,
+        0.000, 1.000)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex to be asserted:
+        '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex to be
+        asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, 1.0)'\r\nExpected vertex: '(-1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, 1.0, -1.0)'\r\nExpected vertex: '(-1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(-1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, -1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, -1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, -1.0)'\r\nExpected vertex: '(1.0, 1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, 1.0, 1.0)'\r\nExpected vertex: '(1.0, -1.0, 1.0)'\r\nVertex
+        to be asserted: '(1.0, -1.0, 1.0)'\r\nChildren Count: 9\r\nExpected text:
+        'Temperature: 330 K\nEnergy: 75 kWh'\r\nResult text: 'Temperature: 330 K\nEnergy:
+        75 kWh'\r\nExpected font size: '125'\r\nResult font size: '125'\r\nTest Finished\r\nResetting
+        Cube size completed\r\nDestroying CubeBehaviour component and child GameObject
+        completed\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -934,13 +1204,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayModeTests.dll/Assets/PlayModeTests/Scripts/[PlayModeTests][Assets.PlayModeTests.Scripts.CubeBehaviourTest][suite]
-    m_ResultText: CubeFactoryTest (0.181s)
+    m_ResultText: Scripts (0.148s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d353eb75
-      m_LastClickedID: 1978356691
-      m_ExpandedIDs: 517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600dc31ee0a0d1cec0fa21cc53dc272103ed353eb75ffffff7f
+      m_SelectedIDs: 91238485
+      m_LastClickedID: -2054937711
+      m_ExpandedIDs: 91238485517ef48ec7f20490ae332b9144b3fb9cab803fa2670f71b16bfbc9c49a141ee9e557abf72314d600dc31ee0a0d1cec0fa21cc53dc272103ed353eb75ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -974,9 +1244,9 @@ MonoBehaviour:
       uniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
-      resultStatus: 1
-      duration: 0.3485336
-      messages: 
+      resultStatus: 2
+      duration: 0.4491883
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -990,9 +1260,9 @@ MonoBehaviour:
       uniqueId: '[EditModeTests.dll][suite]'
       name: EditModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
-      resultStatus: 1
-      duration: 0.3111086
-      messages: 
+      resultStatus: 2
+      duration: 0.3914996
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1006,9 +1276,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/[Assets][suite]
       name: Assets
       fullName: Assets
-      resultStatus: 1
-      duration: 0.3084188
-      messages: 
+      resultStatus: 2
+      duration: 0.3768422
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1022,9 +1292,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
       name: EditModeTests
       fullName: Assets.EditModeTests
-      resultStatus: 1
-      duration: 0.3063737
-      messages: 
+      resultStatus: 2
+      duration: 0.3635466
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1039,7 +1309,7 @@ MonoBehaviour:
       name: AutoMapper
       fullName: Assets.EditModeTests.AutoMapper
       resultStatus: 1
-      duration: 0.3011479
+      duration: 0.221389
       messages: 
       output: 
       stacktrace: 
@@ -1055,7 +1325,7 @@ MonoBehaviour:
       name: AutoMapperTest
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest
       resultStatus: 1
-      duration: 0.2934219
+      duration: 0.2163801
       messages: 
       output: 
       stacktrace: 
@@ -1071,7 +1341,7 @@ MonoBehaviour:
       name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo
       resultStatus: 1
-      duration: 0.259535
+      duration: 0.1854728
       messages: 
       output: 
       stacktrace: 
@@ -1087,7 +1357,7 @@ MonoBehaviour:
       name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo(30.0d,Celsius,50.0d,KiloWatt,1.0d)
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(30.0d,Celsius,50.0d,KiloWatt,1.0d)
       resultStatus: 1
-      duration: 0.2223944
+      duration: 0.1650923
       messages: 
       output: 
       stacktrace: 
@@ -1104,7 +1374,7 @@ MonoBehaviour:
       name: AutoMapperSuccessfullyMapsCsvDataToCubeInfo(20.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.AutoMapperSuccessfullyMapsCsvDataToCubeInfo(20.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
       resultStatus: 1
-      duration: 0.0076692
+      duration: 0.005378
       messages: 
       output: 
       stacktrace: 
@@ -1121,7 +1391,7 @@ MonoBehaviour:
       name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException
       resultStatus: 1
-      duration: 0.0241763
+      duration: 0.0246309
       messages: 
       output: 
       stacktrace: 
@@ -1137,7 +1407,7 @@ MonoBehaviour:
       name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(30.0d,Celsius,500.0d,KiloWatt,1.0d)
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(30.0d,Celsius,500.0d,KiloWatt,1.0d)
       resultStatus: 1
-      duration: 0.0092068
+      duration: 0.0113506
       messages: 
       output: 
       stacktrace: 
@@ -1154,7 +1424,7 @@ MonoBehaviour:
       name: MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(700.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
       fullName: Assets.EditModeTests.AutoMapper.AutoMapperTest.MappingCsvDataToCubeInfoWithCsvDataValuesOutOfCubeInfoValueRangeThrowsException(700.0d,Fahrenheit,1000.0d,KiloWatt,10.0d)
       resultStatus: 1
-      duration: 0.0087162
+      duration: 0.0048095
       messages: 
       output: 
       stacktrace: 
@@ -1170,8 +1440,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.Converters][suite]
       name: Converters
       fullName: Assets.EditModeTests.Converters
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0323972
       messages: 
       output: 
       stacktrace: 
@@ -1186,8 +1456,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
       name: TemperatureConverterTest
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0235223
       messages: 
       output: 
       stacktrace: 
@@ -1202,8 +1472,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0005132
       messages: 
       output: 
       stacktrace: 
@@ -1219,8 +1489,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004405
       messages: 
       output: 
       stacktrace: 
@@ -1236,8 +1506,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002431
       messages: 
       output: 
       stacktrace: 
@@ -1253,8 +1523,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature][suite]
       name: ConvertToCelsiusReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0060094
       messages: 
       output: 
       stacktrace: 
@@ -1269,8 +1539,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)]
       name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004271
       messages: 
       output: 
       stacktrace: 
@@ -1286,8 +1556,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToCelsiusReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)]
       name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001348
       messages: 
       output: 
       stacktrace: 
@@ -1303,8 +1573,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature][suite]
       name: ConvertToFahrenheitReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0070124
       messages: 
       output: 
       stacktrace: 
@@ -1319,8 +1589,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)]
       name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0003271
       messages: 
       output: 
       stacktrace: 
@@ -1336,8 +1606,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToFahrenheitReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)]
       name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000978
       messages: 
       output: 
       stacktrace: 
@@ -1353,8 +1623,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature][suite]
       name: ConvertToKelvinReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0058013
       messages: 
       output: 
       stacktrace: 
@@ -1369,8 +1639,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)]
       name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0003186
       messages: 
       output: 
       stacktrace: 
@@ -1386,8 +1656,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/ConvertToKelvinReturnsExpectedTemperature/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)]
       name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000967
       messages: 
       output: 
       stacktrace: 
@@ -1403,9 +1673,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest][suite]
       name: PropertyCalculatorTest
       fullName: Assets.EditModeTests.PropertyCalculatorTest
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0940627
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1419,8 +1689,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage][suite]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0033641
       messages: 
       output: 
       stacktrace: 
@@ -1435,8 +1705,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0009971
       messages: 
       output: 
       stacktrace: 
@@ -1452,8 +1722,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000965
       messages: 
       output: 
       stacktrace: 
@@ -1469,8 +1739,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000846
       messages: 
       output: 
       stacktrace: 
@@ -1486,8 +1756,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000855
       messages: 
       output: 
       stacktrace: 
@@ -1503,8 +1773,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingAverageOfTwoValuesReturnsExpectedAverage/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)]
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000841
       messages: 
       output: 
       stacktrace: 
@@ -1520,8 +1790,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult][suite]
       name: CalculatingCubeScaleValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0063833
       messages: 
       output: 
       stacktrace: 
@@ -1536,8 +1806,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)]
       name: CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004352
       messages: 
       output: 
       stacktrace: 
@@ -1553,8 +1823,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)]
       name: CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001
       messages: 
       output: 
       stacktrace: 
@@ -1570,8 +1840,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0065902
       messages: 
       output: 
       stacktrace: 
@@ -1586,8 +1856,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)]
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004994
       messages: 
       output: 
       stacktrace: 
@@ -1603,8 +1873,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)]
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001316
       messages: 
       output: 
       stacktrace: 
@@ -1620,8 +1890,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)]
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000939
       messages: 
       output: 
       stacktrace: 
@@ -1637,8 +1907,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)]
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000926
       messages: 
       output: 
       stacktrace: 
@@ -1654,8 +1924,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult][suite]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0084237
       messages: 
       output: 
       stacktrace: 
@@ -1670,8 +1940,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0005251
       messages: 
       output: 
       stacktrace: 
@@ -1687,8 +1957,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000916
       messages: 
       output: 
       stacktrace: 
@@ -1704,8 +1974,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000902
       messages: 
       output: 
       stacktrace: 
@@ -1721,8 +1991,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000894
       messages: 
       output: 
       stacktrace: 
@@ -1738,8 +2008,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000854
       messages: 
       output: 
       stacktrace: 
@@ -1755,8 +2025,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001099
       messages: 
       output: 
       stacktrace: 
@@ -1772,8 +2042,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)]
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000866
       messages: 
       output: 
       stacktrace: 
@@ -1789,8 +2059,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException][suite]
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0057657
       messages: 
       output: 
       stacktrace: 
@@ -1805,8 +2075,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)]
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0005016
       messages: 
       output: 
       stacktrace: 
@@ -1822,8 +2092,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)]
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001061
       messages: 
       output: 
       stacktrace: 
@@ -1839,9 +2109,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult][suite]
       name: CalculatingFontSizeReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0153785
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1855,8 +2125,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)]
       name: CalculatingFontSizeReturnsExpectedResult(2.0f,125)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0011722
       messages: 
       output: 
       stacktrace: 
@@ -1872,8 +2142,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)]
       name: CalculatingFontSizeReturnsExpectedResult(0.0f,40)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.000116
       messages: 
       output: 
       stacktrace: 
@@ -1889,11 +2159,14 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)]
       name: CalculatingFontSizeReturnsExpectedResult(1.0f,83)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0058167
+      messages: "  Expected: 83\r\n  But was:  82\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
+        (System.Single scaleValue, System.Int32 expectedFontSize) [0x00007] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\PropertyCalculatorTest.cs:34
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1906,8 +2179,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0079423
       messages: 
       output: 
       stacktrace: 
@@ -1922,8 +2195,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)]
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004305
       messages: 
       output: 
       stacktrace: 
@@ -1939,8 +2212,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)]
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001245
       messages: 
       output: 
       stacktrace: 
@@ -1956,8 +2229,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)]
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001748
       messages: 
       output: 
       stacktrace: 
@@ -1973,8 +2246,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)]
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001835
       messages: 
       output: 
       stacktrace: 
@@ -1990,9 +2263,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale][suite]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0085474
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2006,8 +2279,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004307
       messages: 
       output: 
       stacktrace: 
@@ -2023,8 +2296,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001086
       messages: 
       output: 
       stacktrace: 
@@ -2040,8 +2313,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001007
       messages: 
       output: 
       stacktrace: 
@@ -2057,8 +2330,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000847
       messages: 
       output: 
       stacktrace: 
@@ -2074,11 +2347,15 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.000561
+      messages: "  Expected: 1.39999998f\r\n  But was:  1.4000001f\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
+        (System.Int32 cubeCount, System.Single expectedXScaleValue) [0x00008] in
+        C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\PropertyCalculatorTest.cs:155
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2091,8 +2368,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.000105
       messages: 
       output: 
       stacktrace: 
@@ -2108,8 +2385,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingGroundXScaleValueReturnsExpectedValueForXScale/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)]
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000854
       messages: 
       output: 
       stacktrace: 
@@ -2125,8 +2402,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult][suite]
       name: CalculatingRedColorValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0052656
       messages: 
       output: 
       stacktrace: 
@@ -2141,8 +2418,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)]
       name: CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0004634
       messages: 
       output: 
       stacktrace: 
@@ -2158,8 +2435,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueReturnsExpectedResult/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)]
       name: CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0002399
       messages: 
       output: 
       stacktrace: 
@@ -2175,8 +2452,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0066217
       messages: 
       output: 
       stacktrace: 
@@ -2191,8 +2468,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)]
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0005252
       messages: 
       output: 
       stacktrace: 
@@ -2208,8 +2485,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)]
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0001153
       messages: 
       output: 
       stacktrace: 
@@ -2225,8 +2502,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)]
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000934
       messages: 
       output: 
       stacktrace: 
@@ -2242,8 +2519,8 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)]
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0000922
       messages: 
       output: 
       stacktrace: 
@@ -2255,13 +2532,18 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1037
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
-    m_ResultText: AutoMapperTest (0.293s)
+    m_ResultText: 'biz.dfch.CS.Unity.IPATesting (0.449s)
+
+      ---
+
+      One or
+      more child tests had errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1ce44a0c
-      m_LastClickedID: 206234652
-      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d600ab9237091ce44a0cb369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
+      m_SelectedIDs: 2314d600
+      m_LastClickedID: 14029859
+      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d010beb5dae557abf72314d600ab9237091ce44a0cb369b4106d730d118359db4128c4b35f27fc9c60ce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2392,9 +2674,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 523a0000
-    m_LastClickedID: 14930
-    m_ExpandedIDs: 00000000523a0000543a0000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a000000ca9a3b
+    m_SelectedIDs: 563a0000
+    m_LastClickedID: 14934
+    m_ExpandedIDs: 00000000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a0000843a0000863a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2422,7 +2704,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000523a0000543a0000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a0000
+    m_ExpandedIDs: 00000000563a0000583a00005a3a00005c3a00005e3a0000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000783a00007a3a00007c3a00007e3a0000803a0000823a0000843a0000863a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2449,7 +2731,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2509,7 +2791,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 15064
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
@@ -2543,9 +2825,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d83a0000
-      m_LastClickedID: 15064
-      m_ExpandedIDs: a2f7ffffe2f7ffff3cfbfffff4ffffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 04d6ffff8ad7ffffacd7ffffccd7ffff80d8ffffa0d8ffffc0d8ffff60d9ffff0edaffff2edaffffcedaffff14dbffffe4dfffff44fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

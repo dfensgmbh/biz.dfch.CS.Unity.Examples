@@ -23,6 +23,7 @@ using Assets.Models;
 using Assets.Readers;
 using Assets.Scripts;
 using AutoMapper;
+using Unity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -76,7 +77,7 @@ namespace Assets.Managers
             var csvReader = new CsvReader();
             var csvData = csvReader.GetCsvData();
 
-            var mapper = UnityContainerManager.Resolve<IMapper>();
+            var mapper = Container.UnityContainer.Resolve<IMapper>();
 
             var cubeInfos = new List<CubeInfo>();
             foreach (var data in csvData)
