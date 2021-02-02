@@ -73,7 +73,6 @@ namespace Assets.Scripts
 
             verticalInput = Input.GetAxis(Vertical) * MovementSpeed;
             horizontalInput = Input.GetAxis(Horizontal) * RotateSpeed;
-            Debug.Log(DateTime.Now + " " + SceneManager.GetSceneByBuildIndex(1).isLoaded);
         }
 
         private void FixedUpdate()

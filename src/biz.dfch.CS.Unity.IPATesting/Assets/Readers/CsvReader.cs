@@ -22,20 +22,20 @@ namespace Assets.Readers
 {
     public class CsvReader
     {
-        private readonly List<CubeInfo> cubeInfos = new List<CubeInfo>
+        private readonly List<CsvData> csvData = new List<CsvData>
         {
-            new CubeInfo(-40, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
-            new CubeInfo(30, TemperatureUnit.Celsius, 100, EnergyUnit.KiloWatt, 1),
-            new CubeInfo(-20, TemperatureUnit.Celsius, 50, EnergyUnit.KiloWatt, 1),
-            new CubeInfo(300, TemperatureUnit.Kelvin, 1000, EnergyUnit.KiloWatt, 11),
-            new CubeInfo(5, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
-            new CubeInfo(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25),
-            new CubeInfo(35, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2)
+            new CsvData(-40, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
+            new CsvData(30, TemperatureUnit.Celsius, 100, EnergyUnit.KiloWatt, 1),
+            new CsvData(-20, TemperatureUnit.Celsius, 50, EnergyUnit.KiloWatt, 1),
+            new CsvData(300, TemperatureUnit.Kelvin, 1000, EnergyUnit.KiloWatt, 11),
+            new CsvData(5, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2),
+            new CsvData(-100, TemperatureUnit.Fahrenheit, 20, EnergyUnit.KiloWatt, 0.25),
+            new CsvData(35, TemperatureUnit.Celsius, 300, EnergyUnit.KiloWatt, 2)
         };
 
-        public List<CubeInfo> GetCubeInfos()
+        public List<CsvData> GetCsvData()
         {
-            return cubeInfos;
+            return csvData;
         }
     }
 }
