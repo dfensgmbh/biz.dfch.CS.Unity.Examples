@@ -21,7 +21,7 @@ using UnityEngine;
 
 namespace Assets.Formatters
 {
-    public class GroundFormatter
+    public class GroundFormatter : IFormatter
     {
         private readonly List<GameObject> cubesOnScene;
         private readonly GameObject groundGameObject;
@@ -36,12 +36,14 @@ namespace Assets.Formatters
             this.groundGameObject = groundGameObject;
         }
 
-        public void Format()
+        public bool Format()
         {
             var firstCubeXPosition = cubesOnScene.First().transform.position.x;
             var lastCubeXPosition = cubesOnScene.Last().transform.position.x;
 
             RecalculateGroundXValue(firstCubeXPosition, lastCubeXPosition);
+
+            return true;
         }
 
         private void RecalculateGroundXValue(float firstCubeXPosition, float lastCubeXPosition)
