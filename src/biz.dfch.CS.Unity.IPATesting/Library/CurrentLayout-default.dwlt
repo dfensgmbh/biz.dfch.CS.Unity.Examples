@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Console
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -34,23 +34,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 574.4
+    x: 574
     y: 0
     width: 504
-    height: 458.8
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+    height: 459
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -70,12 +70,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 272
-    width: 1078.4
-    height: 458.8
+    width: 1078
+    height: 459
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 83
+  controlID: 74
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,11 +96,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1536
-    height: 730.8
+    height: 731
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 124
+  controlID: 72
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,10 +116,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1078.4
+    x: 1078
     y: 0
-    width: 457.59998
-    height: 730.8
+    width: 458
+    height: 731
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -172,8 +172,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 574.4
-    height: 458.8
+    width: 574
+    height: 459
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -203,7 +203,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1536
-    height: 780.8
+    height: 781
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 760.8
+    y: 761
     width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -275,12 +275,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1078.4
-    height: 730.8
+    width: 1078
+    height: 731
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 125
+  controlID: 73
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,12 +300,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1078.4
+    width: 1078
     height: 272
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 126
+  controlID: 141
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,7 +323,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 312
     y: 0
-    width: 766.4
+    width: 766
     height: 272
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Package Manager
-    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -416,10 +416,10 @@ MonoBehaviour:
     x: 574.4
     y: 345.6
     width: 502
-    height: 437.8
+    height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 164
+    ID: 166
     splitterInitialOffset: 231
     currentActiveSplitter: -1
     realSizes:
@@ -1048,9 +1048,9 @@ MonoBehaviour:
       uniqueId: '[biz.dfch.CS.Unity.IPATesting][suite]'
       name: biz.dfch.CS.Unity.IPATesting
       fullName: biz.dfch.CS.Unity.IPATesting
-      resultStatus: 1
-      duration: 0.1212693
-      messages: 
+      resultStatus: 2
+      duration: 0.5287688
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1064,9 +1064,9 @@ MonoBehaviour:
       uniqueId: '[EditModeTests.dll][suite]'
       name: EditModeTests.dll
       fullName: C:/src/biz.dfch.CS.Unity.Examples/src/biz.dfch.CS.Unity.IPATesting/Library/ScriptAssemblies/EditModeTests.dll
-      resultStatus: 1
-      duration: 0.0804111
-      messages: 
+      resultStatus: 2
+      duration: 0.4363895
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1080,9 +1080,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/[Assets][suite]
       name: Assets
       fullName: Assets
-      resultStatus: 1
-      duration: 0.0770537
-      messages: 
+      resultStatus: 2
+      duration: 0.4120182
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1096,9 +1096,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/[EditModeTests][suite]
       name: EditModeTests
       fullName: Assets.EditModeTests
-      resultStatus: 1
-      duration: 0.0743838
-      messages: 
+      resultStatus: 2
+      duration: 0.3792062
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1112,9 +1112,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/[EditModeTests][Assets.EditModeTests.Converters][suite]
       name: Converters
       fullName: Assets.EditModeTests.Converters
-      resultStatus: 1
-      duration: 0.0685808
-      messages: 
+      resultStatus: 2
+      duration: 0.1653004
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1128,9 +1128,9 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest][suite]
       name: TemperatureConverterTest
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest
-      resultStatus: 1
-      duration: 0.0626683
-      messages: 
+      resultStatus: 2
+      duration: 0.1549455
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1144,11 +1144,14 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 1
-      duration: 0.0122841
-      messages: 
+      resultStatus: 2
+      duration: 0.0359851
+      messages: "  Expected: <System.IO.InvalidDataException>\r\n  But was:  null\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+        () [0x00026] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\Converters\TemperatureConverterTest.cs:78
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1161,11 +1164,14 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 1
-      duration: 0.0004828
-      messages: 
+      resultStatus: 2
+      duration: 0.0029583
+      messages: "  Expected: <System.IO.InvalidDataException>\r\n  But was:  null\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToFahrenheitWithTemperatureUnitSetToNoneThrowsInvalidDataException
+        () [0x00026] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\Converters\TemperatureConverterTest.cs:104
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1178,11 +1184,14 @@ MonoBehaviour:
       uniqueId: EditModeTests.dll/Assets/EditModeTests/Converters/TemperatureConverterTest/[EditModeTests][Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException]
       name: ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
-      resultStatus: 1
-      duration: 0.0002525
-      messages: 
+      resultStatus: 2
+      duration: 0.0014298
+      messages: "  Expected: <System.IO.InvalidDataException>\r\n  But was:  null\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToKelvinWithTemperatureUnitSetToNoneThrowsInvalidDataException
+        () [0x00026] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\Converters\TemperatureConverterTest.cs:91
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1196,7 +1205,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0153955
+      duration: 0.029704
       messages: 
       output: 
       stacktrace: 
@@ -1212,7 +1221,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(77.0d,Fahrenheit,25.0d)
       resultStatus: 1
-      duration: 0.0055513
+      duration: 0.0164605
       messages: 
       output: 
       stacktrace: 
@@ -1229,7 +1238,7 @@ MonoBehaviour:
       name: ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToCelsiusReturnsExpectedTemperature(288.15d,Kelvin,15.0d)
       resultStatus: 1
-      duration: 0.0002362
+      duration: 0.0005708
       messages: 
       output: 
       stacktrace: 
@@ -1246,7 +1255,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0059565
+      duration: 0.0124325
       messages: 
       output: 
       stacktrace: 
@@ -1262,7 +1271,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(20.0d,Celsius,68.0d)
       resultStatus: 1
-      duration: 0.0003145
+      duration: 0.0007637
       messages: 
       output: 
       stacktrace: 
@@ -1279,7 +1288,7 @@ MonoBehaviour:
       name: ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToFahrenheitReturnsExpectedTemperature(283.15d,Kelvin,50.0d)
       resultStatus: 1
-      duration: 0.0000894
+      duration: 0.0003092
       messages: 
       output: 
       stacktrace: 
@@ -1296,7 +1305,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature
       resultStatus: 1
-      duration: 0.0080685
+      duration: 0.0237277
       messages: 
       output: 
       stacktrace: 
@@ -1312,7 +1321,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(50.0d,Fahrenheit,283.15d)
       resultStatus: 1
-      duration: 0.000729
+      duration: 0.0007311
       messages: 
       output: 
       stacktrace: 
@@ -1329,7 +1338,7 @@ MonoBehaviour:
       name: ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       fullName: Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertToKelvinReturnsExpectedTemperature(20.0d,Celsius,293.15d)
       resultStatus: 1
-      duration: 0.0001368
+      duration: 0.0006071
       messages: 
       output: 
       stacktrace: 
@@ -1346,7 +1355,7 @@ MonoBehaviour:
       name: PropertyCalculatorTest
       fullName: Assets.EditModeTests.PropertyCalculatorTest
       resultStatus: 2
-      duration: 0.0956449
+      duration: 0.1837262
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1362,7 +1371,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage
       resultStatus: 1
-      duration: 0.0042739
+      duration: 0.009985
       messages: 
       output: 
       stacktrace: 
@@ -1378,7 +1387,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,5,7.5f)
       resultStatus: 1
-      duration: 0.0010941
+      duration: 0.002134
       messages: 
       output: 
       stacktrace: 
@@ -1395,7 +1404,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(10,-5,2.5f)
       resultStatus: 1
-      duration: 0.0001468
+      duration: 0.0004855
       messages: 
       output: 
       stacktrace: 
@@ -1412,7 +1421,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(0,20,10)
       resultStatus: 1
-      duration: 0.0001018
+      duration: 0.000337
       messages: 
       output: 
       stacktrace: 
@@ -1429,7 +1438,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,20,7.5f)
       resultStatus: 1
-      duration: 0.0000962
+      duration: 0.0003133
       messages: 
       output: 
       stacktrace: 
@@ -1446,7 +1455,7 @@ MonoBehaviour:
       name: CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingAverageOfTwoValuesReturnsExpectedAverage(-5,-30,-17.5f)
       resultStatus: 1
-      duration: 0.0000968
+      duration: 0.0002728
       messages: 
       output: 
       stacktrace: 
@@ -1463,7 +1472,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0050653
+      duration: 0.01312
       messages: 
       output: 
       stacktrace: 
@@ -1479,7 +1488,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(150.0d,2.0f)
       resultStatus: 1
-      duration: 0.000463
+      duration: 0.0007817
       messages: 
       output: 
       stacktrace: 
@@ -1496,7 +1505,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueReturnsExpectedResult(0.0d,0.0f)
       resultStatus: 1
-      duration: 0.0001133
+      duration: 0.0002068
       messages: 
       output: 
       stacktrace: 
@@ -1513,7 +1522,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.0096575
+      duration: 0.018347
       messages: 
       output: 
       stacktrace: 
@@ -1529,7 +1538,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(151.0f)
       resultStatus: 1
-      duration: 0.0026143
+      duration: 0.0014278
       messages: 
       output: 
       stacktrace: 
@@ -1546,7 +1555,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(150.1f)
       resultStatus: 1
-      duration: 0.0001336
+      duration: 0.0004149
       messages: 
       output: 
       stacktrace: 
@@ -1563,7 +1572,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       resultStatus: 1
-      duration: 0.0001256
+      duration: 0.0003244
       messages: 
       output: 
       stacktrace: 
@@ -1580,7 +1589,7 @@ MonoBehaviour:
       name: CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingCubeScaleValueWithValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       resultStatus: 1
-      duration: 0.0001272
+      duration: 0.0004894
       messages: 
       output: 
       stacktrace: 
@@ -1597,7 +1606,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0081568
+      duration: 0.0155394
       messages: 
       output: 
       stacktrace: 
@@ -1613,7 +1622,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,2,50)
       resultStatus: 1
-      duration: 0.0004668
+      duration: 0.0007376
       messages: 
       output: 
       stacktrace: 
@@ -1630,7 +1639,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(100,0.5d,200)
       resultStatus: 1
-      duration: 0.0001166
+      duration: 0.0002085
       messages: 
       output: 
       stacktrace: 
@@ -1647,7 +1656,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(200,2.5d,80)
       resultStatus: 1
-      duration: 0.0000988
+      duration: 0.0001541
       messages: 
       output: 
       stacktrace: 
@@ -1664,7 +1673,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(30,0.1d,300)
       resultStatus: 1
-      duration: 0.0000987
+      duration: 0.0001651
       messages: 
       output: 
       stacktrace: 
@@ -1681,7 +1690,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,5,0)
       resultStatus: 1
-      duration: 0.0001037
+      duration: 0.0001514
       messages: 
       output: 
       stacktrace: 
@@ -1698,7 +1707,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(1,0,double.PositiveInfinity)
       resultStatus: 1
-      duration: 0.0001025
+      duration: 0.0001536
       messages: 
       output: 
       stacktrace: 
@@ -1715,7 +1724,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterReturnsExpectedResult(0,0,double.NaN)
       resultStatus: 1
-      duration: 0.0000992
+      duration: 0.0001532
       messages: 
       output: 
       stacktrace: 
@@ -1732,7 +1741,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException
       resultStatus: 1
-      duration: 0.0068028
+      duration: 0.0083724
       messages: 
       output: 
       stacktrace: 
@@ -1748,7 +1757,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-5,2)
       resultStatus: 1
-      duration: 0.0005228
+      duration: 0.0008715
       messages: 
       output: 
       stacktrace: 
@@ -1765,7 +1774,7 @@ MonoBehaviour:
       name: CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingEnergyForOneSquareMeterWithPanelSizeEqualToZeroThrowsDivideByZeroException(-1,2)
       resultStatus: 1
-      duration: 0.0001212
+      duration: 0.0002057
       messages: 
       output: 
       stacktrace: 
@@ -1782,7 +1791,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
       resultStatus: 2
-      duration: 0.0148534
+      duration: 0.0174391
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1798,7 +1807,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(2.0f,125)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(2.0f,125)
       resultStatus: 1
-      duration: 0.0009587
+      duration: 0.002021
       messages: 
       output: 
       stacktrace: 
@@ -1815,7 +1824,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(0.0f,40)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(0.0f,40)
       resultStatus: 1
-      duration: 0.0001171
+      duration: 0.000387
       messages: 
       output: 
       stacktrace: 
@@ -1832,7 +1841,7 @@ MonoBehaviour:
       name: CalculatingFontSizeReturnsExpectedResult(1.0f,83)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult(1.0f,83)
       resultStatus: 2
-      duration: 0.0073165
+      duration: 0.004496
       messages: "  Expected: 83\r\n  But was:  82\r\n"
       output: 
       stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeReturnsExpectedResult
@@ -1852,7 +1861,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.0063729
+      duration: 0.0236012
       messages: 
       output: 
       stacktrace: 
@@ -1868,7 +1877,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(3.0f)
       resultStatus: 1
-      duration: 0.0004055
+      duration: 0.0010044
       messages: 
       output: 
       stacktrace: 
@@ -1885,7 +1894,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(2.1f)
       resultStatus: 1
-      duration: 0.000115
+      duration: 0.0002956
       messages: 
       output: 
       stacktrace: 
@@ -1902,7 +1911,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-1.0f)
       resultStatus: 1
-      duration: 0.0001121
+      duration: 0.0002678
       messages: 
       output: 
       stacktrace: 
@@ -1919,7 +1928,7 @@ MonoBehaviour:
       name: CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingFontSizeWithScaleValueOutOfRangeThrowsArgumentOutOfRangeException(-0.1f)
       resultStatus: 1
-      duration: 0.000178
+      duration: 0.0002415
       messages: 
       output: 
       stacktrace: 
@@ -1936,7 +1945,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
       resultStatus: 2
-      duration: 0.0091329
+      duration: 0.0207614
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1952,7 +1961,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(1,0.2f)
       resultStatus: 1
-      duration: 0.0004989
+      duration: 0.0007687
       messages: 
       output: 
       stacktrace: 
@@ -1969,7 +1978,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(2,0.5f)
       resultStatus: 1
-      duration: 0.0001348
+      duration: 0.0001722
       messages: 
       output: 
       stacktrace: 
@@ -1986,7 +1995,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(3,0.8f)
       resultStatus: 1
-      duration: 0.0001011
+      duration: 0.0001517
       messages: 
       output: 
       stacktrace: 
@@ -2003,7 +2012,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(4,1.1f)
       resultStatus: 1
-      duration: 0.0000954
+      duration: 0.0001467
       messages: 
       output: 
       stacktrace: 
@@ -2020,7 +2029,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(5,1.4f)
       resultStatus: 2
-      duration: 0.0006029
+      duration: 0.0010943
       messages: "  Expected: 1.39999998f\r\n  But was:  1.4000001f\r\n"
       output: 
       stacktrace: 'at Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale
@@ -2041,7 +2050,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(6,1.7f)
       resultStatus: 1
-      duration: 0.0001071
+      duration: 0.0001702
       messages: 
       output: 
       stacktrace: 
@@ -2058,7 +2067,7 @@ MonoBehaviour:
       name: CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingGroundXScaleValueReturnsExpectedValueForXScale(7,2.0f)
       resultStatus: 1
-      duration: 0.0000997
+      duration: 0.0001508
       messages: 
       output: 
       stacktrace: 
@@ -2075,7 +2084,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueReturnsExpectedResult
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult
       resultStatus: 1
-      duration: 0.0048801
+      duration: 0.008185
       messages: 
       output: 
       stacktrace: 
@@ -2091,7 +2100,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(330.0d,1.0f)
       resultStatus: 1
-      duration: 0.0003661
+      duration: 0.0005747
       messages: 
       output: 
       stacktrace: 
@@ -2108,7 +2117,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueReturnsExpectedResult(184,0.0f)
       resultStatus: 1
-      duration: 0.0001188
+      duration: 0.0001622
       messages: 
       output: 
       stacktrace: 
@@ -2125,7 +2134,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException
       resultStatus: 1
-      duration: 0.0076654
+      duration: 0.0168096
       messages: 
       output: 
       stacktrace: 
@@ -2141,7 +2150,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(331.0d)
       resultStatus: 1
-      duration: 0.0005096
+      duration: 0.0007389
       messages: 
       output: 
       stacktrace: 
@@ -2158,7 +2167,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(330.1d)
       resultStatus: 1
-      duration: 0.000161
+      duration: 0.0003416
       messages: 
       output: 
       stacktrace: 
@@ -2175,7 +2184,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183)
       resultStatus: 1
-      duration: 0.000107
+      duration: 0.000545
       messages: 
       output: 
       stacktrace: 
@@ -2192,7 +2201,7 @@ MonoBehaviour:
       name: CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
       fullName: Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException(183.9d)
       resultStatus: 1
-      duration: 0.0001135
+      duration: 0.0004582
       messages: 
       output: 
       stacktrace: 
@@ -2204,13 +2213,19 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: EditModeTests.dll/Assets/EditModeTests/PropertyCalculatorTest/[EditModeTests][Assets.EditModeTests.PropertyCalculatorTest.CalculatingRedColorValueWithTemperatureValueOutOfRangeThrowsArgumentOutOfRangeException][suite]
-    m_ResultText: TemperatureConverterTest (0.063s)
-    m_ResultStacktrace: 
+    m_ResultText: "ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      (0.036s)\n---\nExpected: <System.IO.InvalidDataException>\r\n  But was:  null\n---\nat
+      Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      () [0x00026] in C:\\src\\biz.dfch.CS.Unity.Examples\\src\\biz.dfch.CS.Unity.IPATesting\\Assets\\EditModeTests\\Converters\\TemperatureConverterTest.cs:78"
+    m_ResultStacktrace: 'at Assets.EditModeTests.Converters.TemperatureConverterTest.ConvertingTemperatureToCelsiusWithTemperatureUnitSetToNoneThrowsInvalidDataException
+      () [0x00026] in C:\src\biz.dfch.CS.Unity.Examples\src\biz.dfch.CS.Unity.IPATesting\Assets\EditModeTests\Converters\TemperatureConverterTest.cs:78
+
+'
     m_TestListState:
-      scrollPos: {x: 0, y: 60}
-      m_SelectedIDs: 0cec4303
-      m_LastClickedID: 54782988
-      m_ExpandedIDs: e4d26b8e517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d010beb5dae557abf72314d6000cec4303ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 7f7ac7b8
+      m_LastClickedID: -1194886529
+      m_ExpandedIDs: 517ef48ec7f20490bc1b99b06bb40ab2df9607bd6bfbc9c4f96298d0e557abf72314d6000cec4303ab923709b369b4108359db41c09a1d4f28c4b35f27fc9c60ce887573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2252,7 +2267,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
-    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2281,7 +2296,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2306,14 +2321,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 345.6
-    width: 573.4
-    height: 437.8
+    width: 573
+    height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2341,9 +2356,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 403a0000
-    m_LastClickedID: 14912
-    m_ExpandedIDs: 000000001a3a00001c3a000000ca9a3b
+    m_SelectedIDs: 5e3a0000
+    m_LastClickedID: 14942
+    m_ExpandedIDs: 000000003a3a00003c3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2371,7 +2386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a3a00001c3a0000
+    m_ExpandedIDs: 000000003a3a00003c3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2449,8 +2464,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1078.4
     y: 73.6
-    width: 456.59998
-    height: 709.8
+    width: 457
+    height: 710
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -2480,7 +2495,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2494,7 +2509,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: daf8ffffa0f9ffff56fbffff
+      m_ExpandedIDs: 46faffff26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2534,13 +2549,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 312
     y: 73.6
-    width: 764.4
+    width: 764
     height: 251
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -2605,7 +2620,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.040488396, y: 0.0119725475, z: 0.0007449808, w: -0.99923545}
     speed: 2
-    m_Value: {x: 0.04048324, y: 0.011971024, z: 0.000744886, w: -0.99910825}
+    m_Value: {x: 0.040488396, y: 0.0119725475, z: 0.00074498076, w: -0.99923545}
   m_Size:
     m_Target: 1.2946439
     speed: 2
@@ -2650,7 +2665,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -2680,10 +2695,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1024
-    m_HBaseRangeMax: 1024
-    m_VBaseRangeMin: -576
-    m_VBaseRangeMax: 576
+    m_HBaseRangeMin: -1280
+    m_HBaseRangeMax: 1280
+    m_VBaseRangeMin: -720
+    m_VBaseRangeMax: 720
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2700,24 +2715,24 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 956
-      height: 311
-    m_Scale: {x: 0.2699653, y: 0.2699653}
-    m_Translation: {x: 478, y: 155.5}
+      height: 332
+    m_Scale: {x: 0.23055555, y: 0.23055555}
+    m_Translation: {x: 478, y: 166}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1770.598
-      y: -576
-      width: 3541.196
-      height: 1152
+      x: -2073.2532
+      y: -720
+      width: 4146.5063
+      height: 1440
     m_MinimalGUI: 1
-  m_defaultScale: 0.2699653
-  m_LastWindowPixelSize: {x: 1195, y: 415}
+  m_defaultScale: 0.23055555
+  m_LastWindowPixelSize: {x: 956, y: 332}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -2739,14 +2754,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2254
-    y: 426
-    width: 628
-    height: 573
+    x: 574.4
+    y: 345.6
+    width: 502
+    height: 438
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:
