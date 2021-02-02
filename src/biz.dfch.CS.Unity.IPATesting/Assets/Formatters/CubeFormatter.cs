@@ -24,7 +24,7 @@ using UnityEngine;
 
 namespace Assets.Formatters
 {
-    public class CubeFormatter
+    public class CubeFormatter : IFormatter
     {
         // DFTODO - Some log messages can be put in a resource file
         private const string MainColorName = "_Color";

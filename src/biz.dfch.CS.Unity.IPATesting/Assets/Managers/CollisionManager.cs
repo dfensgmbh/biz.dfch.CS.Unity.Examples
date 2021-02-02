@@ -15,12 +15,16 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using Assets.Constants;
-using Assets.Factories;
+using Assets.IoC;
+using Assets.Models;
 using Assets.Readers;
 using Assets.Scripts;
+using AutoMapper;
+using Unity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -70,15 +74,29 @@ namespace Assets.Managers
                 yield return null;
             }
             activeScene = SceneManager.GetActiveScene();
-            
+
             var csvReader = new CsvReader();
-            var cubeInfos = csvReader.GetCubeInfos();
+            var csvData = csvReader.GetCsvData();
 
-            var cubeFactory = new CubeFactory();
-            var cubes = cubeFactory.CreateMany(cubeInfos);
+            var mapper = DiContainer.UnityContainer.Resolve<IMapper>();
 
-            foreach (var cube in cubes)
+            var cubeInfos = new List<CubeInfo>();
+            foreach (var data in csvData)
             {
+                var cubeInfo = mapper.Map<CubeInfo>(data);
+
+                cubeInfos.Add(cubeInfo);
+            }
+
+            var cubePosition = new Vector3(-4, 1, 0);
+
+            foreach (var cubeInfo in cubeInfos)
+            {
+                var cube = mapper.Map<GameObject>(cubeInfo);
+
+                cube.transform.position = cubePosition;
+                cubePosition.x += 3;
+
                 SceneManager.MoveGameObjectToScene(cube, activeScene);
             }
 
