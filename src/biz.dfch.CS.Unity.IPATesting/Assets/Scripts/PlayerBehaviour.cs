@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-using System;
 using System.Linq;
 using Assets.Constants;
 using Assets.Managers;

@@ -148,11 +148,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             cubeBehaviour = cube.AddComponent<CubeBehaviour>();
 
-            cubeBehaviour.TemperatureUnit = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().TemperatureUnit;
-            cubeBehaviour.Temperature = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().Temperature;
-            cubeBehaviour.EnergyPerMonth = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().EnergyPerMonth;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().SolarPanelSizeInSquareMeter;
-            cubeBehaviour.EnergyUnit = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.First().EnergyUnit;
+            cubeBehaviour.CubeInfo = cubeTestInfo.TestCaseWithExpectedCubeProperties.Keys.FirstOrDefault();
 
             Debug.Log($"TestCases Count: {cubeTestInfo.TestCaseWithExpectedCubeProperties.Count}");
         }
@@ -187,11 +183,7 @@ namespace Assets.PlayModeTests.IMonoBehaviorTestClasses
 
             cubeBehaviour = cube.AddComponent<CubeBehaviour>();
             
-            cubeBehaviour.TemperatureUnit = testCase.TemperatureUnit;
-            cubeBehaviour.Temperature = testCase.Temperature;
-            cubeBehaviour.EnergyPerMonth = testCase.EnergyPerMonth;
-            cubeBehaviour.EnergyUnit = testCase.EnergyUnit;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = testCase.SolarPanelSizeInSquareMeter;
+            cubeBehaviour.CubeInfo = testCase;
 
             Debug.Log("TestCase loaded");
         }

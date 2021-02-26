@@ -28,11 +28,7 @@ namespace Assets.Converters
             var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             var cubeBehaviour = cube.AddComponent<CubeBehaviour>();
 
-            cubeBehaviour.TemperatureUnit = source.TemperatureUnit;
-            cubeBehaviour.Temperature = source.Temperature;
-            cubeBehaviour.EnergyUnit = source.EnergyUnit;
-            cubeBehaviour.SolarPanelSizeInSquareMeter = source.SolarPanelSizeInSquareMeter;
-            cubeBehaviour.EnergyPerMonth = source.EnergyPerMonth;
+            cubeBehaviour.CubeInfo = source;
 
             return cube;
         }

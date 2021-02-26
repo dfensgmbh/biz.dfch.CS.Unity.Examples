@@ -25,16 +25,11 @@ namespace Assets.Scripts
     public class CubeBehaviour : MonoBehaviour
     {
         private const string TextMeshChildGameObjectName = "TextMesh Child";
-        
+
         private CubeFormatter cubeFormatter;
-        private CubeInfo cubeInfo;
         private GameObject childGameObject;
 
-        public double Temperature { get; set; }
-        public TemperatureUnit TemperatureUnit { get; set; } 
-        public double EnergyPerMonth { get; set; }
-        public EnergyUnit EnergyUnit { get; set; } 
-        public double SolarPanelSizeInSquareMeter { get; set; }
+        public CubeInfo CubeInfo { get; set; }
 
         private void Start()
         {
@@ -45,12 +40,10 @@ namespace Assets.Scripts
 
             var cubeRigidbody = gameObject.AddComponent<Rigidbody>();
             cubeRigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-            //cubeRigidbody.constraints = (RigidbodyConstraints) 122;
+            
             Debug.Log("RigidbodyConstraints are: " + cubeRigidbody.constraints);
 
-            cubeInfo = new CubeInfo(Temperature, TemperatureUnit, EnergyPerMonth, EnergyUnit, SolarPanelSizeInSquareMeter);
-            
-            cubeFormatter = new CubeFormatter(cubeInfo, gameObject);
+            cubeFormatter = new CubeFormatter(CubeInfo, gameObject);
             cubeFormatter.Format();
 
             gameObject.tag = GameObjectTag.Cube;
